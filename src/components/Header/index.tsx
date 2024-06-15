@@ -60,10 +60,10 @@ const Header: React.FC<HeaderProps> = ({ clickWaitlist }) => {
           </a>
         </div>
         <button
-          className="hidden md:block px-6 py-2 text-[18px] text-black font-semibold bg-white hover:bg-[#CCCCCC] active:bg-[#AAAAAA] rounded-full cursor-pointer"
+          className="hidden md:block px-6 py-2 text-[18px] text-white font-semibold bg-[#9264F8] hover:bg-[#9C6EEB] active:bg-[#AAAAAA] rounded-full cursor-pointer"
           onClick={clickWaitlist}
         >
-          Join waitlist
+          Download app
         </button>
       </div>
     </div>

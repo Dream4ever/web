@@ -12,7 +12,7 @@ function Vision() {
     const scrollSection = sticky?.querySelector(".scroll_section");
     let value = 0;
     let limit = 400;
-    if(window.innerWidth < 768){
+    if (window.innerWidth < 768) {
       limit = 600;
     }
 
@@ -44,33 +44,8 @@ function Vision() {
               }}
             >
               <div className="absolute w-screen h-full">
-                <p className="absolute hidden font-bold opacity-50 lg:top-20 lg:left-1/2 lg:inline-block">
-                  ~ equal access to financial service
-                </p>
-                <p className="absolute hidden font-bold opacity-25 lg:left-[40%] lg:top-1/4 lg:inline-block">
-                  ~ seamless networking
-                </p>
-                <p className="absolute  hidden font-bold opacity-25 lg:top-1/4 lg:right-[13%] lg:inline-block">
-                  ~ protect personal data
-                </p>
-                <p className="absolute hidden font-bold opacity-25 left-20 whitespace-nowrap md:top-32 md:inline-block md:text-2xl lg:font-medium lg:font-mediumlg:inline-block md:left-[63%] lg:top-[85%] lg:left-[21%]">
-                  ~ manage personal data
-                </p>
-                <p className="absolute font-bold opacity-50 top-16 lg:left-[5%] lg:top-1/4 md:top-[25%] md:left-[6%] md:text-2xl lg:font-medium  ">
-                  ~ full control
-                </p>
-                <p className="absolute font-bold opacity-20 top-32 right-px md:top-[33%] lg:top-[69%] lg:left-[48%] md:text-2xl lg:font-medium">
-                  = P2P payment
-                </p>
-                <p className="absolute font-bold opacity-50 bottom-40 focus-visible:opacity-100 right-4 lg:left-[3%] md:left-[61%] md:bottom-[31%] md:text-2xl lg:font-medium lg:top-[47%]">
-                  ~ financial freedom
-                </p>
-                <p className="absolute font-bold opacity-25 -left-1 bottom-20 lg:top-[69%] whitespace-nowrap lg:left-[80%] md:bottom-[35%] md:text-2xl lg:font-medium">
-                  =Identity freedom
-                </p>
-                <p className="absolute font-bold opacity-20 whitespace-nowrap -right-2 bottom-6 lg:bottom-[20%] md:bottom-[15%] md:left-[32%]  md:text-2xl lg:left-[7%]">
-                  =Open finance
-                </p>
+                <img src="/images/home/center_web.svg" className="absolute" alt="" />
+                <img src="/images/home/white_middle_web.svg" className="absolute top-64" alt="" />
               </div>
             </Tween>
 
@@ -105,7 +80,7 @@ function Vision() {
                     <p className="text-[32px] text-center text-white">
                       Envision a future where everyone has
                     </p>
-                    <h1  className="md:text-[48px] text-[40px] font-Outfit font-medium">
+                    <h1 className="md:text-[48px] text-[40px] font-Outfit font-medium">
                       finance, informational, and identity freedom
                     </h1>
                     {/* <Reveal repeat>
@@ -138,7 +113,7 @@ function Vision() {
                         srcSet="/images/financial_freedom_2x.webp"
                         type="image/webp"
                       />
-                      <img srcSet="/images/financial_freedom_2x.webp" alt='financial_freedom' className="min-w-[316px]"/>
+                      <img srcSet="/images/financial_freedom_2x.webp" alt='financial_freedom' className="min-w-[316px]" />
                     </picture>
                   </div>
                   <div>
@@ -167,7 +142,7 @@ function Vision() {
                         srcSet="/images/informational_freedom_2x.webp"
                         type="image/webp"
                       />
-                      <img srcSet="/images/informational_freedom_2x.webp" alt='informational_freedom' className="min-w-[316px]"/>
+                      <img srcSet="/images/informational_freedom_2x.webp" alt='informational_freedom' className="min-w-[316px]" />
                     </picture>
                   </div>
                   <div>
@@ -192,13 +167,13 @@ function Vision() {
               </div>
               <div className="bg-no-repeat bg-cover bg-L7" data-component="Vision">
                 <div className="flex flex-col items-center justify-center w-[150vw] px-[25vw] md:px-2 md:w-screen h-screen text-white font-Outfit lg:flex-row md:flex-row">
-                   <div className="md:mx-8 lg:mx-8 lg:w-1/3 md:w-1/2">
+                  <div className="md:mx-8 lg:mx-8 lg:w-1/3 md:w-1/2">
                     <picture>
                       <source
                         srcSet="/images/identity_freedom_2x.webp"
                         type="image/webp"
                       />
-                      <img srcSet="/images/identity_freedom_2x.webp" alt='identity_freedom' className="min-w-[316px]"/>
+                      <img srcSet="/images/identity_freedom_2x.webp" alt='identity_freedom' className="min-w-[316px]" />
                     </picture>
                   </div>
                   <div>

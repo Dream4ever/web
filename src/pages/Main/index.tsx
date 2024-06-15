@@ -69,7 +69,7 @@ function Main() {
         isVisible={isTransparencyVisible}
         onClose={handleClick}
       />
-      <RightPanelMenu stage={currentComponent} isVisible={currentComponent !== "Home" && currentComponent !== null} />
+      {/* <RightPanelMenu stage={currentComponent} isVisible={currentComponent !== "Home" && currentComponent !== null} /> */}
       <div className={`${currentComponent !== "Home" && currentComponent !== null ? "fixed bottom-0 z-40 backdrop-blur-xl bg-white/30 h-[44px] w-[100%] md:hidden": "hidden"}`}>
         
       </div>
