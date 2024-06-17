@@ -18,12 +18,12 @@ function App() {
 
   return (
     <div>
-      <Header clickWaitlist={handleClick} />
-      <Transparency
+      {/* <Header clickWaitlist={handleClick} /> */}
+      {/* <Transparency
         isJoinAppear={isJoinAppear}
         isVisible={isTransparencyVisible}
         onClose={handleClick}
-      />
+      /> */}
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/TermsOfService" element={<TermsOfService />} />
