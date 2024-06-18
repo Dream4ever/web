@@ -4,7 +4,7 @@ import { images } from '../../constants/images';
 import { ScrollTrigger, Tween } from 'react-gsap';
 
 type HeaderProps = {
-  clickWaitlist: () => void;
+  clickWaitlist?: () => void;
 };
 
 const scrollToTop = () => {
@@ -14,10 +14,10 @@ const scrollToTop = () => {
 const Header: React.FC<HeaderProps> = ({ clickWaitlist }) => {
   return (
     <div
-      className="w-full px-6 py-4 z-20 fixed flex justify-between"
+      className="fixed z-20 flex justify-between w-full px-6 py-4"
     >
-      <div className="flex gap-2 items-center">
-        <img className="w-6 md:w-8 lg:w-12 h-6 md:h-8 lg:h-12 cursor-pointer" src={images.logo} alt="logo" onClick={scrollToTop}/>
+      <div className="flex items-center gap-2">
+        <img className="w-6 h-6 cursor-pointer md:w-8 lg:w-12 md:h-8 lg:h-12" src={images.logo} alt="logo" onClick={scrollToTop} />
         <ScrollTrigger start="0px" end="220px" scrub={0.5}>
           <Tween from={{
             opacity: 1
@@ -33,13 +33,13 @@ const Header: React.FC<HeaderProps> = ({ clickWaitlist }) => {
           </Tween>
         </ScrollTrigger>
       </div>
-      <div className="flex gap-4 md:gap-8 items-center">
-        <div className="w-6 md:w-8 h-6 md:h-8">
+      <div className="flex items-center gap-4 md:gap-8">
+        <div className="w-6 h-6 md:w-8 md:h-8">
           <a href="https://twitter.com/TowneSquarexyz" target='_blank' rel="noreferrer">
-            <img src="/images/twitter.svg" alt="twitter_image"/>
+            <img src="/images/twitter.svg" alt="twitter_image" />
           </a>
         </div>
-        <div className="w-6 md:w-8 h-6 md:h-8">
+        <div className="w-6 h-6 md:w-8 md:h-8">
           <a href="https://github.com/TowneSquare" target='_blank' rel="noreferrer">
             <BsGithub
               size="auto"
@@ -49,7 +49,7 @@ const Header: React.FC<HeaderProps> = ({ clickWaitlist }) => {
             />
           </a>
         </div>
-        <div className="w-6 md:w-8 h-6 md:h-8">
+        <div className="w-6 h-6 md:w-8 md:h-8">
           <a href="https://docs.townesquare.xyz/townesquare-whitepaper/" target='_blank' rel="noreferrer">
             <BsGit
               size="auto"
@@ -61,7 +61,7 @@ const Header: React.FC<HeaderProps> = ({ clickWaitlist }) => {
         </div>
         <button
           className="hidden md:block px-6 py-2 text-[18px] text-white font-semibold bg-[#9264F8] hover:bg-[#9C6EEB] active:bg-[#AAAAAA] rounded-full cursor-pointer"
-          onClick={clickWaitlist}
+        // onClick={clickWaitlist}
         >
           Download app
         </button>

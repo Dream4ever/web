@@ -29,7 +29,6 @@ function App() {
         <Route path="/TermsOfService" element={<TermsOfService />} />
         <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
       </Routes>
-      <Footer />
     </div>
   );
 }

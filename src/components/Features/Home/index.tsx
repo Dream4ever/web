@@ -2,7 +2,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import React, { useMemo, useRef } from "react";
 
 import ActionFade from "./ActionFade/index";
-import CustomLabel from "./ActionLabel";
+import ActionLabel from "./ActionLabel";
 
 type HeaderProps = {
   clickWaitlist?: () => void;
@@ -25,27 +25,27 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
         />
       </div>
       <div className="absolute z-[9999] hidden w-full lg:block left-0 top-0">
-        <CustomLabel
+        <ActionLabel
           className="top-[33vh] left-[18vw]"
           label="1.325"
           imgUrl="/images/home/icons/comment.svg"
           dotSName="bottom-[11vh] left-[3vw]"
           dotCName="bottom-[5vh] left-[4vw]"
         />
-        <CustomLabel
+        <ActionLabel
           className="-top-[4vh] left-[28vw]"
           label="#HODL"
           dotSName="-top-[4vh] left-[4vw]"
           dotCName="-top-[10vh] left-[2vw]"
         />
-        <CustomLabel
+        <ActionLabel
           className="-top-[3vh] right-[28vw]"
           label="$1,185"
           imgUrl="/images/home/icons/budget.svg"
           dotSName="-top-[13vh] right-[3vw]"
           dotCName="-top-[8vh] right-[5vw]"
         />
-        <CustomLabel
+        <ActionLabel
           className="top-[36vh] right-[20vw]"
           imgUrl="/images/home/icons/aptos.svg"
           dotSName="hidden"
