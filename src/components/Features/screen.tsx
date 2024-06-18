@@ -1,5 +1,5 @@
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-import { useMemo, useRef } from 'react';
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { useMemo, useRef } from "react";
 
 function Screen1() {
   const refMain = useRef(null);
@@ -11,15 +11,13 @@ function Screen1() {
 
   useMemo(() => {
     ScrollTrigger.create({
-      trigger: "#feature",
-      start: "top top+=-200px",
-      end: "top top+=-1200px",
+      trigger: "#home",
+      start: "top top+=-0px",
+      end: "top top+=-600px",
       onUpdate: (self) => {
         if (refMain.current != null && (refMain.current as any).style != null) {
           let node = refMain.current as any;
-          node.style.transform = `translate(-50%, calc(-50% + ${
-            150 * (1 - self.progress)
-          }% + ${50 * (1 - self.progress)}vh))`;
+          node.style.marginTop = `calc(160px + ${160 * self.progress}px)`
         }
       },
     });
@@ -68,21 +66,23 @@ function Screen1() {
   }, []);
 
   return (
-    <>
+    <div
+      className="relative w-full mt-40"
+      ref={refMain}
+    >
       <img
         src="/images/screen1/spline1.png"
         className="absolute w-full top-[30vh]"
       />
       <img src="/images/screen1/spline2.png" className="absolute w-full" />
       <div
-        ref={refMain}
-        className="absolute flex flex-col items-center -translate-x-1/2 translate-y-[100vh] left-1/2 top-1/2"
+        className="flex flex-col items-center"
       >
         <div className="relative">
           <img
             src="/images/screen1/phone.png"
             alt="sign"
-            className="relative z-20 self-center transition-all"
+            className="relative z-20 transition-all"
           />
           <img
             src="/images/screen1/clip1.png"
@@ -141,7 +141,7 @@ function Screen1() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

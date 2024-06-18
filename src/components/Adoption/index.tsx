@@ -3,7 +3,6 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useEffect, useState } from "react";
 import { Controller, Scene } from "react-scrollmagic";
 
-import Background from "./background";
 import Screen from "./screen";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -17,16 +16,13 @@ function Adoption() {
 
   return (
     <div
-      className="hidden bg-black features-wrapper component md:block lg:block"
+      className="hidden md:block lg:block"
       id="adoption"
-      data-component="Adoption"
     >
       <Controller>
-        <Scene duration={3000} pin offset={`${offset}px`}>
+        <Scene duration={3000} pin offset={`${0}px`}>
           <div className="relative w-full">
-            <Background>
-              <Screen />
-            </Background>
+            <Screen />
           </div>
         </Scene>
       </Controller>

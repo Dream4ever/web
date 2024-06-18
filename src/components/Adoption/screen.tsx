@@ -109,7 +109,7 @@ function Screen1() {
           <br /> audience based on Solana and Aptos ecosystems.
         </p>
 
-        <div className="relative w-[1200px] h-[400px] mt-48">
+        <div className="relative w-[1200px] h-[400px] mt-[10vh]">
           <img
             src="/images/adoption/clip1.png"
             className="absolute top-0 left-0 z-10 transition-all translate-y-[100vh] opacity-0"
