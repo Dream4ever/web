@@ -1,4 +1,4 @@
-import { useEffect, useRef, } from 'react';
+import { useEffect, useRef, useState, } from 'react';
 import './index.css';
 interface Props {
   className: string;
@@ -12,6 +12,15 @@ const ActionLabel: React.FC<Props> = ({ className, label, imgUrl, dotSName, dotC
 
   const actionRef = useRef<any>();
   const actionSubRef = useRef<any>();
+
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsVisible(prevStatus => !prevStatus);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, []);
 
   const handleMouseMove = (event: any) => {
     const actionSubRefCurrent = actionSubRef.current;
@@ -49,8 +58,8 @@ const ActionLabel: React.FC<Props> = ({ className, label, imgUrl, dotSName, dotC
         />}
         {label && <p>{label}</p>}
         <div className={`relative `} style={{ transform: "translateZ(10px)" }}>
-          <div className={`absolute ${dotCName} rounded-full w-4 h-4 bg-[#FFF]`} />
-          <div className={`absolute ${dotSName} rounded-full w-2 h-2 bg-[#FFF]`} style={{ transform: "translateZ(250px)" }} />
+          <div className={`absolute ${dotCName} rounded-full w-4 h-4`} style={{ backgroundImage: isVisible ? 'linear-gradient(70deg, #9945FF -7.78%, #14F195 106.39%)' : 'linear-gradient(70deg, #ffffff -7.78%, #ffffff 106.39%)' }} />
+          <div className={`absolute ${dotSName} rounded-full w-2 h-2`} style={{ transform: "translateZ(250px)", backgroundImage: isVisible ? 'linear-gradient(70deg, #9945FF -7.78%, #14F195 106.39%)' : 'linear-gradient(70deg, #ffffff -7.78%, #ffffff 106.39%)' }} />
         </div>
       </div>
     </div>

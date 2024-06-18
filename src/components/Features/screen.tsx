@@ -8,6 +8,7 @@ function Screen1() {
   const ref3 = useRef(null);
   const ref4 = useRef(null);
   const ref5 = useRef(null);
+  const refText = useRef(null);
 
   useMemo(() => {
     ScrollTrigger.create({
@@ -22,43 +23,54 @@ function Screen1() {
       },
     });
     ScrollTrigger.create({
+      trigger: "#home",
+      start: "top top+=-1900px",
+      end: "top top+=-2000px",
+      onUpdate: (self) => {
+        console.log(self.progress);
+        if (refMain.current != null && (refMain.current as any).style != null) {
+          let text = refText.current as any;
+          if (self.progress === 1){
+            text.style.display = "flex";
+          }else {
+            text.style.display = "none";
+          }
+        }
+      },
+    });
+    ScrollTrigger.create({
       trigger: "#feature",
       start: "top top+=-800px",
       end: "top top+=-1200px",
       onUpdate: (self) => {
         if (ref1.current != null && (ref1.current as any).style != null) {
           let node = ref1.current as any;
-          node.style.transform = `translate(calc(-50% - ${
-            450 * self.progress
-          }px), calc(-50% - ${300 * self.progress}px))`;
+          node.style.transform = `translate(calc(-50% - ${450 * self.progress
+            }px), calc(-50% - ${300 * self.progress}px))`;
         }
 
         if (ref2.current != null && (ref2.current as any).style != null) {
           let node = ref2.current as any;
-          node.style.transform = `translate(calc(-50% - ${
-            350 * self.progress
-          }px), calc(-50% - ${100 * self.progress}px))`;
+          node.style.transform = `translate(calc(-50% - ${350 * self.progress
+            }px), calc(-50% - ${100 * self.progress}px))`;
         }
 
         if (ref3.current != null && (ref3.current as any).style != null) {
           let node = ref3.current as any;
-          node.style.transform = `translate(calc(-50% - ${
-            450 * self.progress
-          }px), calc(-50% + ${200 * self.progress}px))`;
+          node.style.transform = `translate(calc(-50% - ${450 * self.progress
+            }px), calc(-50% + ${200 * self.progress}px))`;
         }
 
         if (ref4.current != null && (ref4.current as any).style != null) {
           let node = ref4.current as any;
-          node.style.transform = `translate(calc(-50% + ${
-            350 * self.progress
-          }px), calc(-50% - ${100 * self.progress}px))`;
+          node.style.transform = `translate(calc(-50% + ${350 * self.progress
+            }px), calc(-50% - ${100 * self.progress}px))`;
         }
 
         if (ref5.current != null && (ref5.current as any).style != null) {
           let node = ref5.current as any;
-          node.style.transform = `translate(calc(-50% + ${
-            450 * self.progress
-          }px), calc(-50% + ${100 * self.progress}px))`;
+          node.style.transform = `translate(calc(-50% + ${450 * self.progress
+            }px), calc(-50% + ${100 * self.progress}px))`;
         }
       },
     });
@@ -113,7 +125,7 @@ function Screen1() {
         <p className="font-semibold text-2xl pt-[2vh]">
           SOCIAL NETWORK ON MOBILE
         </p>
-        <p className="pt-4 text-5xl font-bold"> TowneSquare mobile app</p>
+        <p ref={refText} className="hidden pt-4 text-5xl font-bold"> TowneSquare mobile app</p>
         <div className="mt-20">
           <img src="/images/screen1/vector.png" />
           <div className="flex gap-10">
