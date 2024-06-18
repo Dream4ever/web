@@ -26,30 +26,30 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
       </div>
       <div className="absolute z-[9999] hidden w-full lg:block left-0 top-0">
         <CustomLabel
-          className="top-80 left-80"
+          className="top-[33vh] left-[18vw]"
           label="1.325"
           imgUrl="/images/home/icons/comment.svg"
-          dotSName="-top-24 left-16"
-          dotCName="-top-16 left-20"
+          dotSName="bottom-[11vh] left-[3vw]"
+          dotCName="bottom-[5vh] left-[4vw]"
         />
         <CustomLabel
-          className="top-8 left-[530px]"
+          className="-top-[4vh] left-[28vw]"
           label="#HODL"
-          dotSName="-top-10 left-20"
-          dotCName="-top-24 left-14"
+          dotSName="-top-[4vh] left-[4vw]"
+          dotCName="-top-[10vh] left-[2vw]"
         />
         <CustomLabel
-          className="top-12 right-[544px]"
+          className="-top-[3vh] right-[28vw]"
           label="$1,185"
           imgUrl="/images/home/icons/budget.svg"
-          dotSName="-top-36 right-14"
-          dotCName="-top-28 right-20"
+          dotSName="-top-[13vh] right-[3vw]"
+          dotCName="-top-[8vh] right-[5vw]"
         />
         <CustomLabel
-          className="top-[350px] right-[324px]"
+          className="top-[36vh] right-[20vw]"
           imgUrl="/images/home/icons/aptos.svg"
           dotSName="hidden"
-          dotCName="top-4 right-20"
+          dotCName="top-[3vh] right-[5vw]"
         />
       </div>
       <div className="absolute z-0 block w-full md:hidden">

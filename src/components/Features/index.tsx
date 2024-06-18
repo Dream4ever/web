@@ -26,7 +26,7 @@ function Features() {
       onUpdate: (self) => {
         if (ref.current != null && (ref.current as any).style != null) {
           let node = ref.current as any;
-          node.style.transform = `translate(0, ${-50 * self.progress}vh)`;
+          node.style.transform = `translate(0, calc(${-50 * self.progress}vh - ${320 * self.progress}px))`;
         }
       },
     });
@@ -39,7 +39,7 @@ function Features() {
       id="home"
     >
       <Controller>
-        <Scene duration={2500} pin offset={`${offset}px`}>
+        <Scene duration={3000} pin offset={`${offset}px`}>
           <div className="relative w-full">
             <Background />
             <div ref={ref}>

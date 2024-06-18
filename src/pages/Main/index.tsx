@@ -3,6 +3,8 @@ import EarlyAccess from "../../components/EarlyAccess";
 
 const Features = lazy(() => import("../../components/Features"));
 const Adoption = lazy(() => import("../../components/Adoption"));
+const SocialGraph = lazy(() => import("../../components/SocialGraph"));
+const Mobile = lazy(() => import("../../components/Mobile"));
 
 function Main() {
 
@@ -11,6 +13,8 @@ function Main() {
       <Suspense fallback={<div>LOADING</div>}>
         <Features />
         <Adoption />
+        <SocialGraph />
+        <Mobile />
       </Suspense>
       <EarlyAccess />
     </div>
