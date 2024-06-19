@@ -126,7 +126,7 @@ const Screen = () => {
   return (
     <>
       <div
-        className="absolute flex flex-col -translate-x-1/2 -translate-y-1/2 ite left-1/2 top-1/2"
+        className="flex flex-col"
       >
         <div className="flex flex-col items-center justify-center">
           <p className="pt-4 text-2xl font-semibold bold text">
@@ -137,7 +137,7 @@ const Screen = () => {
           </p>
         </div>
 
-        <div className="relative w-[1200px] h-[400px] my-[10vh]">
+        <div className="relative w-[1200px] h-[400px] my-[7vh]">
           <img
             src="/images/mobile/hooray.png"
             className="absolute top-[80px] left-32 z-10 transition-all translate-y-[100vh] opacity-0"
@@ -180,14 +180,14 @@ const Screen = () => {
           />
         </div>
 
-        <div className="flex flex-col items-center justify-center mt-40 text-center">
+        <div className="flex flex-col items-center justify-center text-center mt-[150px]">
           <p className="text-[23px] font-medium">
             <span className="font-extrabold">TowneSquare</span> is the home of the 1st Web3 mobile mint experience,<br />
             powered by the TowneSquare Mini-App module called Tile
 
           </p>
         </div>
-        <div className="flex justify-center mt-16">
+        <div className="flex justify-center mt-2">
           <button className="px-4 py-2 text-base font-medium text-black rounded-full w-52 bg-primary-default">
             Download TowneSquare
             <p className="text-sm">Coming soon</p>

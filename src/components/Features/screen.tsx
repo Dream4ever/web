@@ -18,7 +18,7 @@ function Screen1() {
       onUpdate: (self) => {
         if (refMain.current != null && (refMain.current as any).style != null) {
           let node = refMain.current as any;
-          node.style.marginTop = `calc(160px + ${160 * self.progress}px)`
+          node.style.marginTop = `calc(160px + ${0 * self.progress}px)`
         }
       },
     });

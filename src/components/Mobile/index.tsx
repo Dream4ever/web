@@ -7,7 +7,7 @@ import Screen from "./screen";
 
 gsap.registerPlugin(ScrollTrigger);
 
-function Adoption() {
+function Mobile() {
   const [offset, setOffset] = useState(700);
 
   useEffect(() => {
@@ -20,8 +20,8 @@ function Adoption() {
       id="mobile"
     >
       <Controller>
-        <Scene duration={3000} pin offset={`${0}px`}>
-          <div className="relative w-full">
+        <Scene duration={3000} pin offset={`${offset}px`}>
+          <div className="relative flex justify-center w-full h-screen">
             <Screen />
           </div>
         </Scene>
@@ -30,4 +30,4 @@ function Adoption() {
   );
 }
 
-export default Adoption;
+export default Mobile;

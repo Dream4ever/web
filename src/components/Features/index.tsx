@@ -39,7 +39,7 @@ function Features() {
       id="home"
     >
       <Controller>
-        <Scene duration={3000} pin offset={`600px`}>
+        <Scene duration={3000} pin offset={`${offset}px`}>
           <div className="relative w-full">
             <Background />
             <div ref={ref}>

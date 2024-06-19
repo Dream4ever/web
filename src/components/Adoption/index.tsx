@@ -5,8 +5,6 @@ import { Controller, Scene } from "react-scrollmagic";
 
 import Screen from "./screen";
 
-gsap.registerPlugin(ScrollTrigger);
-
 function Adoption() {
   const [offset, setOffset] = useState(700);
 
@@ -20,8 +18,8 @@ function Adoption() {
       id="adoption"
     >
       <Controller>
-        <Scene duration={3000} pin offset={`${0}px`}>
-          <div className="relative w-full">
+        <Scene duration={3000} pin offset={`${offset}px`}>
+          <div className="relative flex justify-center w-full h-screen">
             <Screen />
           </div>
         </Scene>

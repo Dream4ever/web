@@ -19,9 +19,8 @@ function Screen1() {
       onUpdate: (self) => {
         if (refMain.current != null && (refMain.current as any).style != null) {
           let node = refMain.current as any;
-          node.style.transform = `translate(-50%, calc(-50% + ${
-            150 * (1 - self.progress)
-          }% + ${50 * (1 - self.progress)}vh))`;
+          node.style.transform = `translate(-50%, calc(-50% + ${150 * (1 - self.progress)
+            }% + ${50 * (1 - self.progress)}vh))`;
         }
       },
     });
@@ -33,9 +32,8 @@ function Screen1() {
         if (ref1.current != null && (ref1.current as any).style != null) {
           let node = ref1.current as any;
           node.style.opacity = calcOpacity(self.progress);
-          node.style.transform = `translate(0px, calc(${
-            100 * (1 - self.progress)
-          }vh))`;
+          node.style.transform = `translate(0px, calc(${100 * (1 - self.progress)
+            }vh))`;
         }
       },
     });
@@ -47,9 +45,8 @@ function Screen1() {
         if (ref2.current != null && (ref2.current as any).style != null) {
           let node = ref2.current as any;
           node.style.opacity = calcOpacity(self.progress);
-          node.style.transform = `translate(0px, calc(${
-            100 * (1 - self.progress)
-          }vh))`;
+          node.style.transform = `translate(0px, calc(${100 * (1 - self.progress)
+            }vh))`;
         }
       },
     });
@@ -61,9 +58,8 @@ function Screen1() {
         if (ref3.current != null && (ref3.current as any).style != null) {
           let node = ref3.current as any;
           node.style.opacity = calcOpacity(self.progress);
-          node.style.transform = `translate(0px, calc(${
-            100 * (1 - self.progress)
-          }vh))`;
+          node.style.transform = `translate(0px, calc(${100 * (1 - self.progress)
+            }vh))`;
         }
       },
     });
@@ -75,9 +71,8 @@ function Screen1() {
         if (ref4.current != null && (ref4.current as any).style != null) {
           let node = ref4.current as any;
           node.style.opacity = calcOpacity(self.progress);
-          node.style.transform = `translate(0px, calc(${
-            100 * (1 - self.progress)
-          }vh))`;
+          node.style.transform = `translate(0px, calc(${100 * (1 - self.progress)
+            }vh))`;
         }
       },
     });
@@ -91,25 +86,24 @@ function Screen1() {
         className="absolute w-full top-[30vh]"
       />
       <img src="/images/screen1/spline2.png" className="absolute w-full" />
-      <div
-        // ref={refMain}
-        className="absolute flex flex-col -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2"
-      >
-        <div>
-          <img src="/images/screen1/vector.png" />
+      <div className="flex flex-col">
+        <div className="flex flex-col justify-stretch">
+          <div>
+            <img src="/images/screen1/vector.png" />
+          </div>
+          <p className="pt-4 text-5xl font-bold">
+            Harnessing performant
+            <br />
+            blockchains for adoption
+          </p>
+          <p className="pt-4 text-xl font-medium">
+            TowneSquare network empowers creators &<br />
+            developers to build and scale use cases to a mass
+            <br /> audience based on Solana and Aptos ecosystems.
+          </p>
         </div>
-        <p className="pt-4 text-5xl font-bold">
-          Harnessing performant
-          <br />
-          blockchains for adoption
-        </p>
-        <p className="pt-4 text-xl font-medium">
-          TowneSquare network empowers creators &<br />
-          developers to build and scale use cases to a mass
-          <br /> audience based on Solana and Aptos ecosystems.
-        </p>
 
-        <div className="relative w-[1200px] h-[400px] mt-[10vh]">
+        <div className="relative w-[1200px] h-[400px] mt-[5vh]">
           <img
             src="/images/adoption/clip1.png"
             className="absolute top-0 left-0 z-10 transition-all translate-y-[100vh] opacity-0"
