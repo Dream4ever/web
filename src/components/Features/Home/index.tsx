@@ -61,7 +61,7 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
         <img
           src="/images/home/right_mobile.svg"
           alt="background"
-          className="absolute top-[20vh] right-0"
+          className="absolute top-[20vh] hidden md:block lg:block right-0"
         />
       </div>
 

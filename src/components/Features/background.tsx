@@ -74,8 +74,8 @@ function Background({ children }: { children?: ReactNode }) {
     });
     ScrollTrigger.create({
       trigger: "#adoption",
-      start: "top top+=-2500px",
-      end: "top top+=-3500px",
+      start: "top top+=-4000px",
+      end: "top top+=-4500px",
       onUpdate: (self) => {
         if (
           backgroundRef.current != null &&
@@ -116,8 +116,8 @@ function Background({ children }: { children?: ReactNode }) {
     });
     ScrollTrigger.create({
       trigger: "#socialgraph",
-      start: "top top+=-3000px",
-      end: "top top+=-3500px",
+      start: "top top+=-4000px",
+      end: "top top+=-4500px",
       onUpdate: (self) => {
         if (
           backgroundRef.current != null &&

@@ -1,8 +1,7 @@
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { useRef, useMemo } from "react";
+import { useMemo, useRef } from "react";
 
-const Screen = () => {
-
+function MobileScreen() {
   const refMain = useRef(null);
   const ref1 = useRef(null);
   const ref2 = useRef(null);
@@ -14,7 +13,19 @@ const Screen = () => {
   };
   useMemo(() => {
     ScrollTrigger.create({
-      trigger: "#socialgraph",
+      trigger: "#adoption",
+      start: "top top+=-200px",
+      end: "top top+=-1200px",
+      onUpdate: (self) => {
+        if (refMain.current != null && (refMain.current as any).style != null) {
+          let node = refMain.current as any;
+          node.style.transform = `translate(-50%, calc(-50% + ${150 * (1 - self.progress)
+            }% + ${50 * (1 - self.progress)}vh))`;
+        }
+      },
+    });
+    ScrollTrigger.create({
+      trigger: "#adoption",
       start: "top top+=-400px",
       end: "top top+=-800px",
       onUpdate: (self) => {
@@ -27,7 +38,7 @@ const Screen = () => {
       },
     });
     ScrollTrigger.create({
-      trigger: "#socialgraph",
+      trigger: "#adoption",
       start: "top top+=-800px",
       end: "top top+=-1200px",
       onUpdate: (self) => {
@@ -40,7 +51,7 @@ const Screen = () => {
       },
     });
     ScrollTrigger.create({
-      trigger: "#socialgraph",
+      trigger: "#adoption",
       start: "top top+=-1200px",
       end: "top top+=-1600px",
       onUpdate: (self) => {
@@ -53,7 +64,7 @@ const Screen = () => {
       },
     });
     ScrollTrigger.create({
-      trigger: "#socialgraph",
+      trigger: "#adoption",
       start: "top top+=-1600px",
       end: "top top+=-2000px",
       onUpdate: (self) => {
@@ -68,67 +79,56 @@ const Screen = () => {
     ScrollTrigger.refresh();
   }, []);
 
-
   return (
     <>
-      <div
-        className="flex flex-col"
-      >
-        <div className="flex flex-col items-center justify-center">
-          <div className="flex flex-col items-center justify-center">
-            <p className="pt-4 text-2xl font-semibold bold text">
-              Social graph
-            </p>
-            <p className="pt-4 text-5xl font-bold">
-              CRED Social graph & profile
-            </p>
+      <img
+        src="/images/screen1/spline1.png"
+        className="absolute hidden md:w-full md:top-[30vh]"
+      />
+      <img src="/images/screen1/spline2.png" className="absolute md:w-full hidden" />
+      <div className="flex flex-col">
+        <div className="flex flex-col justify-stretch px-3 pt-10">
+          <div>
+            <img src="/images/screen1/vector.png" />
           </div>
+          <p className="pt-4 text-[28px] md:text-5xl font-bold">
+            Harnessing performant
+            <br />
+            blockchains for adoption
+          </p>
+          <p className="pt-4 text-lg md:text-xl font-medium">
+            TowneSquare network empowers <br />
+            creators & developers to build and <br />
+            scale use cases to a mass audience<br />
+            based on Solana and Aptos <br />
+            ecosystems.
+          </p>
         </div>
-        <div className="relative w-[1200px] h-[400px] my-[2vh]">
+
+        <div className="relative w-full h-full mt-[5vh]">
           <img
-            src="/images/socialgraph/profile.png"
+            src="/images/adoption/mobile_clip1.png"
             className="absolute top-0 left-0 z-10 transition-all translate-y-[100vh] opacity-0"
             ref={ref1}
           />
           <img
-            src="/images/socialgraph/earn.png"
-            className="absolute top-0 left-[764px] z-10 transition-all  translate-y-[100vh]"
+            src="/images/adoption/mobile_clip2.png"
+            className="absolute top-[380px] left-[0px] z-10 transition-all  translate-y-[100vh]"
             ref={ref2}
           />
           <img
-            src="/images/socialgraph/cred.png"
-            className="absolute top-[290px] left-[384px] z-10 transition-all  translate-y-[100vh]"
+            src="/images/adoption/mobile_clip3.png"
+            className="absolute top-[620px] left-[0px] z-10 transition-all  translate-y-[100vh]"
             ref={ref3}
           />
           <img
-            src="/images/socialgraph/integrated.png"
-            className="absolute top-[290px] left-[1px] z-10 transition-all  translate-y-[100vh]"
+            src="/images/adoption/mobile_clip4.png"
+            className="absolute top-[620px] left-[175px] z-10 transition-all  translate-y-[100vh]"
             ref={ref4}
           />
         </div>
 
-        <div className="flex flex-col justify-center mt-[150px]">
-          <div className="flex flex-col items-start pl-[110px] justify-left">
-            <img src="/images/screen1/vector.png" />
-          </div>
-          <div className="flex items-center justify-center gap-28 text-start">
-            <p className="pt-4 text-[40px] font-bold">
-              Social graph with
-              <br />
-              over 140,000
-              <br />
-              registered wallets!
-            </p>
-            <p className="pt-4 text-2xl font-medium">
-              Directly integrated in the TowneSquare app, CRED<br />
-              social graph aggregates social data from all on-<br />
-              chain activities to complete the social profile of a<br />
-              user, powering different social use cases in DeFi,<br />
-              NFT, gaming, payments, etc.
-            </p>
-          </div>
-        </div>
-        <div className="flex justify-center mt-2">
+        <div className="flex justify-center mt-[100vh]">
           <button className="px-4 py-2 text-base font-medium text-black rounded-full w-52 bg-primary-default">
             Download TowneSquare
             <p className="text-sm">Coming soon</p>
@@ -137,6 +137,6 @@ const Screen = () => {
       </div>
     </>
   );
-};
+}
 
-export default Screen;
+export default MobileScreen;

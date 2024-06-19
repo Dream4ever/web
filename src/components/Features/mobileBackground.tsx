@@ -40,8 +40,8 @@ function MobileBackground({ children }: { children?: ReactNode }) {
     });
     ScrollTrigger.create({
       trigger: "#home",
-      start: "top top+=-4000px",
-      end: "top top+=-4500px",
+      start: "top top+=-4500px",
+      end: "top top+=-5000px",
       onUpdate: (self) => {
         if (
           backgroundRef.current != null &&
@@ -74,8 +74,8 @@ function MobileBackground({ children }: { children?: ReactNode }) {
     });
     ScrollTrigger.create({
       trigger: "#adoption",
-      start: "top top+=-2500px",
-      end: "top top+=-3500px",
+      start: "top top+=-4000px",
+      end: "top top+=-4500px",
       onUpdate: (self) => {
         if (
           backgroundRef.current != null &&
@@ -116,8 +116,8 @@ function MobileBackground({ children }: { children?: ReactNode }) {
     });
     ScrollTrigger.create({
       trigger: "#socialgraph",
-      start: "top top+=-3000px",
-      end: "top top+=-3500px",
+      start: "top top+=-5500px",
+      end: "top top+=-6500px",
       onUpdate: (self) => {
         if (
           backgroundRef.current != null &&

@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { Controller, Scene } from "react-scrollmagic";
 
 import Screen from "./screen";
+import MobileScreen from "./mobileScreen";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -16,13 +17,18 @@ function Mobile() {
 
   return (
     <div
-      className="hidden md:block lg:block"
+      className="md:block lg:block"
       id="mobile"
     >
       <Controller>
         <Scene duration={3000} pin offset={`${offset}px`}>
-          <div className="relative flex justify-center w-full h-screen mt-40">
-            <Screen />
+          <div className="relative flex justify-center w-full h-[150vh] mt-40">
+            <div className="hidden md:block">
+              <Screen />
+            </div>
+            <div className="block md:hidden">
+              <MobileScreen />
+            </div>
           </div>
         </Scene>
       </Controller>

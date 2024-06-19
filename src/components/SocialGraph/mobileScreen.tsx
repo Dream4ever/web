@@ -1,7 +1,7 @@
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useRef, useMemo } from "react";
 
-const Screen = () => {
+const MobileScreen = () => {
 
   const refMain = useRef(null);
   const ref1 = useRef(null);
@@ -76,59 +76,60 @@ const Screen = () => {
       >
         <div className="flex flex-col items-center justify-center">
           <div className="flex flex-col items-center justify-center">
-            <p className="pt-4 text-2xl font-semibold bold text">
+            <p className="pt-4 text-lg font-semibold bold text">
               Social graph
             </p>
-            <p className="pt-4 text-5xl font-bold">
-              CRED Social graph & profile
+            <p className="pt-4 text-4xl font-bold text-center">
+              CRED Social graph <br />&profile
             </p>
           </div>
         </div>
-        <div className="relative w-[1200px] h-[400px] my-[2vh]">
+        <div className="relative w-full h-full my-[2vh]">
           <img
-            src="/images/socialgraph/profile.png"
-            className="absolute top-0 left-0 z-10 transition-all translate-y-[100vh] opacity-0"
+            src="/images/socialgraph/mobile_clip1.png"
+            className="absolute top-0 w-[325px] left-2 z-10 transition-all translate-y-[100vh] opacity-0"
             ref={ref1}
           />
           <img
             src="/images/socialgraph/earn.png"
-            className="absolute top-0 left-[764px] z-10 transition-all  translate-y-[100vh]"
+            className="absolute top-[405px] left-2 w-[325px] z-10 transition-all  translate-y-[100vh]"
             ref={ref2}
           />
           <img
             src="/images/socialgraph/cred.png"
-            className="absolute top-[290px] left-[384px] z-10 transition-all  translate-y-[100vh]"
+            className="absolute top-[910px] w-[325px] left-2 z-10 transition-all  translate-y-[100vh]"
             ref={ref3}
           />
           <img
             src="/images/socialgraph/integrated.png"
-            className="absolute top-[290px] left-[1px] z-10 transition-all  translate-y-[100vh]"
+            className="absolute top-[1160px] w-[325px] left-2 z-10 transition-all  translate-y-[100vh]"
             ref={ref4}
           />
         </div>
 
-        <div className="flex flex-col justify-center mt-[150px]">
-          <div className="flex flex-col items-start pl-[110px] justify-left">
+        <div className="flex flex-col mt-[155vh] px-4">
+          <div className="flex justify-start items-start">
             <img src="/images/screen1/vector.png" />
           </div>
-          <div className="flex items-center justify-center gap-28 text-start">
-            <p className="pt-4 text-[40px] font-bold">
+          <div className="flex flex-col">
+            <p className="pt-4 text-[28px] font-medium">
               Social graph with
               <br />
               over 140,000
               <br />
               registered wallets!
             </p>
-            <p className="pt-4 text-2xl font-medium">
-              Directly integrated in the TowneSquare app, CRED<br />
-              social graph aggregates social data from all on-<br />
-              chain activities to complete the social profile of a<br />
-              user, powering different social use cases in DeFi,<br />
-              NFT, gaming, payments, etc.
+            <p className="pt-4 text-lg font-medium">
+              Directly integrated in the TowneSquare <br />
+              app, CRED social graph aggregates <br />
+              social data from all on-chain activities<br />
+              to complete the social profile of a user,<br />
+              powering different social use cases in<br />
+              DeFi, NFT, gaming, payments, etc.
             </p>
           </div>
         </div>
-        <div className="flex justify-center mt-2">
+        <div className="flex justify-center mt-[5vh]">
           <button className="px-4 py-2 text-base font-medium text-black rounded-full w-52 bg-primary-default">
             Download TowneSquare
             <p className="text-sm">Coming soon</p>
@@ -139,4 +140,4 @@ const Screen = () => {
   );
 };
 
-export default Screen;
+export default MobileScreen;
