@@ -7,7 +7,7 @@ const Adoption = lazy(() => import("../../components/Adoption"));
 const SocialGraph = lazy(() => import("../../components/SocialGraph"));
 const Mobile = lazy(() => import("../../components/Mobile"));
 const Footer = lazy(() => import("../../components/Footer"));
-// const Header = lazy(() => import("../../components/Header"));
+const FeaturesMobile = lazy(() => import("../../components/FeaturesMobile"));
 
 function Main() {
   return (
@@ -21,6 +21,7 @@ function Main() {
         <EarlyAccess />
         <Footer />
       </Suspense>
+      {/* <FeaturesMobile /> */}
     </div>
   );
 }

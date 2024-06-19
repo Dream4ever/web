@@ -36,16 +36,16 @@ const ActionFade: React.FC<Props> = ({ imgUrl, replaceImgUrl }) => {
   }, [fadeProp])
 
   return (
-    <div className="relative">
+    <div className="relative flex items-center justify-center">
 
       {isVisible ? (<img src={imgUrl}
         alt=""
-        className={fadeProp.fade}
+        className={`${fadeProp.fade} w-[75%] md:w-full lg:w-full`}
       />) :
         (
           <img src={replaceImgUrl}
             alt=""
-            className={fadeProp.fade}
+            className={`${fadeProp.fade} w-[75%] md:w-full lg:w-full`}
           />
         )}
     </div>

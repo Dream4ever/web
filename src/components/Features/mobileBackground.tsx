@@ -1,7 +1,7 @@
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { ReactNode, useMemo, useRef } from "react";
 
-function Background({ children }: { children?: ReactNode }) {
+function MobileBackground({ children }: { children?: ReactNode }) {
   const backgroundRef = useRef(null);
 
   const bgStart = "linear-gradient(169.95deg, #000000 7.53%, #000000 94.82%)";
@@ -40,8 +40,8 @@ function Background({ children }: { children?: ReactNode }) {
     });
     ScrollTrigger.create({
       trigger: "#home",
-      start: "top top+=-3000px",
-      end: "top top+=-3500px",
+      start: "top top+=-4000px",
+      end: "top top+=-4500px",
       onUpdate: (self) => {
         if (
           backgroundRef.current != null &&
@@ -168,4 +168,4 @@ function Background({ children }: { children?: ReactNode }) {
   );
 }
 
-export default Background;
+export default MobileBackground;

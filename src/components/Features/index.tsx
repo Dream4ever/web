@@ -4,7 +4,9 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { Controller, Scene } from "react-scrollmagic";
 
 import Screen from "./screen";
+import MobileScreen from "./mobileScreen";
 import Background from "./background";
+import MobileBackground from "./mobileBackground";
 import Home from "./Home";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -35,16 +37,21 @@ function Features() {
 
   return (
     <div
-      className="hidden bg-black features-wrapper component md:block lg:block"
+      className="bg-black features-wrapper component md:block lg:block"
       id="home"
     >
       <Controller>
         <Scene duration={3000} pin offset={`${offset}px`}>
           <div className="relative w-full">
-            <Background />
+            {window.innerWidth < 768 ? (<MobileBackground />) : (<Background />)}
             <div ref={ref}>
               <Home />
-              <Screen />
+              <div className="hidden md:block">
+                <Screen />
+              </div>
+              <div className="block md:hidden">
+                <MobileScreen />
+              </div>
             </div>
           </div>
         </Scene>

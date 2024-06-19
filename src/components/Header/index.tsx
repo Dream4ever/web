@@ -14,7 +14,7 @@ const scrollToTop = () => {
 const Header: React.FC<HeaderProps> = ({ clickWaitlist }) => {
   return (
     <div
-      className="fixed z-20 flex justify-between w-full px-6 py-4"
+      className="fixed z-20 flex justify-between w-full px-4 py-4 md:px-6"
     >
       <div className="flex items-center gap-2">
         <img className="w-6 h-6 cursor-pointer md:w-8 lg:w-12 md:h-8 lg:h-12" src={images.logo} alt="logo" onClick={scrollToTop} />
