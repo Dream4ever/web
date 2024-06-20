@@ -1,5 +1,6 @@
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useMemo, useRef } from "react";
+import ActionLabel from "../Features/Home/ActionLabel";
 
 function MobileScreen() {
   const refMain = useRef(null);
@@ -82,6 +83,30 @@ function MobileScreen() {
   return (
     <>
       <div className="flex flex-col">
+        <div className="absolute z-[9999] w-full lg:block left-0 top-0">
+          <ActionLabel
+            className="bottom-[15vh] left-[5vh]"
+            imgUrl="/images/home/icons/solana.png"
+            dotSName="bottom-[5vh] right-[7vw]"
+            dotCName="bottom-[7vh] right-[6vw]"
+            dot3Name="bottom-[6vh] right-[2vw]"
+            dot4Name="bottom-[7vh] left-[5vw]"
+            dot5Name="bottom-[9vh] left-[8vw]"
+          />
+          <ActionLabel
+            className="bottom-[6vh] right-[15vh]"
+            imgUrl="/images/home/icons/ts.png"
+          />
+          <ActionLabel
+            className="bottom-[0vh] right-[5vh]"
+            imgUrl="/images/home/icons/aptos.svg"
+            dotSName="bottom-[7vh] left-[9vw]"
+            dotCName="bottom-[9vh] left-[8vw]"
+            dot3Name="bottom-[8vh] left-[4vw]"
+            dot4Name="top-[4vh] right-[8vw]"
+            dot5Name="top-[5vh] right-[4vw]"
+          />
+        </div>
         <div className="flex flex-col px-3 pt-10 justify-stretch">
           <div>
             <img src="/images/screen1/vector.png" />

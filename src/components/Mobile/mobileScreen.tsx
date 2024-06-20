@@ -137,7 +137,7 @@ const MobileScreen = () => {
           </p>
         </div>
 
-        <div className="relative w-full h-[500px] my-[7vh]">
+        <div className="relative w-full h-[500px] my-[3vh]">
           <img
             src="/images/mobile/hooray.png"
             className="absolute top-[80px] left-10 z-10 w-[90px] transition-all translate-y-[100vh] opacity-0"

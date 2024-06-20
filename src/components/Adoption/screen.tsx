@@ -1,5 +1,6 @@
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useMemo, useRef } from "react";
+import ActionLabel from "../Features/Home/ActionLabel";
 
 function Screen1() {
   const refMain = useRef(null);
@@ -97,7 +98,30 @@ function Screen1() {
             <br /> audience based on Solana and Aptos ecosystems.
           </p>
         </div>
-
+        <div className="absolute z-[9999] w-full lg:block left-0 top-0">
+          <ActionLabel
+            className="top-[0vh] right-[83vh]"
+            imgUrl="/images/home/icons/solana.png"
+            dotSName="bottom-[7vh] right-[4vw]"
+            dotCName="bottom-[9vh] right-[3vw]"
+            dot3Name="bottom-[8vh] right-[2vw]"
+            dot4Name="bottom-[12vh] left-[3vw]"
+            dot5Name="bottom-[11vh] left-[2vw]"
+          />
+          <ActionLabel
+            className="top-[6vh] right-[75vh]"
+            imgUrl="/images/home/icons/ts.png"
+          />
+          <ActionLabel
+            className="top-[13vh] right-[68vh]"
+            imgUrl="/images/home/icons/aptos.svg"
+            dotSName="bottom-[7vh] left-[4vw]"
+            dotCName="bottom-[9vh] left-[3vw]"
+            dot3Name="bottom-[8vh] left-[2vw]"
+            dot4Name="top-[0vh] right-[5vw]"
+            dot5Name="top-[1vh] right-[4vw]"
+          />
+        </div>
         <div className="relative w-[1200px] h-[400px] mt-[5vh]">
           <img
             src="/images/adoption/clip1.png"
