@@ -116,8 +116,8 @@ function MobileBackground({ children }: { children?: ReactNode }) {
     });
     ScrollTrigger.create({
       trigger: "#socialgraph",
-      start: "top top+=-5500px",
-      end: "top top+=-6500px",
+      start: "top top+=-4000px",
+      end: "top top+=-5000px",
       onUpdate: (self) => {
         if (
           backgroundRef.current != null &&

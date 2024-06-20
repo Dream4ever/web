@@ -72,12 +72,12 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
           imgUrl="/images/home/btn_aptos.svg"
           replaceImgUrl="/images/home/btn_solana.svg"
         />
-        <span className="text-[20px] lg:text-[32px] font-medium mt-8">
+        <span className="text-[20px] lg:text-[32px] font-medium mt-6">
           The Non-EVM Social Layer
           <br></br>
           for Mass Adoption
         </span>
-        <div className="flex justify-center w-full gap-2 mt-8 lg:gap-6 md:gap-6 md:item-center lg:justify-center">
+        <div className="flex justify-center w-full gap-2 mt-6 lg:gap-6 md:gap-6 md:item-center lg:justify-center">
           <button>
             <img src="/images/home/btn_google_play.svg" alt="" />
           </button>
