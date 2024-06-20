@@ -100,20 +100,20 @@ function Screen1() {
         </div>
         <div className="absolute z-[9999] w-full lg:block left-0 top-0">
           <ActionLabel
-            className="top-[0vh] right-[83vh]"
+            className="-top-[3vh] left-[44vw]"
             imgUrl="/images/home/icons/solana.png"
             dotSName="bottom-[7vh] right-[4vw]"
             dotCName="bottom-[9vh] right-[3vw]"
             dot3Name="bottom-[8vh] right-[2vw]"
-            dot4Name="bottom-[12vh] left-[3vw]"
-            dot5Name="bottom-[11vh] left-[2vw]"
+            dot4Name="bottom-[11vh] left-[5vw]"
+            dot5Name="bottom-[10vh] left-[3.5vw]"
           />
           <ActionLabel
-            className="top-[6vh] right-[75vh]"
+            className="top-[6vh] left-[52.5vw]"
             imgUrl="/images/home/icons/ts.png"
           />
           <ActionLabel
-            className="top-[13vh] right-[68vh]"
+            className="top-[13vh] left-[62vw]"
             imgUrl="/images/home/icons/aptos.svg"
             dotSName="bottom-[7vh] left-[4vw]"
             dotCName="bottom-[9vh] left-[3vw]"

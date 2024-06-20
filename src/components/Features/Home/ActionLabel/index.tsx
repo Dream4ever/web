@@ -57,14 +57,14 @@ const ActionLabel: React.FC<Props> = ({ className, label, imgUrl, dotSName, dotC
         {imgUrl && <img
           src={imgUrl}
           alt="background"
-          className={`md:w-[37px] ${dotCName ? 'w-[20px]' : 'w-[60px]'} `}
+          className={`md:w-[37px] ${dotCName ? 'w-[20px]' : 'w-[60px] md:w-[65px]'} `}
         />}
         {label && <p className='text-[14px] md:text-[17px]'>{label}</p>}
         <div className={`relative `} style={{ transform: "translateZ(10px)" }}>
           {dotCName && <div className={`absolute ${dotCName} rounded-full w-4 h-4`} style={{ backgroundImage: isVisible ? 'linear-gradient(70deg, #9945FF -7.78%, #14F195 106.39%)' : 'linear-gradient(70deg, #ffffff -7.78%, #ffffff 106.39%)' }} />}
           {dotSName && <div className={`absolute ${dotSName} rounded-full w-2 h-2`} style={{ transform: "translateZ(250px)", backgroundImage: isVisible ? 'linear-gradient(70deg, #9945FF -7.78%, #14F195 106.39%)' : 'linear-gradient(70deg, #ffffff -7.78%, #ffffff 106.39%)' }} />}
-          {dot3Name && <div className={`absolute ${dot3Name} rounded-full w-2 h-2`} style={{ transform: "translateZ(250px)", backgroundImage: isVisible ? 'linear-gradient(70deg, #9945FF -7.78%, #14F195 106.39%)' : 'linear-gradient(70deg, #ffffff -7.78%, #ffffff 106.39%)' }} />}
-          {dot4Name && <div className={`absolute ${dot4Name} rounded-full w-2 h-2`} style={{ transform: "translateZ(250px)", backgroundImage: isVisible ? 'linear-gradient(70deg, #9945FF -7.78%, #14F195 106.39%)' : 'linear-gradient(70deg, #ffffff -7.78%, #ffffff 106.39%)' }} />}
+          {dot3Name && <div className={`absolute ${dot3Name} rounded-full w-1 h-1`} style={{ transform: "translateZ(250px)", backgroundImage: isVisible ? 'linear-gradient(70deg, #9945FF -7.78%, #14F195 106.39%)' : 'linear-gradient(70deg, #ffffff -7.78%, #ffffff 106.39%)' }} />}
+          {dot4Name && <div className={`absolute ${dot4Name} rounded-full w-1 h-1`} style={{ transform: "translateZ(250px)", backgroundImage: isVisible ? 'linear-gradient(70deg, #9945FF -7.78%, #14F195 106.39%)' : 'linear-gradient(70deg, #ffffff -7.78%, #ffffff 106.39%)' }} />}
           {dot5Name && <div className={`absolute ${dot5Name} rounded-full w-2 h-2`} style={{ transform: "translateZ(250px)", backgroundImage: isVisible ? 'linear-gradient(70deg, #9945FF -7.78%, #14F195 106.39%)' : 'linear-gradient(70deg, #ffffff -7.78%, #ffffff 106.39%)' }} />}
         </div>
       </div>

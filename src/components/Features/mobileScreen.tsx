@@ -9,6 +9,10 @@ function MobileScreen() {
   const ref4 = useRef(null);
   const ref5 = useRef(null);
 
+  const calcOpacity = (progress: number) => {
+    return progress > 0.5 ? (progress - 0.5) / 0.5 : 0;
+  };
+
   useMemo(() => {
     ScrollTrigger.create({
       trigger: "#home",
@@ -17,7 +21,7 @@ function MobileScreen() {
       onUpdate: (self) => {
         if (refMain.current != null && (refMain.current as any).style != null) {
           let node = refMain.current as any;
-          node.style.marginTop = `calc(160px + ${0 * self.progress}px)`
+          node.style.marginTop = `calc(220px + ${0 * self.progress}px)`
         }
       },
     });
@@ -28,41 +32,42 @@ function MobileScreen() {
       onUpdate: (self) => {
         if (ref1.current != null && (ref1.current as any).style != null) {
           let node = ref1.current as any;
-          node.style.transform = `translate(calc(-50% - ${120 * self.progress
-            }px), calc(-50% - ${-100 * self.progress}px))`;
           self.progress === 1 ? node.style.zIndex = 30 : node.style.zIndex = 10;
+          node.style.opacity = calcOpacity(self.progress);
+          node.style.transform = `translate(0px, calc(${100 * (1 - self.progress)
+            }vh))`;
         }
 
         if (ref2.current != null && (ref2.current as any).style != null) {
           let node = ref2.current as any;
-          node.style.transform = `translate(calc(-50% - ${120 * self.progress
-            }px), calc(-50% - ${-260 * self.progress}px))`;
+          node.style.transform = `translate(0px, calc(${100 * (1 - self.progress)
+          }vh))`;
           self.progress === 1 ? node.style.zIndex = 30 : node.style.zIndex = 10;
-
+          node.style.opacity = calcOpacity(self.progress);
         }
 
         if (ref3.current != null && (ref3.current as any).style != null) {
           let node = ref3.current as any;
-          node.style.transform = `translate(calc(-50% - ${0 * self.progress
-            }px), calc(-50% + ${230 * self.progress}px))`;
+          node.style.transform = `translate(0px, calc(${100 * (1 - self.progress)
+          }vh))`;
           self.progress === 1 ? node.style.zIndex = 30 : node.style.zIndex = 10;
-
+          node.style.opacity = calcOpacity(self.progress);
         }
 
         if (ref4.current != null && (ref4.current as any).style != null) {
           let node = ref4.current as any;
-          node.style.transform = `translate(calc(-50% + ${120 * self.progress
-            }px), calc(-50% - ${-150 * self.progress}px))`;
+          node.style.transform = `translate(0px, calc(${100 * (1 - self.progress)
+          }vh))`;
           self.progress === 1 ? node.style.zIndex = 30 : node.style.zIndex = 10;
-
+          node.style.opacity = calcOpacity(self.progress);
         }
 
         if (ref5.current != null && (ref5.current as any).style != null) {
           let node = ref5.current as any;
-          node.style.transform = `translate(calc(-50% + ${120 * self.progress
-            }px), calc(-50% + ${300 * self.progress}px))`;
+          node.style.transform = `translate(0px, calc(${100 * (1 - self.progress)
+          }vh))`;
           self.progress === 1 ? node.style.zIndex = 30 : node.style.zIndex = 10;
-
+          node.style.opacity = calcOpacity(self.progress);
         }
       },
     });
@@ -82,7 +87,7 @@ function MobileScreen() {
       <div
         className="flex flex-col items-center"
       >
-        <div className="relative flex justify-center">
+        <div className="relative flex justify-center w-full">
           <img
             src="/images/screen1/phone.png"
             alt="sign"
@@ -90,31 +95,31 @@ function MobileScreen() {
           />
           <img
             src="/images/screen1/clip1.png"
-            className="absolute z-10 transition-all -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 w-[30%]"
+            className="absolute top-[35vh] left-[2vw] z-10 transition-all translate-y-[100vh] opacity-0 w-[30%]"
             ref={ref1}
           />
           <img
             src="/images/screen1/clip2.png"
-            className="absolute z-10 transition-all -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 w-[30%]"
+            className="absolute top-[45vh] left-[35vw] z-10 transition-all translate-y-[100vh] opacity-0 w-[30%]"
             ref={ref2}
           />
           <img
             src="/images/screen1/clip3.png"
-            className="absolute z-10 transition-all -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 w-[30%]"
+            className="absolute top-[55vh] left-[2vw] z-10 transition-all translate-y-[100vh] opacity-0 w-[30%]"
             ref={ref3}
           />
           <img
             src="/images/screen1/clip4.png"
-            className="absolute z-10 transition-all -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 w-[30%]"
+            className="absolute top-[40vh] left-[68vw] z-10 transition-all translate-y-[100vh] opacity-0 w-[30%]"
             ref={ref4}
           />
           <img
             src="/images/screen1/clip5.png"
-            className="absolute z-10 transition-all -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 w-[30%]"
+            className="absolute top-[55vh] left-[68vw] z-10 transition-all translate-y-[100vh] opacity-0 w-[30%]"
             ref={ref5}
           />
         </div>
-        <p className="font-semibold text-lg md:text-2xl pt-[22vh]">
+        <p className="text-lg font-semibold md:text-2xl pt-[40vh]">
           SOCIAL NETWORK ON MOBILE
         </p>
         <p className="pt-4 text-4xl font-bold text-center md:text-5xl"> TowneSquare <br />mobile app</p>

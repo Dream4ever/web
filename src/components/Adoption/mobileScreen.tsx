@@ -90,8 +90,8 @@ function MobileScreen() {
             dotSName="bottom-[5vh] right-[7vw]"
             dotCName="bottom-[7vh] right-[6vw]"
             dot3Name="bottom-[6vh] right-[2vw]"
-            dot4Name="bottom-[7vh] left-[5vw]"
-            dot5Name="bottom-[9vh] left-[8vw]"
+            dot4Name="bottom-[6vh] left-[6vw]"
+            dot5Name="bottom-[7vh] left-[9vw]"
           />
           <ActionLabel
             className="bottom-[6vh] right-[15vh]"
