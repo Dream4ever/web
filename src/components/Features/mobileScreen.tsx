@@ -119,7 +119,7 @@ function MobileScreen() {
             ref={ref5}
           />
         </div>
-        <p className="text-lg font-semibold md:text-2xl pt-[40vh]">
+        <p className="text-lg font-semibold md:text-2xl mt-[35vh]">
           SOCIAL NETWORK ON MOBILE
         </p>
         <p className="pt-4 text-4xl font-bold text-center md:text-5xl"> TowneSquare <br />mobile app</p>

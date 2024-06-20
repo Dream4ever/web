@@ -23,7 +23,7 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
           className="absolute hidden top-0 right-0 h-[248px] w-[408px] md:block lg:block"
         />
       </div>
-      <div className="absolute z-[9999] w-full lg:block left-0 top-0">
+      <div className="absolute z-[9999] w-full min-h-[900px] lg:block left-0 top-0">
         <ActionLabel
           className="top-[33vh] -left-[2vh] md:top-[33vh] md:left-[18vw] lg:top-[33vh] lg:left-[18vw]"
           label="1.325"
@@ -45,7 +45,7 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
           dotCName="-top-[10vh] right-[3vw] md:-top-[8vh] md:right-[5vw]"
         />
         <ActionLabel
-          className="top-[32vh] -right-[5vw] md:top-[36vh] md:right-[20vw]"
+          className="top-[27vh] left-[72vw] md:top-[36vh] md:right-[20vw]"
           imgUrl="/images/home/icons/aptos.svg"
           dotSName="hidden"
           dotCName="top-[3vh] right-[8vw] md:top-[3vh] md:right-[5vw]"

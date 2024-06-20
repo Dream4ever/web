@@ -42,7 +42,7 @@ function Features() {
     >
       <Controller>
         <Scene duration={3000} pin offset={`${offset}px`}>
-          <div className="relative w-full">
+          <div className="relative w-full ">
             {window.innerWidth < 768 ? (<MobileBackground />) : (<Background />)}
             <div ref={ref}>
               <Home />
