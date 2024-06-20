@@ -81,13 +81,8 @@ function Screen1() {
 
   return (
     <>
-      <img
-        src="/images/screen1/spline1.png"
-        className="absolute w-full top-[30vh]"
-      />
-      <img src="/images/screen1/spline2.png" className="absolute w-full" />
       <div className="flex flex-col">
-        <div className="flex flex-col justify-stretch">
+        <div className="flex flex-col pt-4 justify-stretch">
           <div>
             <img src="/images/screen1/vector.png" />
           </div>

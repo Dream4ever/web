@@ -40,8 +40,8 @@ function Background({ children }: { children?: ReactNode }) {
     });
     ScrollTrigger.create({
       trigger: "#home",
-      start: "top top+=-3000px",
-      end: "top top+=-3500px",
+      start: "top top+=-4500px",
+      end: "top top+=-5000px",
       onUpdate: (self) => {
         if (
           backgroundRef.current != null &&
