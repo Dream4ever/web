@@ -137,7 +137,7 @@ const MobileScreen = () => {
           </p>
         </div>
 
-        <div className="relative w-full h-full my-[7vh]">
+        <div className="relative w-full h-[500px] my-[7vh]">
           <img
             src="/images/mobile/hooray.png"
             className="absolute top-[80px] left-10 z-10 w-[90px] transition-all translate-y-[100vh] opacity-0"
@@ -180,7 +180,7 @@ const MobileScreen = () => {
           />
         </div>
 
-        <div className="flex flex-col items-center justify-center text-center mt-[53vh]">
+        <div className="flex flex-col items-center justify-center text-center">
           <p className="text-[18px] font-medium">
             <span className="font-extrabold">TowneSquare</span> is the home of the 1st<br />Web3 mobile mint experience,<br />
             powered by the TowneSquare Mini-<br />App module called Tile
@@ -193,7 +193,7 @@ const MobileScreen = () => {
             <p className="text-sm">Coming soon</p>
           </button>
         </div>
-      </div>
+      </div> 
     </>
   );
 };

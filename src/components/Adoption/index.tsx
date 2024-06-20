@@ -20,7 +20,7 @@ function Adoption() {
     >
       <Controller>
         <Scene duration={3000} pin offset={`${offset}px`}>
-          <div className="relative flex justify-center w-full h-[150vh]">
+          <div className="relative flex justify-center w-full mb-[50vh]">
             <div className="hidden md:contents lg:contents">
               <Screen />
             </div>

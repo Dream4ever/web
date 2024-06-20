@@ -15,9 +15,8 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
         <img
           src="/images/home/middle_web.svg"
           alt="background"
-          className="absolute hidden md:block lg:block md:w-full md:left-0 md:bottom-0"
+          className="absolute hidden md:block lg:block md:w-full md:left-0 md:top-[70vh]"
         />
-
         <img
           src="/images/home/top_web.svg"
           alt="background"

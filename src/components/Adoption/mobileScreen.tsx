@@ -81,13 +81,8 @@ function MobileScreen() {
 
   return (
     <>
-      <img
-        src="/images/screen1/spline1.png"
-        className="absolute hidden md:w-full md:top-[30vh]"
-      />
-      <img src="/images/screen1/spline2.png" className="absolute md:w-full hidden" />
       <div className="flex flex-col">
-        <div className="flex flex-col justify-stretch px-3 pt-10">
+        <div className="flex flex-col px-3 pt-10 justify-stretch">
           <div>
             <img src="/images/screen1/vector.png" />
           </div>
@@ -96,7 +91,7 @@ function MobileScreen() {
             <br />
             blockchains for adoption
           </p>
-          <p className="pt-4 text-lg md:text-xl font-medium">
+          <p className="pt-4 text-lg font-medium md:text-xl">
             TowneSquare network empowers <br />
             creators & developers to build and <br />
             scale use cases to a mass audience<br />
@@ -105,7 +100,7 @@ function MobileScreen() {
           </p>
         </div>
 
-        <div className="relative w-full h-full mt-[5vh]">
+        <div className="relative w-full min-h-[900px] mt-[5vh]">
           <img
             src="/images/adoption/mobile_clip1.png"
             className="absolute top-0 left-0 z-10 transition-all translate-y-[100vh] opacity-0"
@@ -128,7 +123,7 @@ function MobileScreen() {
           />
         </div>
 
-        <div className="flex justify-center mt-[100vh]">
+        <div className="flex justify-center">
           <button className="px-4 py-2 text-base font-medium text-black rounded-full w-52 bg-primary-default">
             Download TowneSquare
             <p className="text-sm">Coming soon</p>

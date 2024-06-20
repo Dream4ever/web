@@ -1,4 +1,4 @@
-function EarlyAccess() {
+function Join() {
   return (
     <div id='earlyAccessDiv' className="early-access component" data-component="Early">
       <div className='z-20'>
@@ -19,4 +19,4 @@ function EarlyAccess() {
   )
 };
 
-export default EarlyAccess
+export default Join

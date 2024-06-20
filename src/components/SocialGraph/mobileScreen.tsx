@@ -84,7 +84,7 @@ const MobileScreen = () => {
             </p>
           </div>
         </div>
-        <div className="relative w-full h-full my-[2vh]">
+        <div className="relative w-full h-[1400px] my-[2vh]">
           <img
             src="/images/socialgraph/mobile_clip1.png"
             className="absolute top-0 w-[325px] left-2 z-10 transition-all translate-y-[100vh] opacity-0"
@@ -107,8 +107,8 @@ const MobileScreen = () => {
           />
         </div>
 
-        <div className="flex flex-col mt-[155vh] px-4">
-          <div className="flex justify-start items-start">
+        <div className="flex flex-col px-4">
+          <div className="flex items-start justify-start">
             <img src="/images/screen1/vector.png" />
           </div>
           <div className="flex flex-col">
