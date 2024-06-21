@@ -1,26 +1,51 @@
-.fade-in {
-  transition: opacity 1s ease;
+.a-fade {
+  animation: 4s a-fade-in infinite;
 }
 
-.fade-out {
-  opacity: 0;
-  transition: opacity 1s ease;
+@keyframes a-fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
-.fade-enter {
-  opacity: 0;
-  transition: opacity 1s ease-in;
+.b-fade {
+  animation: 4s b-fade-in infinite;
 }
 
-.fade-enter-active {
-  opacity: 1;
-}
+@keyframes b-fade-in {
+  0% {
+    opacity: 0;
+  }
 
-.fade-exit {
-  opacity: 1;
-  transition: opacity 1s ease-out;
-}
+  50% {
+    opacity: 0;
+  }
 
-.fade-exit-active {
-  opacity: 0;
+  60% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
