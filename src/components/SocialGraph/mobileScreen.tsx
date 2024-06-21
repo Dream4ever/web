@@ -130,9 +130,8 @@ const MobileScreen = () => {
           </div>
         </div>
         <div className="flex justify-center mt-[5vh]">
-          <button className="px-4 py-2 text-base font-medium text-black rounded-full w-52 bg-primary-default">
-            Download TowneSquare
-            <p className="text-sm">Coming soon</p>
+          <button className="px-4 py-2 text-base font-medium text-black rounded-full w-52 bg-[#FFFFFF]">
+            Register on CRED
           </button>
         </div>
       </div>

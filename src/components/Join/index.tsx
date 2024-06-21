@@ -19,8 +19,8 @@ function Join() {
                     </button>
                   </div>
                   <div className="flex flex-row gap-2">
-                    <img src="/images/home/btn_google_play.svg" alt="" />
-                    <img src="/images/home/btn_app_store.svg" alt="" />
+                    <img src="/images/home/btn_google_play.svg" alt="" className="cursor-pointer" />
+                    <img src="/images/home/btn_app_store.svg" alt="" className="cursor-pointer" />
                   </div>
                 </div>
                 <img src="/images/join/first_line.svg" alt="" className="absolute mt-4 ml-[285px]" />
@@ -42,8 +42,8 @@ function Join() {
                     </button>
                   </div>
                   <div className="flex flex-row gap-2">
-                    <img src="/images/home/btn_google_play.svg" alt="" />
-                    <img src="/images/home/btn_app_store.svg" alt="" />
+                    <img src="/images/home/btn_google_play.svg" alt="" className="cursor-pointer" />
+                    <img src="/images/home/btn_app_store.svg" alt="" className="cursor-pointer" />
                   </div>
                 </div>
               </div>
