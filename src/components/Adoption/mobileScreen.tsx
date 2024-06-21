@@ -84,7 +84,7 @@ function MobileScreen() {
     <>
       <div className="flex flex-col">
         <div className="absolute z-[9999] w-full lg:block left-0 top-0">
-          <ActionLabel
+          {/* <ActionLabel
             className="bottom-[17vh] left-[8vw]"
             imgUrl="/images/home/icons/solana.png"
             dotSName="bottom-[5vh] right-[7vw]"
@@ -105,7 +105,7 @@ function MobileScreen() {
             dot3Name="bottom-[8vh] left-[4vw]"
             dot4Name="top-[4vh] right-[8vw]"
             dot5Name="top-[5vh] right-[4vw]"
-          />
+          /> */}
         </div>
         <div className="flex flex-col px-3 pt-10 justify-stretch">
           <div>

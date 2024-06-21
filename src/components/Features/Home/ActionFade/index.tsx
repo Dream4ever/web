@@ -1,17 +1,20 @@
-import "./index.css";
-
-import React, { useEffect, useState } from "react";
+import React, { ReactNode, useEffect, useState } from "react";
 
 interface Props {
-  imgUrl: string;
-  replaceImgUrl: string;
+  className?: string;
+  comp1: ReactNode;
+  comp2: ReactNode;
 }
 
-const ActionFade: React.FC<Props> = ({ imgUrl, replaceImgUrl }) => {
+const ActionFade: React.FC<Props> = ({ comp1, comp2, className }) => {
   return (
-    <div className="relative flex items-center justify-center w-[75%] h-[50px]">
-      <img src={imgUrl} alt="" className={`a-fade absolute`} />
-      <img src={replaceImgUrl} alt="" className={`b-fade absolute`} />
+    <div className={`relative flex items-center justify-center ${className}`}>
+      <div className={`a-fade absolute`}>
+        {comp1}
+      </div>
+      <div className={`b-fade absolute`}>
+        {comp2}
+      </div>
     </div>
   );
 };

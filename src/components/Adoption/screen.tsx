@@ -99,7 +99,7 @@ function Screen1() {
           </p>
         </div>
         <div className="absolute z-[9999] w-full lg:block left-0 top-0">
-          <ActionLabel
+          {/* <ActionLabel
             className="-top-[3vh] left-[44vw]"
             imgUrl="/images/home/icons/solana.png"
             dotSName="bottom-[7vh] right-[4vw]"
@@ -120,7 +120,7 @@ function Screen1() {
             dot3Name="bottom-[8vh] left-[2vw]"
             dot4Name="top-[0vh] right-[5vw]"
             dot5Name="top-[1vh] right-[4vw]"
-          />
+          /> */}
         </div>
         <div className="relative w-[1200px] h-[400px] mt-[5vh]">
           <div className="absolute top-0 left-0 z-10 transition-all translate-y-[100vh] opacity-0"
