@@ -107,7 +107,7 @@ const Screen = () => {
           </div>
 
           <img
-            src="/images/socialgraph/cred.png"
+            src="/images/socialgraph/social3.png"
             className="absolute top-[290px] left-[384px] z-10 transition-all  translate-y-[100vh]"
             ref={ref3}
           />
@@ -145,9 +145,14 @@ const Screen = () => {
           </div>
         </div>
         <div className="flex justify-center mt-20">
-          <button className="px-4 py-2 text-base font-medium text-black rounded-full w-52 bg-[#FFFFFF]">
+          <a
+            href="https://x.com/townesquarexyz"
+            target="_blank"
+            rel="noreferrer"
+            className="px-4 py-2 text-base font-medium text-black text-center rounded-full w-52 bg-[#FFFFFF]"
+          >
             Register on CRED
-          </button>
+          </a>
         </div>
       </div>
     </>

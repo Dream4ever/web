@@ -29,7 +29,8 @@ function Join() {
               </div>
             </div>
             <div className="z-30 block md:hidden">
-              <div className="flex w-[95vw] h-[414px] border rounded-2xl bg-[url('../public/images/join/back.png')]">
+              <div className="flex w-[336px] h-[414px] border rounded-2xl">
+                <img src="/images/join/back.png" alt="" className="absolute w-100vw" />
                 <div className="z-20 flex flex-col items-center justify-center text-center py-14">
                   <p className="text-[#FFF] text-[40px] font-semibold">Join the Web3 revolution</p>
                   <p className="text-[#FFF] text-[23px] font-medium">Download TowneSquare now!</p>

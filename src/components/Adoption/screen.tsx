@@ -99,28 +99,31 @@ function Screen1() {
           </p>
         </div>
         <div className="absolute z-[9999] w-full lg:block left-0 top-0">
-          {/* <ActionLabel
+          <ActionLabel
             className="-top-[3vh] left-[44vw]"
-            imgUrl="/images/home/icons/solana.png"
-            dotSName="bottom-[7vh] right-[4vw]"
-            dotCName="bottom-[9vh] right-[3vw]"
-            dot3Name="bottom-[8vh] right-[2vw]"
-            dot4Name="bottom-[11vh] left-[5vw]"
-            dot5Name="bottom-[10vh] left-[3.5vw]"
+            imgUrl1="/images/home/icons/solana.png"
+            imgUrl2="/images/home/icons/solana.png"
+            dotSName="bottom-[7vh] right-[4vw] w-4"
+            dotCName="bottom-[10vh] right-[5vw] w-2"
+            dot3Name="bottom-[9vh] right-[3vw] w-4"
+            dot4Name="bottom-[11vh] left-[7vw] w-1"
+            dot5Name="bottom-[12vh] left-[3.5vw] w-2"
           />
           <ActionLabel
             className="top-[6vh] left-[52.5vw]"
-            imgUrl="/images/home/icons/ts.png"
+            imgUrl1="/images/home/icons/ts.png"
+            imgUrl2="/images/home/icons/ts.png"
           />
           <ActionLabel
             className="top-[13vh] left-[62vw]"
-            imgUrl="/images/home/icons/aptos.svg"
-            dotSName="bottom-[7vh] left-[4vw]"
-            dotCName="bottom-[9vh] left-[3vw]"
-            dot3Name="bottom-[8vh] left-[2vw]"
-            dot4Name="top-[0vh] right-[5vw]"
-            dot5Name="top-[1vh] right-[4vw]"
-          /> */}
+            imgUrl1="/images/home/icons/aptos.svg"
+            imgUrl2="/images/home/icons/aptos.svg"
+            dotSName="bottom-[8vh] left-[6vw]"
+            dotCName="bottom-[10vh] left-[5vw]"
+            dot3Name="bottom-[9vh] left-[4vw]"
+            dot4Name="top-[5vh] right-[5vw]"
+            dot5Name="top-[7vh] right-[9vw]"
+          />
         </div>
         <div className="relative w-[1200px] h-[400px] mt-[5vh]">
           <div className="absolute top-0 left-0 z-10 transition-all translate-y-[100vh] opacity-0"

@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import "./index.css";
 import ActionFade from "../ActionFade";
 import Dot from "./dot";
+import SmallDot from "./smallDot";
 interface Props {
   className: string;
   label1?: string;
@@ -64,14 +65,14 @@ const ActionLabel: React.FC<Props> = ({
         ref={actionRef}
         className={`relative flex flex-col justify-center items-center w-[60px] h-[60px] md:w-20 md:h-20 gap-1 md:p-2 bg-white/10 ${
           dotCName ? "border border-[#AAAAAA]" : ""
-        } item rounded-2xl`}
+        } item rounded-2xl bg-[#FFFFFF12]`}
       >
         <ActionFade
           className={` ${
             dotCName ? "w-[20px] md:w-[37px]" : "w-[60px] md:w-[65px]"
           } `}
           comp1={
-            <div className="flex flex-col items-center gap-2">
+            <div className="flex flex-col items-center">
               {label1 && <p className="text-[14px] md:text-[17px]">{label1}</p>}
               <div className="flex justify-center">
                 <img src={imgUrl1} />
@@ -79,7 +80,7 @@ const ActionLabel: React.FC<Props> = ({
             </div>
           }
           comp2={
-            <div className="flex flex-col items-center gap-2">
+            <div className="flex flex-col items-center">
               {label2 && <p className="text-[14px] md:text-[17px]">{label2}</p>}
               <div className="flex justify-center">
                 <img src={imgUrl2} />
@@ -88,8 +89,8 @@ const ActionLabel: React.FC<Props> = ({
           }
         />
         {dotCName && <Dot className={`absolute ${dotCName}`} />}
-        {dotSName && <Dot className={`absolute ${dotSName}`} />}
-        {dot3Name && <Dot className={`absolute ${dot3Name}`} />}
+        {dotSName && <SmallDot className={`absolute ${dotSName}`} />}
+        {dot3Name && <SmallDot className={`absolute ${dot3Name}`} />}
         {dot4Name && <Dot className={`absolute ${dot4Name}`} />}
         {dot5Name && <Dot className={`absolute ${dot5Name}`} />}
       </div>

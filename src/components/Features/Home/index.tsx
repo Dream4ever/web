@@ -39,15 +39,15 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
           label2="1.325"
           imgUrl1={"/images/home/icons/swap.svg"}
           imgUrl2={"/images/home/icons/comment.svg"}
-          dotSName="bottom-[7vh] left-[5vw] md:bottom-[11vh] md:left-[3vw] lg:bottom-[11vh] lg:left-[3vw]"
-          dotCName="bottom-[10vh] left-[0vw] md:bottom-[5vh] md:left-[4vw] lg:bottom-[5vh] lg:left-[4vw]"
+          dotSName="bottom-[8vh] left-[5vw] md:bottom-[11vh] md:left-[3vw] lg:bottom-[11vh] lg:left-[4vw]"
+          dotCName="bottom-[10vh] left-[0vw] md:bottom-[5vh] md:left-[4vw] lg:bottom-[5vh] lg:left-[6vw]"
         />
         <ActionLabel
           className="top-[5.5vh] left-[13vw] md:-top-[4vh] md:left-[28vw]"
           label1="#MOON"
           label2="#HODL"
-          dotSName="-top-[5vh] left-[10vw] md:-top-[4vh] md:left-[4vw]"
-          dotCName="-top-[8vh] left-[0vw] md:-top-[10vh] md:left-[2vw]"
+          dotSName="-top-[2vh] left-[10vw] md:-top-[4vh] md:left-[4vw] lg:-top-[1vh] lg:left-[7vw]"
+          dotCName="-top-[2vh] left-[0vw] md:-top-[10vh] md:left-[2vw] lg:-top-[2vh] lg:left-[5vw]"
         />
         <ActionLabel
           className="top-[5.5vh] right-[10vw] md:-top-[3vh] md:right-[28vw]"
@@ -55,15 +55,15 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
           label2="$1,185"
           imgUrl1="/images/home/icons/heart.svg"
           imgUrl2="/images/home/icons/budget.svg"
-          dotSName="-top-[8vh] right-[15vw] md:-top-[13vh] md:right-[3vw]"
-          dotCName="-top-[10vh] right-[3vw] md:-top-[8vh] md:right-[5vw]"
+          dotSName="-top-[3vh] right-[15vw] md:-top-[13vh] md:right-[3vw] lg:-top-[5vh] lg:right-[3vw]"
+          dotCName="-top-[2vh] right-[3vw] md:-top-[8vh] md:right-[5vw] lg:-top-[3vh] lg:right-[5vw]"
         />
         <ActionLabel
           className="top-[27vh] left-[72vw] md:top-[36vh] md:right-[20vw]"
           imgUrl1="/images/home/icons/solana.png"
           imgUrl2="/images/home/icons/aptos.svg"
           dotSName="hidden"
-          dotCName="top-[3vh] right-[8vw] md:top-[3vh] md:right-[5vw]"
+          dotCName="top-[7vh] right-[18vw] md:top-[3vh] md:right-[5vw] md:top-[8vh] md:right-[6vw]"
         />
       </div>
       <div className="absolute z-0 block w-full md:hidden">

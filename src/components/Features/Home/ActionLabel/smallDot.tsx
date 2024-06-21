@@ -3,14 +3,14 @@ import ActionFade from "../ActionFade";
 interface Props {
   className?: string;
 }
-const Dot: React.FC<Props> = ({ className }) => {
+const SmallDot: React.FC<Props> = ({ className }) => {
   return (
     <div className={`${className}`}>
       <ActionFade
-        className="w-3 h-3 rounded-full"
+        className="w-2 h-2 rounded-full"
         comp1={
           <div
-            className="w-3 h-3 rounded-full"
+            className="w-2 h-2 rounded-full"
             style={{
               backgroundImage:
                 "linear-gradient(70deg, #9945FF -7.78%, #14F195 106.39%)",
@@ -19,7 +19,7 @@ const Dot: React.FC<Props> = ({ className }) => {
         }
         comp2={
           <div
-            className="w-3 h-3 rounded-full"
+            className="w-2 h-2 rounded-full"
             style={{
               backgroundImage:
                 "linear-gradient(70deg, #ffffff -7.78%, #ffffff 106.39%)",
@@ -31,4 +31,4 @@ const Dot: React.FC<Props> = ({ className }) => {
   );
 };
 
-export default Dot;
+export default SmallDot;

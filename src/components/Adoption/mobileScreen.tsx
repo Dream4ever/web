@@ -84,30 +84,33 @@ function MobileScreen() {
     <>
       <div className="flex flex-col">
         <div className="absolute z-[9999] w-full lg:block left-0 top-0">
-          {/* <ActionLabel
-            className="bottom-[17vh] left-[8vw]"
-            imgUrl="/images/home/icons/solana.png"
-            dotSName="bottom-[5vh] right-[7vw]"
-            dotCName="bottom-[7vh] right-[6vw]"
-            dot3Name="bottom-[6vh] right-[2vw]"
-            dot4Name="bottom-[6vh] left-[6vw]"
-            dot5Name="bottom-[7vh] left-[9vw]"
+          <ActionLabel
+            className="bottom-[17vh] left-[9vw]"
+            imgUrl1="/images/home/icons/solana.png"
+            imgUrl2="/images/home/icons/solana.png"
+            dotSName="bottom-[6vh] right-[19vw]"
+            dotCName="bottom-[8vh] right-[21vw]"
+            dot3Name="bottom-[9vh] right-[17vw]"
+            dot4Name="bottom-[5vh] left-[18vw]"
+            dot5Name="bottom-[7vh] left-[24vw]"
           />
           <ActionLabel
             className="bottom-[10vh] right-[40vw]"
-            imgUrl="/images/home/icons/ts.png"
+            imgUrl1="/images/home/icons/ts.png"
+            imgUrl2="/images/home/icons/ts.png"
           />
           <ActionLabel
-            className="bottom-[6vh] right-[9vw]"
-            imgUrl="/images/home/icons/aptos.svg"
-            dotSName="bottom-[7vh] left-[9vw]"
-            dotCName="bottom-[9vh] left-[8vw]"
-            dot3Name="bottom-[8vh] left-[4vw]"
-            dot4Name="top-[4vh] right-[8vw]"
-            dot5Name="top-[5vh] right-[4vw]"
-          /> */}
+            className="bottom-[6vh] right-[11vw]"
+            imgUrl1="/images/home/icons/aptos.svg"
+            imgUrl2="/images/home/icons/aptos.svg"
+            dotSName="bottom-[7vh] right-[18vw]"
+            dotCName="bottom-[9vh] right-[20vw]"
+            dot3Name="bottom-[8vh] right-[16vw]"
+            dot4Name="top-[8vh] right-[0vw]"
+            dot5Name="top-[9vh] right-[4vw]"
+          />
         </div>
-        <div className="flex flex-col px-3 pt-10 justify-stretch">
+        <div className="flex flex-col px-3 pt-20 justify-stretch">
           <div>
             <img src="/images/screen1/vector.png" />
           </div>
