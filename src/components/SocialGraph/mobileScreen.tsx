@@ -85,26 +85,43 @@ const MobileScreen = () => {
           </div>
         </div>
         <div className="relative w-full h-[1400px] my-[2vh]">
-          <img
-            src="/images/socialgraph/mobile_clip1.png"
-            className="absolute top-0 w-[325px] left-2 z-10 transition-all translate-y-[100vh] opacity-0"
-            ref={ref1}
-          />
-          <img
-            src="/images/socialgraph/earn.png"
-            className="absolute top-[405px] left-2 w-[325px] z-10 transition-all  translate-y-[100vh]"
-            ref={ref2}
-          />
-          <img
-            src="/images/socialgraph/cred.png"
-            className="absolute top-[910px] w-[325px] left-2 z-10 transition-all  translate-y-[100vh]"
-            ref={ref3}
-          />
-          <img
-            src="/images/socialgraph/integrated.png"
-            className="absolute top-[1160px] w-[325px] left-2 z-10 transition-all  translate-y-[100vh]"
-            ref={ref4}
-          />
+          <div className="absolute top-0 w-[325px] left-2 z-10 transition-all translate-y-[100vh] opacity-0"
+            ref={ref1}>
+            <img
+              src="/images/socialgraph/mobile1.png"
+            />
+            <div className="absolute pl-6 bottom-5">
+              <p className="text-[#FFF] text-[28px] font-semibold">Complete your Social <br />graph profile</p>
+              <p className="text-[#FFFFFF] text-[14px] font-normal">Own and take your Web3 data with you</p>
+            </div>
+          </div>
+          <div className="absolute top-[405px] left-2 w-[325px] z-10 transition-all  translate-y-[100vh]"
+            ref={ref2}>
+            <img
+              src="/images/socialgraph/mobile2.png"
+            />
+            <div className="absolute pl-6 text-center top-40">
+              <p className="text-[#FFF] text-[28px] font-semibold">Earn $CRED Rewards</p>
+              <p className="text-[#FFFFFF] text-[14px] font-normal">Just by being active on Web3</p>
+            </div>
+          </div>
+          <div className="absolute top-[810px] w-[325px] left-2 z-10 transition-all  translate-y-[100vh]"
+            ref={ref3}>
+            <img
+              src="/images/socialgraph/mobile3.png"
+            />
+          </div>
+          <div className="absolute top-[1015px] w-[325px] left-2 z-10 transition-all  translate-y-[100vh]"
+            ref={ref4}>
+            <img
+              src="/images/socialgraph/mobile4.png"
+            />
+            <div className="absolute pl-20 text-center top-8">
+              <p className="text-[#FFF] text-[28px] font-semibold">Integrated in</p>
+              <p className="text-[#FFFFFF] text-[14px] font-normal mt-16">Earn and benefit from CRED<br />
+                directly in TowneSquare</p>
+            </div>
+          </div>
         </div>
 
         <div className="flex flex-col px-4">

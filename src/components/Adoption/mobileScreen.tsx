@@ -126,26 +126,47 @@ function MobileScreen() {
         </div>
 
         <div className="relative w-full min-h-[900px] mt-[5vh]">
-          <img
-            src="/images/adoption/mobile_clip1.png"
-            className="absolute top-0 left-0 z-10 transition-all translate-y-[100vh] opacity-0"
-            ref={ref1}
-          />
-          <img
-            src="/images/adoption/mobile_clip2.png"
-            className="absolute top-[380px] left-[0px] z-10 transition-all  translate-y-[100vh]"
-            ref={ref2}
-          />
-          <img
-            src="/images/adoption/mobile_clip3.png"
-            className="absolute top-[620px] left-[0px] z-10 transition-all  translate-y-[100vh]"
-            ref={ref3}
-          />
-          <img
-            src="/images/adoption/mobile_clip4.png"
-            className="absolute top-[620px] left-[175px] z-10 transition-all  translate-y-[100vh]"
-            ref={ref4}
-          />
+          <div className="absolute top-0 left-0 z-10 transition-all translate-y-[100vh] opacity-0"
+            ref={ref1}>
+            <img
+              src="/images/adoption/mobile1.png"
+            />
+            <div className="absolute bottom-6 left-6">
+              <p className="text-[#FFF] text-[28px] font-semibold">Network effect</p>
+              <p className="text-[#FFFFFF] text-sm font-normal">Driven by high-value DeFi & NFT <br />communities</p>
+            </div>
+          </div>
+          <div className="absolute top-[380px] left-[0px] z-10 transition-all  translate-y-[100vh]"
+            ref={ref2}>
+            <img
+              src="/images/adoption/mobile2.png"
+            />
+            <div className="absolute left-6 top-14">
+              <p className="text-[#FFF] text-[28px] font-semibold">Consumer-grade <br />User experience</p>
+              <p className="text-[#FFFFFF] text-sm font-normal">Sign up, pay, and transact within seconds</p>
+            </div>
+          </div>
+
+          <div className="absolute top-[615px] left-[0px] z-10 transition-all  translate-y-[100vh]"
+            ref={ref3}>
+            <img
+              src="/images/adoption/mobile3.png"
+            />
+            <div className="absolute left-6 top-20">
+              <p className="text-[#FFF] text-[28px] font-semibold">Developer <br /> - friendly</p>
+              <p className="text-[#FFFFFF] text-sm font-normal">Supporting both <br /> Rust & Move <br /> language</p>
+            </div>
+          </div>
+          <div className="absolute top-[615px] left-[175px] z-10 transition-all  translate-y-[100vh]"
+            ref={ref4}>
+            <img
+              src="/images/adoption/mobile4.png"
+            />
+            <div className="absolute left-6 top-[102px]">
+              <p className="text-[#FFF] text-[28px] font-semibold">Low fees</p>
+              <p className="text-[#FFFFFF] text-sm font-normal">Interact directly <br /> with your audience <br /> and no middleman <br /> with low fees</p>
+            </div>
+          </div>
         </div>
 
         <div className="flex justify-center">
