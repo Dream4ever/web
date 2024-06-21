@@ -29,7 +29,7 @@ function Join() {
               </div>
             </div>
             <div className="z-30 block md:hidden">
-              <div className="flex w-[336px] h-[414px] border rounded-2xl">
+              <div className="flex w-[338px] h-[416px] border rounded-2xl">
                 <img src="/images/join/back.png" alt="" className="absolute w-100vw" />
                 <div className="z-20 flex flex-col items-center justify-center text-center py-14">
                   <p className="text-[#FFF] text-[40px] font-semibold">Join the Web3 revolution</p>
