@@ -28,7 +28,7 @@ function MobileScreen() {
     ScrollTrigger.create({
       trigger: "#feature",
       start: "top top+=-800px",
-      end: "top top+=-1200px",
+      end: "top top+=-1000px",
       onUpdate: (self) => {
         if (ref1.current != null && (ref1.current as any).style != null) {
           let node = ref1.current as any;
@@ -37,35 +37,59 @@ function MobileScreen() {
           node.style.transform = `translate(0px, calc(${100 * (1 - self.progress)
             }vh))`;
         }
-
+      },
+    });
+    ScrollTrigger.create({
+      trigger: "#feature",
+      start: "top top+=-1000px",
+      end: "top top+=-1200px",
+      onUpdate: (self) => {
         if (ref2.current != null && (ref2.current as any).style != null) {
           let node = ref2.current as any;
           node.style.transform = `translate(0px, calc(${100 * (1 - self.progress)
-          }vh))`;
+            }vh))`;
           self.progress === 1 ? node.style.zIndex = 30 : node.style.zIndex = 10;
           node.style.opacity = calcOpacity(self.progress);
         }
-
+      },
+    });
+    ScrollTrigger.create({
+      trigger: "#feature",
+      start: "top top+=-1200px",
+      end: "top top+=-1400px",
+      onUpdate: (self) => {
         if (ref3.current != null && (ref3.current as any).style != null) {
           let node = ref3.current as any;
           node.style.transform = `translate(0px, calc(${100 * (1 - self.progress)
-          }vh))`;
+            }vh))`;
           self.progress === 1 ? node.style.zIndex = 30 : node.style.zIndex = 10;
           node.style.opacity = calcOpacity(self.progress);
         }
-
+      },
+    });
+    ScrollTrigger.create({
+      trigger: "#feature",
+      start: "top top+=-1400px",
+      end: "top top+=-1600px",
+      onUpdate: (self) => {
         if (ref4.current != null && (ref4.current as any).style != null) {
           let node = ref4.current as any;
           node.style.transform = `translate(0px, calc(${100 * (1 - self.progress)
-          }vh))`;
+            }vh))`;
           self.progress === 1 ? node.style.zIndex = 30 : node.style.zIndex = 10;
           node.style.opacity = calcOpacity(self.progress);
         }
-
+      },
+    });
+    ScrollTrigger.create({
+      trigger: "#feature",
+      start: "top top+=-1600px",
+      end: "top top+=-1800px",
+      onUpdate: (self) => {
         if (ref5.current != null && (ref5.current as any).style != null) {
           let node = ref5.current as any;
           node.style.transform = `translate(0px, calc(${100 * (1 - self.progress)
-          }vh))`;
+            }vh))`;
           self.progress === 1 ? node.style.zIndex = 30 : node.style.zIndex = 10;
           node.style.opacity = calcOpacity(self.progress);
         }
@@ -95,27 +119,27 @@ function MobileScreen() {
           />
           <img
             src="/images/screen1/clip1.png"
-            className="absolute top-[35vh] left-[2vw] z-10 transition-all translate-y-[100vh] opacity-0 w-[30%]"
+            className="absolute top-[30vh] left-[2vw] z-10 transition-all translate-y-[100vh] opacity-0 w-[30%]"
             ref={ref1}
           />
           <img
             src="/images/screen1/clip2.png"
-            className="absolute top-[45vh] left-[35vw] z-10 transition-all translate-y-[100vh] opacity-0 w-[30%]"
+            className="absolute top-[40vh] left-[35vw] z-10 transition-all translate-y-[100vh] opacity-0 w-[30%]"
             ref={ref2}
           />
           <img
             src="/images/screen1/clip3.png"
-            className="absolute top-[55vh] left-[2vw] z-10 transition-all translate-y-[100vh] opacity-0 w-[30%]"
+            className="absolute top-[50vh] left-[2vw] z-10 transition-all translate-y-[100vh] opacity-0 w-[30%]"
             ref={ref3}
           />
           <img
             src="/images/screen1/clip4.png"
-            className="absolute top-[40vh] left-[68vw] z-10 transition-all translate-y-[100vh] opacity-0 w-[30%]"
+            className="absolute top-[35vh] left-[68vw] z-10 transition-all translate-y-[100vh] opacity-0 w-[30%]"
             ref={ref4}
           />
           <img
             src="/images/screen1/clip5.png"
-            className="absolute top-[55vh] left-[68vw] z-10 transition-all translate-y-[100vh] opacity-0 w-[30%]"
+            className="absolute top-[53vh] left-[68vw] z-10 transition-all translate-y-[100vh] opacity-0 w-[30%]"
             ref={ref5}
           />
         </div>

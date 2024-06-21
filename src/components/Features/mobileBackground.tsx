@@ -116,7 +116,7 @@ function MobileBackground({ children }: { children?: ReactNode }) {
     });
     ScrollTrigger.create({
       trigger: "#socialgraph",
-      start: "top top+=-4000px",
+      start: "top top+=-4700px",
       end: "top top+=-5000px",
       onUpdate: (self) => {
         if (
@@ -152,7 +152,7 @@ function MobileBackground({ children }: { children?: ReactNode }) {
             b: startColor3.b + progress * (endColor3.b - startColor3.b),
           };
 
-          node.style.background = `linear-gradient(169.95deg, rgb(${currentColor1.r}, ${currentColor1.g}, ${currentColor1.b}) 0.94%, rgb(${currentColor2.r}, ${currentColor2.g}, ${currentColor2.b}) 48.34%, rgb(${currentColor3.r}, ${currentColor3.g}, ${currentColor3.b}) 64.0%)`;
+          node.style.background = `linear-gradient(169.95deg, rgb(${currentColor1.r}, ${currentColor1.g}, ${currentColor1.b}) 0.94%, rgb(${currentColor2.r}, ${currentColor2.g}, ${currentColor2.b}) 48.34%`;
         }
       },
     });
