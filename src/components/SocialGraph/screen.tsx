@@ -85,26 +85,42 @@ const Screen = () => {
           </div>
         </div>
         <div className="relative w-[1200px] h-[400px] my-[2vh]">
-          <img
-            src="/images/socialgraph/profile.png"
-            className="absolute top-0 left-0 z-10 transition-all translate-y-[100vh] opacity-0"
-            ref={ref1}
-          />
-          <img
-            src="/images/socialgraph/earn.png"
-            className="absolute top-0 left-[764px] z-10 transition-all  translate-y-[100vh]"
-            ref={ref2}
-          />
+          <div className="absolute top-0 left-0 z-10 transition-all translate-y-[100vh] opacity-0"
+            ref={ref1}>
+            <img
+              src="/images/socialgraph/social1.png"
+            />
+            <div className="absolute px-6 top-14">
+              <p className="text-[#FFF] text-[40px] font-semibold">Complete your <br /> Social graph profile</p>
+              <p className="text-[#FFFFFF] text-base font-weight">Own and take your Web3 data with you</p>
+            </div>
+          </div>
+          <div className="absolute top-0 left-[764px] z-10 transition-all  translate-y-[100vh]"
+            ref={ref2}>
+            <img
+              src="/images/socialgraph/social2.png"
+            />
+            <div className="absolute text-center top-40 left-[70px]">
+              <p className="text-[#FFF] text-[40px] font-semibold">Earn $CRED<br /> Rewards</p>
+              <p className="text-[#FFFFFF] text-base font-weight">Just by being active on Web3</p>
+            </div>
+          </div>
+
           <img
             src="/images/socialgraph/cred.png"
             className="absolute top-[290px] left-[384px] z-10 transition-all  translate-y-[100vh]"
             ref={ref3}
           />
-          <img
-            src="/images/socialgraph/integrated.png"
-            className="absolute top-[290px] left-[1px] z-10 transition-all  translate-y-[100vh]"
-            ref={ref4}
-          />
+          <div className="absolute top-[290px] left-[1px] z-10 transition-all  translate-y-[100vh]"
+            ref={ref4}>
+            <img
+              src="/images/socialgraph/social4.png"
+            />
+            <div className="absolute text-center top-10 left-[72px]">
+              <p className="text-[#FFF] text-[40px] font-semibold">Integrated in</p>
+              <p className="text-[#FFFFFF] text-base font-weight mt-24">Earn and benefit from CRED<br />directly in TowneSquare</p>
+            </div>
+          </div>
         </div>
 
         <div className="flex flex-col justify-center mt-[150px]">
@@ -129,9 +145,8 @@ const Screen = () => {
           </div>
         </div>
         <div className="flex justify-center mt-2">
-          <button className="px-4 py-2 text-base font-medium text-black rounded-full w-52 bg-primary-default">
-            Download TowneSquare
-            <p className="text-sm">Coming soon</p>
+          <button className="px-4 py-2 text-base font-medium text-black rounded-full w-52 bg-[#FFFFFF]">
+            Register on CRED
           </button>
         </div>
       </div>

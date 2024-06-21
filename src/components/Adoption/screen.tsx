@@ -123,26 +123,46 @@ function Screen1() {
           />
         </div>
         <div className="relative w-[1200px] h-[400px] mt-[5vh]">
-          <img
-            src="/images/adoption/clip1.png"
-            className="absolute top-0 left-0 z-10 transition-all translate-y-[100vh] opacity-0"
-            ref={ref1}
-          />
-          <img
-            src="/images/adoption/clip2.png"
-            className="absolute top-0 left-[384px] z-10 transition-all  translate-y-[100vh]"
-            ref={ref2}
-          />
-          <img
-            src="/images/adoption/clip3.png"
-            className="absolute top-[240px] left-[384px] z-10 transition-all  translate-y-[100vh]"
-            ref={ref3}
-          />
-          <img
-            src="/images/adoption/clip4.png"
-            className="absolute top-[240px] left-[768px] z-10 transition-all  translate-y-[100vh]"
-            ref={ref4}
-          />
+          <div className="absolute top-0 left-0 z-10 transition-all translate-y-[100vh] opacity-0"
+            ref={ref1}>
+            <img
+              src="/images/adoption/adopt1.png"
+            />
+            <div className="absolute px-6 bottom-6 ">
+              <p className="text-[#FFF] text-[40px] font-semibold">Network <br />effect</p>
+              <p className="text-[#FFFFFF] text-base font-normal">Driven by high-value DeFi & NFT <br /> communities</p>
+            </div>
+          </div>
+          <div className="absolute top-0 left-[384px] z-10 transition-all  translate-y-[100vh]"
+            ref={ref2}>
+            <img
+              src="/images/adoption/adopt2.png"
+            />
+            <div className="absolute px-6 top-8">
+              <p className="text-[#FFF] text-[40px] font-semibold">Consumer-grade<br /> User experience</p>
+              <p className="text-[#FFFFFF] text-base font-normal">Sign up, pay, and transact within seconds</p>
+            </div>
+          </div>
+          <div className="absolute top-[240px] left-[384px] z-10 transition-all  translate-y-[100vh]"
+            ref={ref3}>
+            <img
+              src="/images/adoption/adopt3.png"
+            />
+            <div className="absolute px-6 top-14">
+              <p className="text-[#FFF] text-[40px] font-semibold">Developer-<br />friendly</p>
+              <p className="text-[#FFFFFF] text-base font-normal">Supporting both Rust & Move language</p>
+            </div>
+          </div>
+          <div className="absolute top-[240px] left-[768px] z-10 transition-all  translate-y-[100vh]"
+            ref={ref4}>
+            <img
+              src="/images/adoption/adopt4.png"
+            />
+            <div className="absolute px-6 top-8">
+              <p className="text-[#FFF] text-[40px] font-semibold">Low <br />fees</p>
+              <p className="text-[#FFFFFF] text-base font-normal">Interact directly with your audience and<br /> no middleman with low fees</p>
+            </div>
+          </div>
         </div>
 
         <div className="flex justify-center mt-40">
