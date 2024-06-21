@@ -21,7 +21,7 @@ function MobileScreen() {
       onUpdate: (self) => {
         if (refMain.current != null && (refMain.current as any).style != null) {
           let node = refMain.current as any;
-          node.style.marginTop = `calc(220px + ${0 * self.progress}px)`
+          node.style.marginTop = `calc(30vh + ${0 * self.progress}px)`
         }
       },
     });

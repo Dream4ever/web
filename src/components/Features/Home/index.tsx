@@ -1,5 +1,5 @@
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import React, { useMemo, useRef } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 
 import ActionFade from "./ActionFade/index";
 import ActionLabel from "./ActionLabel";
@@ -8,7 +8,18 @@ type HeaderProps = {
   clickWaitlist?: () => void;
 };
 
+
 const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
+
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsVisible(prevStatus => !prevStatus);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="relative flex items-end justify-center w-full">
       <div className="absolute z-0 hidden w-full h-screen lg:block md:block">
@@ -26,27 +37,27 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
       <div className="absolute z-[9999] w-full min-h-[900px] lg:block left-0 top-0">
         <ActionLabel
           className="top-[33vh] -left-[2vh] md:top-[33vh] md:left-[18vw] lg:top-[33vh] lg:left-[18vw]"
-          label="1.325"
-          imgUrl="/images/home/icons/comment.svg"
+          label={!isVisible ? "942" : "1.325"}
+          imgUrl={!isVisible ? "/images/home/icons/swap.svg" : "/images/home/icons/comment.svg"}
           dotSName="bottom-[7vh] left-[5vw] md:bottom-[11vh] md:left-[3vw] lg:bottom-[11vh] lg:left-[3vw]"
           dotCName="bottom-[10vh] left-[0vw] md:bottom-[5vh] md:left-[4vw] lg:bottom-[5vh] lg:left-[4vw]"
         />
         <ActionLabel
           className="top-[5.5vh] left-[13vw] md:-top-[4vh] md:left-[28vw]"
-          label="#HODL"
+          label={!isVisible ? "#MOON" : "#HODL"}
           dotSName="-top-[5vh] left-[10vw] md:-top-[4vh] md:left-[4vw]"
           dotCName="-top-[8vh] left-[0vw] md:-top-[10vh] md:left-[2vw]"
         />
         <ActionLabel
           className="top-[5.5vh] right-[10vw] md:-top-[3vh] md:right-[28vw]"
-          label="$1,185"
-          imgUrl="/images/home/icons/budget.svg"
+          label={!isVisible ? "$2,842" : "$1,185"}
+          imgUrl={!isVisible ? "/images/home/icons/heart.svg" : "/images/home/icons/budget.svg"}
           dotSName="-top-[8vh] right-[15vw] md:-top-[13vh] md:right-[3vw]"
           dotCName="-top-[10vh] right-[3vw] md:-top-[8vh] md:right-[5vw]"
         />
         <ActionLabel
           className="top-[27vh] left-[72vw] md:top-[36vh] md:right-[20vw]"
-          imgUrl="/images/home/icons/aptos.svg"
+          imgUrl={!isVisible ? "/images/home/icons/solana.png" : "/images/home/icons/aptos.svg"}
           dotSName="hidden"
           dotCName="top-[3vh] right-[8vw] md:top-[3vh] md:right-[5vw]"
         />
