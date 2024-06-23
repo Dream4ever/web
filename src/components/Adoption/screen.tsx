@@ -169,7 +169,7 @@ function Screen1() {
         </div>
 
         <div className="flex justify-center mt-40">
-          <button className="px-4 py-2 text-base font-medium text-black rounded-full w-52 bg-primary-default">
+          <button className="px-4 py-2 text-base font-medium text-black rounded-full w-52 bg-primary-default hover:bg-primary-default/70">
             Download TowneSquare
             <p className="text-sm">Coming soon</p>
           </button>

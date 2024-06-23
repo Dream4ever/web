@@ -149,7 +149,7 @@ function MobileScreen() {
         <p className="pt-4 text-4xl font-bold text-center md:text-5xl"> TowneSquare <br />mobile app</p>
         <div className="w-full px-4 mt-20">
           <img src="/images/screen1/vector.png" />
-          <div className="flex flex-col gap-10 md:flex md:flex-row">
+          <div className="flex flex-col gap-4 md:flex md:flex-row">
             <span className="font-bold text-[28px]">
               The app for social
               <br />
@@ -169,7 +169,7 @@ function MobileScreen() {
             </span>
           </div>
           <div className="flex justify-center mt-4">
-            <button className="px-2 py-2 text-base font-medium text-black rounded-full w-52 bg-secondary-cyan">
+            <button className="px-4 py-2 text-base font-medium text-black rounded-full w-60 bg-secondary-cyan">
               Download TowneSquare
               <p className="text-sm">Coming soon</p>
             </button>

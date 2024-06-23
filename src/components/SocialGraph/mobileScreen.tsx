@@ -84,7 +84,7 @@ const MobileScreen = () => {
             </p>
           </div>
         </div>
-        <div className="relative w-full h-[1400px] my-[2vh]">
+        <div className="relative w-full h-[1280px] my-[2vh]">
           <div className="absolute top-0 w-[325px] left-2 z-10 transition-all translate-y-[100vh] opacity-0"
             ref={ref1}>
             <img
@@ -147,7 +147,7 @@ const MobileScreen = () => {
           </div>
         </div>
         <div className="flex justify-center mt-[5vh]">
-          <button className="px-4 py-2 text-base font-medium text-black rounded-full w-52 bg-[#FFFFFF]">
+          <button className="px-4 py-3 text-base font-medium text-black rounded-full w-52 bg-[#FFFFFF]">
             Register on CRED
           </button>
         </div>

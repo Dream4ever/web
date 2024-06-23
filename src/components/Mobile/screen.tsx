@@ -188,7 +188,7 @@ const Screen = () => {
           </p>
         </div>
         <div className="flex justify-center mt-2">
-          <button className="px-4 py-2 text-base font-medium text-black rounded-full w-52 bg-[#9264F8]">
+          <button className="h-12 px-4 py-2 text-base font-medium rounded-full w-52 bg-primary-default hover:bg-primary-default/70">
             Check out Cool Sloths
           </button>
         </div>

@@ -49,7 +49,6 @@ const ActionLabel: React.FC<Props> = ({
     const mainLabel = actionRef.current;
 
     if (mainLabel) {
-      console.log("leaving", mainLabel);
       mainLabel.style.transition = "all 0.5s";
       mainLabel.style.transform = `rotateY(0deg) rotateX(0deg)`;
     }

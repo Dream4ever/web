@@ -137,7 +137,7 @@ const MobileScreen = () => {
           </p>
         </div>
 
-        <div className="relative w-full h-[500px] my-[3vh]">
+        <div className="relative w-full h-[550px] my-[3vh]">
           <img
             src="/images/mobile/hooray.png"
             className="absolute top-[80px] left-10 z-10 w-[90px] transition-all translate-y-[100vh] opacity-0"
@@ -188,7 +188,7 @@ const MobileScreen = () => {
           </p>
         </div>
         <div className="flex justify-center mt-12">
-          <button className="px-4 py-2 text-base font-medium text-black rounded-full w-52 bg-[#9264F8]">
+          <button className="px-3 py-3 text-base font-medium rounded-full w-52 bg-[#9264F8]">
             Check out Cool Sloths
           </button>
         </div>
