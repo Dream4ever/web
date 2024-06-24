@@ -10,8 +10,6 @@ type HeaderProps = {
 };
 
 const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
-  const [isVisible, setIsVisible] = useState(false);
-
   const homeRef = useRef(null);
 
   const calcOpacity = (progress: number) => {
@@ -33,20 +31,13 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
     ScrollTrigger.refresh();
   }, []);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIsVisible((prevStatus) => !prevStatus);
-    }, 4000);
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <div ref={homeRef} className="relative flex items-end justify-center w-full h-[50vh] opacity-100">
       <div className="absolute z-0 hidden w-full h-screen lg:block md:block">
         <img
           src="/images/home/middle_web.svg"
           alt="background"
-          className="absolute hidden md:block lg:block md:w-full md:left-0 md:top-[70vh]"
+          className="absolute hidden md:block lg:block md:w-full md:left-0 md:-bottom-[50vh]"
         />
         <img
           src="/images/home/top_web.svg"

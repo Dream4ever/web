@@ -23,7 +23,7 @@ function Screen1() {
       onUpdate: (self) => {
         if (refMain.current != null && (refMain.current as any).style != null) {
           let node = refMain.current as any;
-          node.style.marginTop = `calc(160px + ${0 * self.progress}px)`
+          // node.style.marginTop = `calc(160px + ${0 * self.progress}px)`
         }
       },
     });
@@ -32,13 +32,12 @@ function Screen1() {
       start: "top top+=-1900px",
       end: "top top+=-2000px",
       onUpdate: (self) => {
-        console.log(self.progress);
-        if (refMain.current != null && (refMain.current as any).style != null) {
-          let text = refText.current as any;
-          let text1 = refText1.current as any;
-          text1.style.opacity = calcOpacity(self.progress);
-          text.style.opacity = calcOpacity(self.progress);
-        }
+        // if (refMain.current != null && (refMain.current as any).style != null) {
+        //   let text = refText.current as any;
+        //   let text1 = refText1.current as any;
+        //   text1.style.opacity = calcOpacity(self.progress);
+        //   text.style.opacity = calcOpacity(self.progress);
+        // }
       },
     });
     ScrollTrigger.create({
@@ -82,7 +81,7 @@ function Screen1() {
 
   return (
     <div
-      className="relative w-full h-[100%] mt-40"
+      className="relative w-full mt-40"
       ref={refMain}
     >
       <img
@@ -125,10 +124,10 @@ function Screen1() {
             ref={ref5}
           />
         </div>
-        <p ref={refText1} className="font-semibold text-2xl pt-[150px] opacity-0 ">
+        <p ref={refText1} className="font-semibold text-2xl pt-[150px]">
           SOCIAL NETWORK ON MOBILE
         </p>
-        <p ref={refText} className="pt-4 text-5xl font-bold opacity-0"> TowneSquare mobile app</p>
+        <p ref={refText} className="pt-4 text-5xl font-bold"> TowneSquare mobile app</p>
         <div className="mt-28">
           <img src="/images/screen1/vector.png" />
           <div className="flex gap-10">

@@ -28,15 +28,7 @@ function Features() {
       onUpdate: (self) => {
         if (ref.current != null && (ref.current as any).style != null) {
           let node = ref.current as any;
-          if (window.innerHeight <= 945)
-            node.style.transform = `translate(0, calc(${-26 * self.progress}% - ${10 * self.progress}px))`;
-          else if (window.innerHeight <= 1050)
-            node.style.transform = `translate(0, calc(${-25 * self.progress}% - ${10 * self.progress}px))`;
-          else if (window.innerHeight <= 1181)
-            node.style.transform = `translate(0, calc(${-24 * self.progress}% - ${10 * self.progress}px))`;
-          else if (window.innerHeight <= 1260)
-            node.style.transform = `translate(0, calc(${-27 * self.progress}% - ${10 * self.progress}px))`;
-          console.log(window.innerHeight);
+          node.style.transform = `translate(0, calc(-${495 * self.progress}px))`;
         }
       },
     });
