@@ -130,7 +130,7 @@ const Screen = () => {
       >
         <div className="flex flex-col items-center justify-center">
           <p className="pt-4 text-2xl font-semibold bold text">
-            COMPOSAbLE NFT COLLECTION
+            COMPOSABLE NFT COLLECTION
           </p>
           <p className="pt-4 text-5xl font-bold">
             Cool Sloths mobile mint
