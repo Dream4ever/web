@@ -9,6 +9,11 @@ function Screen1() {
   const ref4 = useRef(null);
   const ref5 = useRef(null);
   const refText = useRef(null);
+  const refText1 = useRef(null);
+
+  const calcOpacity = (progress: number) => {
+    return progress > 0.5 ? (progress - 0.5) / 0.5 : 0;
+  };
 
   useMemo(() => {
     ScrollTrigger.create({
@@ -30,11 +35,9 @@ function Screen1() {
         console.log(self.progress);
         if (refMain.current != null && (refMain.current as any).style != null) {
           let text = refText.current as any;
-          if (self.progress === 1){
-            text.style.display = "flex";
-          }else {
-            text.style.display = "none";
-          }
+          let text1 = refText1.current as any;
+          text1.style.opacity = calcOpacity(self.progress);
+          text.style.opacity = calcOpacity(self.progress);
         }
       },
     });
@@ -79,7 +82,7 @@ function Screen1() {
 
   return (
     <div
-      className="relative w-full mt-40"
+      className="relative w-full h-[100%] mt-40"
       ref={refMain}
     >
       <img
@@ -122,10 +125,10 @@ function Screen1() {
             ref={ref5}
           />
         </div>
-        <p className="font-semibold text-2xl pt-[2vh]">
+        <p ref={refText1} className="font-semibold text-2xl pt-[150px] opacity-0 ">
           SOCIAL NETWORK ON MOBILE
         </p>
-        <p ref={refText} className="hidden pt-4 text-5xl font-bold"> TowneSquare mobile app</p>
+        <p ref={refText} className="pt-4 text-5xl font-bold opacity-0"> TowneSquare mobile app</p>
         <div className="mt-28">
           <img src="/images/screen1/vector.png" />
           <div className="flex gap-10">

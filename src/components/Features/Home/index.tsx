@@ -1,5 +1,6 @@
 import "./index.css";
 import React, { useEffect, useMemo, useRef, useState } from "react";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 import ActionFade from "./ActionFade/index";
 import ActionLabel from "./ActionLabel";
@@ -11,6 +12,27 @@ type HeaderProps = {
 const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
   const [isVisible, setIsVisible] = useState(false);
 
+  const homeRef = useRef(null);
+
+  const calcOpacity = (progress: number) => {
+    return progress < 0.5 ? (0.5 - progress) / 0.5 : 0;
+  };
+
+  useMemo(() => {
+    ScrollTrigger.create({
+      trigger: "#home",
+      start: "top top+=-0px",
+      end: "top top+=-600px",
+      onUpdate: (self) => {
+        if (homeRef.current != null && (homeRef.current as any).style != null) {
+          let node = homeRef.current as any;
+          node.style.opacity = calcOpacity(self.progress);
+        }
+      },
+    });
+    ScrollTrigger.refresh();
+  }, []);
+
   useEffect(() => {
     const interval = setInterval(() => {
       setIsVisible((prevStatus) => !prevStatus);
@@ -19,7 +41,7 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
   }, []);
 
   return (
-    <div className="relative flex items-end justify-center w-full">
+    <div ref={homeRef} className="relative flex items-end justify-center w-full h-[50vh] opacity-100">
       <div className="absolute z-0 hidden w-full h-screen lg:block md:block">
         <img
           src="/images/home/middle_web.svg"

@@ -2,10 +2,9 @@ function Join() {
   return (
     <div id='earlyAccessDiv' className="early-access component" data-component="Early">
       <div className='z-20'>
-        <div className='relative w-full h-screen overflow-hidden lg:overflow-visible'>
-          <div className="flex justify-center pt-20 pb-40">
+        <div className='relative w-full h-[55vh] overflow-hidden lg:overflow-visible'>
+          <div className="flex justify-center">
             <div className="hidden md:block">
-              {/* <img src="/images/footer.png" alt="" /> */}
               <div className="flex w-[944px] h-[414px] border rounded-2xl border-[#FFF]/30" style={{ backgroundImage: 'linear-gradient(101deg, rgba(94, 64, 158, 0.40) 20.36%, rgba(119, 92, 178, 0.40) 53.12%, rgba(94, 64, 158, 0.40) 96.24%)' }}>
                 <div className="z-20 flex flex-col pl-8 py-14">
                   <p className="text-[#FFF] text-[40px] font-semibold">Join the Web3 revolution</p>

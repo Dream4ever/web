@@ -8,7 +8,6 @@ function Screen1() {
   const ref2 = useRef(null);
   const ref3 = useRef(null);
   const ref4 = useRef(null);
-
   const calcOpacity = (progress: number) => {
     return progress > 0.5 ? (progress - 0.5) / 0.5 : 0;
   };
@@ -20,15 +19,14 @@ function Screen1() {
       onUpdate: (self) => {
         if (refMain.current != null && (refMain.current as any).style != null) {
           let node = refMain.current as any;
-          node.style.transform = `translate(-50%, calc(-50% + ${150 * (1 - self.progress)
-            }% + ${50 * (1 - self.progress)}vh))`;
+          node.style.transform = `translate(0%, calc(-50% + ${10 * (1 - self.progress)}vh))`;
         }
       },
     });
     ScrollTrigger.create({
       trigger: "#adoption",
-      start: "top top+=-400px",
-      end: "top top+=-800px",
+      start: "top top+=-800px",
+      end: "top top+=-1100px",
       onUpdate: (self) => {
         if (ref1.current != null && (ref1.current as any).style != null) {
           let node = ref1.current as any;
@@ -40,8 +38,8 @@ function Screen1() {
     });
     ScrollTrigger.create({
       trigger: "#adoption",
-      start: "top top+=-800px",
-      end: "top top+=-1200px",
+      start: "top top+=-1100px",
+      end: "top top+=-1400px",
       onUpdate: (self) => {
         if (ref2.current != null && (ref2.current as any).style != null) {
           let node = ref2.current as any;
@@ -53,8 +51,8 @@ function Screen1() {
     });
     ScrollTrigger.create({
       trigger: "#adoption",
-      start: "top top+=-1200px",
-      end: "top top+=-1600px",
+      start: "top top+=-1400px",
+      end: "top top+=-1700px",
       onUpdate: (self) => {
         if (ref3.current != null && (ref3.current as any).style != null) {
           let node = ref3.current as any;
@@ -66,7 +64,7 @@ function Screen1() {
     });
     ScrollTrigger.create({
       trigger: "#adoption",
-      start: "top top+=-1600px",
+      start: "top top+=-1700px",
       end: "top top+=-2000px",
       onUpdate: (self) => {
         if (ref4.current != null && (ref4.current as any).style != null) {
@@ -82,8 +80,8 @@ function Screen1() {
 
   return (
     <>
-      <div className="flex flex-col">
-        <div className="flex flex-col pt-4 justify-stretch">
+      <div ref={refMain} className="flex flex-col transition-all -translate-y-1/2">
+        <div className="flex flex-col pt-4">
           <div>
             <img src="/images/screen1/vector.png" />
           </div>
@@ -100,7 +98,7 @@ function Screen1() {
         </div>
         <div className="absolute z-[9999] w-full lg:block left-0 top-0">
           <ActionLabel
-            className="-top-[3vh] left-[44vw]"
+            className="-top-[6vh] left-[28vw]"
             imgUrl1="/images/home/icons/solana.png"
             imgUrl2="/images/home/icons/solana.png"
             dotSName="bottom-[7vh] right-[4vw] w-4"
@@ -110,12 +108,12 @@ function Screen1() {
             dot5Name="bottom-[12vh] left-[3.5vw] w-2"
           />
           <ActionLabel
-            className="top-[6vh] left-[52.5vw]"
+            className="top-[3vh] left-[34.5vw]"
             imgUrl1="/images/home/icons/ts.png"
             imgUrl2="/images/home/icons/ts.png"
           />
           <ActionLabel
-            className="top-[13vh] left-[62vw]"
+            className="top-[10vh] left-[42vw]"
             imgUrl1="/images/home/icons/aptos.svg"
             imgUrl2="/images/home/icons/aptos.svg"
             dotSName="bottom-[8vh] left-[6vw]"
@@ -125,15 +123,23 @@ function Screen1() {
             dot5Name="top-[7vh] right-[9vw]"
           />
         </div>
-        <div className="relative w-[1200px] h-[400px] mt-[5vh]">
+        <div className="flex justify-center mt-40">
+          <button className="px-4 py-2 text-base font-medium rounded-full w-52 bg-primary-default hover:bg-primary-default/70">
+            Download TowneSquare
+            <p className="text-sm">Coming soon</p>
+          </button>
+        </div>
+        <div className="relative w-[1200px] h-[400px] mt-[40vh]">
           <div className="absolute top-0 left-0 z-10 transition-all translate-y-[100vh] opacity-0"
             ref={ref1}>
             <img
               src="/images/adoption/adopt1.png"
             />
             <div className="absolute px-6 bottom-6 ">
-              <p className="text-[#FFF] text-[40px] font-semibold">Network <br />effect</p>
-              <p className="text-[#FFFFFF] text-base font-normal">Driven by high-value DeFi & NFT <br /> communities</p>
+              <p className="text-[#FFF] text-[40px] font-semibold">Network effect</p>
+              <p className="text-[#FFFFFF] text-base font-normal">
+                Connect with users from high-value DeFi<br /> & NFT communities. Earn rewards while <br /> inviting users into the ecosystem.
+              </p>
             </div>
           </div>
           <div className="absolute top-0 left-[384px] z-10 transition-all  translate-y-[100vh]"
@@ -162,17 +168,10 @@ function Screen1() {
               src="/images/adoption/adopt4.png"
             />
             <div className="absolute px-6 top-8">
-              <p className="text-[#FFF] text-[40px] font-semibold">Low <br />fees</p>
+              <p className="text-[#FFF] text-[40px] font-semibold">Low fees</p>
               <p className="text-[#FFFFFF] text-base font-normal">Interact directly with your audience and<br /> no middleman with low fees</p>
             </div>
           </div>
-        </div>
-
-        <div className="flex justify-center mt-40">
-          <button className="px-4 py-2 text-base font-medium rounded-full w-52 bg-primary-default hover:bg-primary-default/70">
-            Download TowneSquare
-            <p className="text-sm">Coming soon</p>
-          </button>
         </div>
       </div>
     </>

@@ -8,6 +8,7 @@ const Screen = () => {
   const ref2 = useRef(null);
   const ref3 = useRef(null);
   const ref4 = useRef(null);
+  const refDiv = useRef(null);
 
   const calcOpacity = (progress: number) => {
     return progress > 0.5 ? (progress - 0.5) / 0.5 : 0;
@@ -65,6 +66,17 @@ const Screen = () => {
         }
       },
     });
+    ScrollTrigger.create({
+      trigger: "#socialgraph",
+      start: "top top+=-2200px",
+      end: "top top+=-2600px",
+      onUpdate: (self) => {
+        if (refDiv.current != null && (refDiv.current as any).style != null) {
+          let node = refDiv.current as any;
+          node.style.opacity = calcOpacity(self.progress);
+        }
+      },
+    });
     ScrollTrigger.refresh();
   }, []);
 
@@ -72,7 +84,7 @@ const Screen = () => {
   return (
     <>
       <div
-        className="flex flex-col"
+        className="flex flex-col mt-16"
       >
         <div className="flex flex-col items-center justify-center">
           <div className="flex flex-col items-center justify-center">
@@ -83,6 +95,16 @@ const Screen = () => {
               CRED Social graph & profile
             </p>
           </div>
+        </div>
+        <div className="flex justify-center mt-20">
+          <a
+            href="https://x.com/townesquarexyz"
+            target="_blank"
+            rel="noreferrer"
+            className="px-4 py-2 text-base font-medium text-black text-center rounded-full w-48 h-12 bg-[#FFFFFF] hover:bg-[#FFFFFF]/70 flex justify-center items-center"
+          >
+            Register on CRED
+          </a>
         </div>
         <div className="relative w-[1200px] h-[400px] my-[7vh]">
           <div className="absolute top-0 left-0 z-10 transition-all translate-y-[100vh] opacity-0"
@@ -123,7 +145,7 @@ const Screen = () => {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center mt-[200px]">
+        <div ref={refDiv} className="flex flex-col justify-center mt-[200px] opacity-0">
           <div className="flex flex-col items-start pl-[110px] justify-left">
             <img src="/images/screen1/vector.png" />
           </div>
@@ -143,16 +165,6 @@ const Screen = () => {
               NFT, gaming, payments, etc.
             </p>
           </div>
-        </div>
-        <div className="flex justify-center mt-20">
-          <a
-            href="https://x.com/townesquarexyz"
-            target="_blank"
-            rel="noreferrer"
-            className="px-4 py-2 text-base font-medium text-black text-center rounded-full w-48 h-12 bg-[#FFFFFF] hover:bg-[#FFFFFF]/70 flex justify-center items-center"
-          >
-            Register on CRED
-          </a>
         </div>
       </div>
     </>

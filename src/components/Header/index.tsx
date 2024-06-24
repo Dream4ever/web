@@ -32,7 +32,7 @@ const Header: React.FC<HeaderProps> = ({ clickWaitlist }) => {
             }}
           >
             <span className="font-[Urbanist] text-[22px] md:text-[35px] lg:text-[42px] font-bold text-white">
-              TowneSquare
+              townesquare
             </span>
           </Tween>
         </ScrollTrigger>

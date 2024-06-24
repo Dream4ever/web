@@ -11,6 +11,7 @@ const Screen = () => {
   const ref6 = useRef(null);
   const ref7 = useRef(null);
   const ref8 = useRef(null);
+  const refDiv = useRef(null);
 
   const calcOpacity = (progress: number) => {
     return progress > 0.5 ? (progress - 0.5) / 0.5 : 0;
@@ -120,13 +121,24 @@ const Screen = () => {
         }
       },
     });
+    ScrollTrigger.create({
+      trigger: "#mobile",
+      start: "top top+=-2400px",
+      end: "top top+=-2600px",
+      onUpdate: (self) => {
+        if (refDiv.current != null && (refDiv.current as any).style != null) {
+          let node = refDiv.current as any;
+          node.style.opacity = calcOpacity(self.progress);
+        }
+      },
+    });
     ScrollTrigger.refresh();
   }, []);
 
   return (
     <>
       <div
-        className="flex flex-col"
+        className="flex flex-col mt-16"
       >
         <div className="flex flex-col items-center justify-center">
           <p className="pt-4 text-2xl font-semibold bold text">
@@ -136,8 +148,12 @@ const Screen = () => {
             Cool Sloths mobile mint
           </p>
         </div>
-
-        <div className="relative w-[1200px] h-[400px] my-[7vh]">
+        <div className="flex justify-center mt-10">
+          <button className="h-12 px-4 py-2 text-base font-medium rounded-full w-52 bg-primary-default hover:bg-primary-default/70">
+            Check out Cool Sloths
+          </button>
+        </div>
+        <div className="relative w-[1200px] h-[400px] my-36">
           <img
             src="/images/mobile/hooray.png"
             className="absolute top-[80px] left-32 z-10 transition-all translate-y-[100vh] opacity-0"
@@ -180,17 +196,12 @@ const Screen = () => {
           />
         </div>
 
-        <div className="flex flex-col items-center justify-center text-center mt-[150px]">
+        <div ref={refDiv} className="flex flex-col items-center justify-center text-center mt-[170px] opacity-0">
           <p className="text-[23px] font-medium">
             <span className="font-extrabold">TowneSquare</span> is the home of the 1st Web3 mobile mint experience,<br />
             powered by the TowneSquare Mini-App module called Tile
 
           </p>
-        </div>
-        <div className="flex justify-center mt-2">
-          <button className="h-12 px-4 py-2 text-base font-medium rounded-full w-52 bg-primary-default hover:bg-primary-default/70">
-            Check out Cool Sloths
-          </button>
         </div>
       </div>
     </>
