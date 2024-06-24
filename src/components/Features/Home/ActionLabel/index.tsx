@@ -4,6 +4,7 @@ import ActionFade from "../ActionFade";
 import Dot from "./dot";
 import SmallDot from "./smallDot";
 interface Props {
+  bHaveBackground?: false;
   className: string;
   label1?: string;
   label2?: string;
@@ -27,6 +28,7 @@ const ActionLabel: React.FC<Props> = ({
   dot3Name,
   dot4Name,
   dot5Name,
+  bHaveBackground = true
 }) => {
   const actionRef = useRef<any>();
 
@@ -64,7 +66,7 @@ const ActionLabel: React.FC<Props> = ({
         ref={actionRef}
         className={`relative flex flex-col justify-center items-center w-[60px] h-[60px] md:w-20 md:h-20 gap-1 md:p-2 bg-white/10 ${
           dotCName ? "border border-[#AAAAAA]" : ""
-        } item rounded-2xl ${imgUrl1 !== "/images/home/icons/ts.png" ? 'bg-[#FFFFFF12]' : ''}`}
+        } item rounded-2xl ${bHaveBackground ? 'bg-[#FFFFFF12]' : ''}`}
       >
         <ActionFade
           className={` ${

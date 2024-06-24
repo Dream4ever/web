@@ -98,6 +98,7 @@ function MobileScreen() {
             className="bottom-[10vh] right-[40vw]"
             imgUrl1="/images/home/icons/ts.png"
             imgUrl2="/images/home/icons/ts.png"
+            bHaveBackground={false}
           />
           <ActionLabel
             className="bottom-[6vh] right-[11vw]"
