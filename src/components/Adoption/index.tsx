@@ -15,12 +15,12 @@ function Adoption() {
 
   return (
     <div
-      className="md:block lg:block"
+      className=""
       id="adoption"
     >
       <Controller>
         <Scene duration={3000} pin offset={`${offset}px`}>
-          <div className="flex items-center justify-center mt-96">
+          <div className="flex items-center justify-center">
             <div className="hidden md:contents lg:contents">
               <Screen />
             </div>

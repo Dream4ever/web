@@ -37,11 +37,11 @@ function Features() {
 
   return (
     <div
-      className="bg-black features-wrapper component md:block lg:block"
+      className="features-wrapper component md:block lg:block"
       id="home"
     >
       <Controller>
-        <Scene duration={3000} pin offset={`${offset}px`}>
+        <Scene duration={2500} pin offset={`${offset}px`}>
           <div className="relative w-full">
             {window.innerWidth < 768 ? (<MobileBackground />) : (<Background />)}
             <div ref={ref}>

@@ -138,7 +138,7 @@ const Screen = () => {
   return (
     <>
       <div
-        className="flex flex-col mt-16"
+        className="flex flex-col mt-[100px] mb-[100px]"
       >
         <div className="flex flex-col items-center justify-center">
           <p className="pt-4 text-2xl font-semibold bold text">

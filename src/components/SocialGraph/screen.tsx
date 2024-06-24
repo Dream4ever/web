@@ -84,7 +84,7 @@ const Screen = () => {
   return (
     <>
       <div
-        className="flex flex-col mt-16"
+        className="flex flex-col mt-[100px] mb-[100px]"
       >
         <div className="flex flex-col items-center justify-center">
           <div className="flex flex-col items-center justify-center">

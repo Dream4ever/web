@@ -15,12 +15,12 @@ function Screen1() {
   useMemo(() => {
     ScrollTrigger.create({
       trigger: "#adoption",
-      start: "top top+=-200px",
-      end: "top top+=-1200px",
+      start: "top top+=300px",
+      end: "top top+=-000px",
       onUpdate: (self) => {
         if (refMain.current != null && (refMain.current as any).style != null) {
           let node = refMain.current as any;
-          node.style.transform = `translate(0%, calc(${50 * self.progress}vh - ${870 * self.progress}px))`;
+          node.style.transform = `translate(0%, calc(${50 * self.progress}vh - ${480 * self.progress}px))`;
         }
       },
     });
@@ -84,7 +84,7 @@ function Screen1() {
   }, []);
 
   return (
-    <div ref={refMain} className="transition-all my-[100px]">
+    <div ref={refMain} className="transition-all -mt-[295px] mb-[95px]">
       <div>
         <div>
           <img src="/images/screen1/vector.png" />
