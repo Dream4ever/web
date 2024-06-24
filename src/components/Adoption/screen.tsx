@@ -111,6 +111,7 @@ function Screen1() {
             className="top-[3vh] left-[34.5vw]"
             imgUrl1="/images/home/icons/ts.png"
             imgUrl2="/images/home/icons/ts.png"
+            bHaveBackground={false}
           />
           <ActionLabel
             className="top-[10vh] left-[42vw]"
