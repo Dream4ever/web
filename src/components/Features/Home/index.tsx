@@ -32,12 +32,18 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
   }, []);
 
   return (
-    <div ref={homeRef} className="relative flex items-end justify-center w-full md:h-[50vh] opacity-100">
-      <div className="absolute z-0 hidden w-full h-screen lg:block md:block">
+    <div
+      ref={homeRef}
+      className="relative flex items-end justify-center w-full md:h-[50vh] opacity-100"
+    >
+      <div className="absolute top-0 left-0 z-0 w-full">
+        <img src="/images/banner.png" className="absolute top-0 right-0 w-[160px] md:w-auto" />
+      </div>
+      <div className="absolute top-0 left-0 z-0 hidden w-full h-screen lg:block md:block">
         <img
           src="/images/home/middle_web.svg"
           alt="background"
-          className="absolute hidden md:block lg:block md:w-full md:left-0 md:-bottom-[50vh]"
+          className="absolute hidden md:block lg:block md:w-full md:left-0 md:bottom-0"
         />
         <img
           src="/images/home/top_web.svg"
