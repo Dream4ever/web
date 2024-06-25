@@ -16,6 +16,7 @@ interface Props {
   dot3Name?: string;
   dot4Name?: string;
   dot5Name?: string;
+  nDotBackground?: number;
 }
 
 const ActionLabel: React.FC<Props> = ({
@@ -32,6 +33,7 @@ const ActionLabel: React.FC<Props> = ({
   dot3Name,
   dot4Name,
   dot5Name,
+  nDotBackground,
 }) => {
   const actionRef = useRef<any>();
 
@@ -102,11 +104,39 @@ const ActionLabel: React.FC<Props> = ({
         ) : (
           <img src={imgUrl1} className={`${imgClassName}`} />
         )}
-        {dotSName && <Dot className={`absolute ${dotSName}`} innerClassName="!w-2 !h-2"/>}
-        {dotCName && <Dot className={`absolute ${dotCName}`} />}
-        {dot3Name && <Dot className={`absolute ${dot3Name}`} innerClassName="!w-2 !h-2" />}
-        {dot4Name && <Dot className={`absolute ${dot4Name}`} />}
-        {dot5Name && <Dot className={`absolute ${dot5Name}`} innerClassName="!w-[18px] !h-[18px]"/>}
+        {dotSName && (
+          <Dot
+            className={`absolute ${dotSName}`}
+            innerClassName="!w-2 !h-2"
+            nBackground={nDotBackground}
+          />
+        )}
+        {dotCName && (
+          <Dot
+            className={`absolute ${dotCName}`}
+            nBackground={nDotBackground}
+          />
+        )}
+        {dot3Name && (
+          <Dot
+            className={`absolute ${dot3Name}`}
+            innerClassName="!w-2 !h-2"
+            nBackground={nDotBackground}
+          />
+        )}
+        {dot4Name && (
+          <Dot
+            className={`absolute ${dot4Name}`}
+            nBackground={nDotBackground}
+          />
+        )}
+        {dot5Name && (
+          <Dot
+            className={`absolute ${dot5Name}`}
+            innerClassName="!w-[18px] !h-[18px]"
+            nBackground={nDotBackground}
+          />
+        )}
       </div>
     </div>
   );

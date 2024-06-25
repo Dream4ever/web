@@ -109,19 +109,20 @@ function Screen1() {
             className="-top-[93px] left-[585px]"
             innerClassName="w-[90px] h-[90px] md:w-[150px] md:h-[150px]"
             imgUrl1="/images/home/icons/solana.png"
-            imgUrl2="/images/home/icons/solana.png"
+            // imgUrl2="/images/home/icons/solana.png"
             imgClassName="!w-[78px]"
             dotSName="-left-[75px] top-[2px]"
             dotCName="-left-[77px] top-[20px]"
             dot3Name="-right-[40px] -top-[50px]"
             dot4Name="-right-[25px] -top-[35px]"
             dot5Name="-left-[40px] top-[10px]"
+            nDotBackground={0}
           />
           <ActionLabel
             className="top-[63px] left-[755px]"
             innerClassName="w-[90px] h-[90px] md:w-[150px] md:h-[150px]"
             imgUrl1="/images/home/icons/ts.png"
-            imgUrl2="/images/home/icons/ts.png"
+            // imgUrl2="/images/home/icons/ts.png"
             imgClassName="!w-[112px]"
             bHaveBackground={false}
           />
@@ -129,13 +130,14 @@ function Screen1() {
             className="top-[153px] left-[925px]"
             innerClassName="w-[90px] h-[90px] md:w-[150px] md:h-[150px]"
             imgUrl1="/images/aptos.png"
-            imgUrl2="/images/aptos.png"
+            // imgUrl2="/images/aptos.png"
             imgClassName="!w-[78px]"
             dotSName="left-[22px] -bottom-[35px]"
             dotCName="left-[3px] -bottom-[30px]"
             dot3Name="-right-[20px] -top-[20px]"
             dot4Name="-right-[10px] -top-[35px]"
             dot5Name="-right-[40px] -top-[40px]"
+            nDotBackground={1}
           />
         </div>
       </div>
