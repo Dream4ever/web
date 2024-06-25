@@ -130,7 +130,7 @@ function Screen1() {
         <p ref={refText} className="pt-4 text-5xl font-bold"> TowneSquare mobile app</p>
         <div className="mt-28">
           <img src="/images/screen1/vector.png" />
-          <div className="flex gap-10">
+          <div className="flex gap-[72px] mt-4">
             <span className="font-bold text-[40px]">
               The app for social
               <br />
