@@ -1,10 +1,29 @@
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { ReactNode, useMemo, useRef } from "react";
+import { ReactNode, useEffect, useMemo, useRef, useState } from "react";
 
 function Background({ children }: { children?: ReactNode }) {
   const backgroundRef = useRef(null);
 
   const bgStart = "linear-gradient(169.95deg, #000000 7.53%, #000000 94.82%)";
+
+  const resizeObserverRef = useRef<any>(null);
+
+  useEffect(() => {
+    const handleResize = (entries: any) => {
+      ScrollTrigger.refresh();
+    };
+
+    resizeObserverRef.current = new ResizeObserver(handleResize);
+    resizeObserverRef.current.observe(document.documentElement);
+
+    // Cleanup observer on component unmount
+    return () => {
+      if (resizeObserverRef.current) {
+        resizeObserverRef.current.disconnect();
+      }
+    };
+  }, []);
+
   useMemo(() => {
     ScrollTrigger.create({
       trigger: "#home",
@@ -43,7 +62,6 @@ function Background({ children }: { children?: ReactNode }) {
       start: "top top+=900px",
       end: "top top+=400px",
       onUpdate: (self) => {
-        console.log("background=>", self.progress)
         if (
           backgroundRef.current != null &&
           (backgroundRef.current as any).style != null
