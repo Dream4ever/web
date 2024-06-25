@@ -32,7 +32,7 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
   }, []);
 
   return (
-    <div ref={homeRef} className="relative flex items-end justify-center w-full h-[50vh] opacity-100">
+    <div ref={homeRef} className="relative flex items-end justify-center w-full md:h-[50vh] opacity-100">
       <div className="absolute z-0 hidden w-full h-screen lg:block md:block">
         <img
           src="/images/home/middle_web.svg"
@@ -76,7 +76,7 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
           imgUrl1="/images/home/icons/solana.png"
           imgUrl2="/images/home/icons/aptos.svg"
           dotSName="hidden"
-          dotCName="top-[7vh] right-[18vw] md:top-[3vh] md:right-[5vw] md:top-[8vh] md:right-[6vw]"
+          dotCName="top-[7vh] -right-[5vw] md:top-[3vh] md:right-[5vw] md:top-[8vh] md:right-[6vw]"
         />
       </div>
       <div className="absolute z-0 block w-full md:hidden">
@@ -92,7 +92,7 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
         />
       </div>
 
-      <div className="-mb-[50px] md:mb-[0px] lg:-mb-[0px] z-10 flex flex-col items-center text-center md:pr-10 lg:pr-0">
+      <div className="z-10 flex flex-col items-center text-center md:pr-10 lg:pr-0">
         <span className="text-[36px] md:text-[48px] lg:text-[56px] font-bold mt-[115px]">
           The Web 3 social network on
         </span>

@@ -20,8 +20,7 @@ function MobileScreen() {
       onUpdate: (self) => {
         if (refMain.current != null && (refMain.current as any).style != null) {
           let node = refMain.current as any;
-          node.style.transform = `translate(-50%, calc(-50% + ${150 * (1 - self.progress)
-            }% + ${50 * (1 - self.progress)}vh))`;
+          node.style.transform = `translate(0, calc(${-269 * self.progress}px))`;
         }
       },
     });
@@ -82,8 +81,8 @@ function MobileScreen() {
 
   return (
     <>
-      <div className="flex flex-col">
-        <div className="absolute z-[9999] w-full lg:block left-0 top-0">
+      <div className="flex flex-col" ref={refMain}>
+        <div className="absolute z-[9999] w-full lg:block left-0">
           <ActionLabel
             className="bottom-[17vh] left-[9vw]"
             imgUrl1="/images/home/icons/solana.png"
@@ -111,7 +110,7 @@ function MobileScreen() {
             dot5Name="top-[9vh] right-[4vw]"
           />
         </div>
-        <div className="flex flex-col px-3 pt-20 justify-stretch">
+        <div className="flex flex-col px-3 justify-stretch">
           <div>
             <img src="/images/screen1/vector.png" />
           </div>
@@ -129,7 +128,7 @@ function MobileScreen() {
           </p>
         </div>
 
-        <div className="relative w-full min-h-[900px] mt-[5vh]">
+        <div className="relative w-full min-h-[870px] mt-20">
           <div className="absolute top-0 left-0 z-10 transition-all translate-y-[100vh] opacity-0"
             ref={ref1}>
             <img
@@ -173,7 +172,7 @@ function MobileScreen() {
           </div>
         </div>
 
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-14">
           <button className="px-4 py-2 text-base font-medium rounded-full w-52 bg-primary-default">
             Download TowneSquare
             <p className="text-sm">Coming soon</p>

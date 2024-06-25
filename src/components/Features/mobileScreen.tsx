@@ -19,10 +19,10 @@ function MobileScreen() {
       start: "top top+=-0px",
       end: "top top+=-600px",
       onUpdate: (self) => {
-        if (refMain.current != null && (refMain.current as any).style != null) {
-          let node = refMain.current as any;
-          node.style.marginTop = `calc(30vh + ${0 * self.progress}px)`
-        }
+        // if (refMain.current != null && (refMain.current as any).style != null) {
+        //   let node = refMain.current as any;
+        //   // node.style.marginTop = `calc(30vh + ${0 * self.progress}px)`
+        // }
       },
     });
     ScrollTrigger.create({
@@ -100,7 +100,7 @@ function MobileScreen() {
 
   return (
     <div
-      className="relative w-full mt-40"
+      className="relative w-full mt-28"
       ref={refMain}
     >
       <img
@@ -143,13 +143,13 @@ function MobileScreen() {
             ref={ref5}
           />
         </div>
-        <p className="text-lg font-semibold md:text-2xl mt-[35vh]">
+        <p className="text-lg font-semibold md:text-2xl mt-[250px]">
           SOCIAL NETWORK ON MOBILE
         </p>
         <p className="pt-4 text-4xl font-bold text-center md:text-5xl"> TowneSquare <br />mobile app</p>
-        <div className="w-full px-4 mt-20">
+        <div className="w-full px-4 mt-[70px]">
           <img src="/images/screen1/vector.png" />
-          <div className="flex flex-col gap-4 md:flex md:flex-row">
+          <div className="flex flex-col gap-4 mt-4">
             <span className="font-bold text-[28px]">
               The app for social
               <br />
@@ -168,7 +168,7 @@ function MobileScreen() {
               <br />in their social experiences
             </span>
           </div>
-          <div className="flex justify-center mt-4">
+          <div className="flex justify-center mt-14">
             <button className="px-4 py-2 text-base font-medium text-black rounded-full w-60 bg-secondary-cyan">
               Download TowneSquare
               <p className="text-sm">Coming soon</p>
