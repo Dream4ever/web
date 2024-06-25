@@ -39,9 +39,9 @@ function MobileBackground({ children }: { children?: ReactNode }) {
       },
     });
     ScrollTrigger.create({
-      trigger: "#home",
-      start: "top top+=-3500px",
-      end: "top top+=-4000px",
+      trigger: "#adoption",
+      start: "top top+=900px",
+      end: "top top+=400px",
       onUpdate: (self) => {
         if (
           backgroundRef.current != null &&
@@ -73,9 +73,9 @@ function MobileBackground({ children }: { children?: ReactNode }) {
       },
     });
     ScrollTrigger.create({
-      trigger: "#adoption",
-      start: "top top+=-4000px",
-      end: "top top+=-4500px",
+      trigger: "#socialgraph",
+      start: "top top+=500px",
+      end: "top top+=0px",
       onUpdate: (self) => {
         if (
           backgroundRef.current != null &&
@@ -84,12 +84,12 @@ function MobileBackground({ children }: { children?: ReactNode }) {
           let node = backgroundRef.current as any;
           const progress = self.progress;
 
-          const endColor1 = { r: 0x4e, g: 0x86, b: 0xac };
           const startColor1 = { r: 0x00, g: 0x00, b: 0x00 };
-          const endColor2 = { r: 0x21, g: 0x74, b: 0x7e };
+          const endColor1 = { r: 0x4e, g: 0x86, b: 0xac };
           const startColor2 = { r: 0x00, g: 0x00, b: 0x00 };
-          const endColor3 = { r: 0x13, g: 0x5f, b: 0x69 };
+          const endColor2 = { r: 0x21, g: 0x74, b: 0x7e };
           const startColor3 = { r: 0x00, g: 0x00, b: 0x00 };
+          const endColor3 = { r: 0x13, g: 0x5f, b: 0x69 };
           // background: linear-gradient(165.04deg, #4EB6AC 0.94%, #21747E 48.34%, #135F69 64.04%);
 
           const currentColor1 = {
@@ -115,9 +115,9 @@ function MobileBackground({ children }: { children?: ReactNode }) {
       },
     });
     ScrollTrigger.create({
-      trigger: "#socialgraph",
-      start: "top top+=-4900px",
-      end: "top top+=-5300px",
+      trigger: "#mobile",
+      start: "top top+=500px",
+      end: "top top+=0px",
       onUpdate: (self) => {
         if (
           backgroundRef.current != null &&
@@ -126,11 +126,11 @@ function MobileBackground({ children }: { children?: ReactNode }) {
           let node = backgroundRef.current as any;
           const progress = self.progress;
 
-          const startColor1 = { r: 0x00, g: 0x00, b: 0x00 };
+          const startColor1 = { r: 0x4e, g: 0x86, b: 0xac };
           const endColor1 = { r: 0x5e, g: 0x40, b: 0x9e };
-          const startColor2 = { r: 0x00, g: 0x00, b: 0x00 };
+          const startColor2 = { r: 0x21, g: 0x74, b: 0x7e };
           const endColor2 = { r: 0x35, g: 0x25, b: 0x57 };
-          const startColor3 = { r: 0x00, g: 0x00, b: 0x00 };
+          const startColor3 = { r: 0x13, g: 0x5f, b: 0x69 };
           const endColor3 = { r: 0x35, g: 0x25, b: 0x57 };
           
           const currentColor1 = {
@@ -155,11 +155,10 @@ function MobileBackground({ children }: { children?: ReactNode }) {
         }
       },
     });
-
     ScrollTrigger.create({
-      trigger: "#mobile",
-      start: "top top+=-3700px",
-      end: "top top+=-4300px",
+      trigger: "#join",
+      start: "top top+=500px",
+      end: "top top+=200px",
       onUpdate: (self) => {
         if (
           backgroundRef.current != null &&

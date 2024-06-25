@@ -9,7 +9,7 @@ function Background({ children }: { children?: ReactNode }) {
     ScrollTrigger.create({
       trigger: "#home",
       start: "top top+=-400px",
-      end: "top top+=-1000px",
+      end: "top top+=-900px",
       onUpdate: (self) => {
         if (
           backgroundRef.current != null &&
@@ -39,10 +39,11 @@ function Background({ children }: { children?: ReactNode }) {
       },
     });
     ScrollTrigger.create({
-      trigger: "#home",
-      start: "top top+=-3500px",
-      end: "top top+=-4000px",
+      trigger: "#adoption",
+      start: "top top+=900px",
+      end: "top top+=400px",
       onUpdate: (self) => {
+        console.log("background=>", self.progress)
         if (
           backgroundRef.current != null &&
           (backgroundRef.current as any).style != null
@@ -73,9 +74,9 @@ function Background({ children }: { children?: ReactNode }) {
       },
     });
     ScrollTrigger.create({
-      trigger: "#adoption",
-      start: "top top+=-4000px",
-      end: "top top+=-4500px",
+      trigger: "#socialgraph",
+      start: "top top+=500px",
+      end: "top top+=0px",
       onUpdate: (self) => {
         if (
           backgroundRef.current != null &&
@@ -115,9 +116,9 @@ function Background({ children }: { children?: ReactNode }) {
       },
     });
     ScrollTrigger.create({
-      trigger: "#socialgraph",
-      start: "top top+=-4000px",
-      end: "top top+=-4500px",
+      trigger: "#mobile",
+      start: "top top+=500px",
+      end: "top top+=0px",
       onUpdate: (self) => {
         if (
           backgroundRef.current != null &&
@@ -156,9 +157,9 @@ function Background({ children }: { children?: ReactNode }) {
       },
     });
     ScrollTrigger.create({
-      trigger: "#mobile",
-      start: "top top+=-3700px",
-      end: "top top+=-4300px",
+      trigger: "#join",
+      start: "top top+=500px",
+      end: "top top+=200px",
       onUpdate: (self) => {
         if (
           backgroundRef.current != null &&

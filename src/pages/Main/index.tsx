@@ -11,7 +11,7 @@ const Footer = lazy(() => import("../../components/Footer"));
 function Main() {
   useEffect(() => {
     const onScroll = (e: any) => {
-      console.log(window.scrollY);
+      // console.log(window.scrollY);
     };
     window.addEventListener("scroll", onScroll);
   }, [])

@@ -1,7 +1,7 @@
 function Join() {
   return (
     <div
-      id="earlyAccessDiv"
+      id="join"
       className="mt-[100px]"
       data-component="Early"
     >
