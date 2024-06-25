@@ -20,7 +20,9 @@ function Screen1() {
       onUpdate: (self) => {
         if (refMain.current != null && (refMain.current as any).style != null) {
           let node = refMain.current as any;
-          node.style.transform = `translate(0%, calc(${50 * self.progress}vh - ${480 * self.progress}px))`;
+          node.style.transform = `translate(0%, calc(${
+            50 * self.progress
+          }vh - ${480 * self.progress}px))`;
         }
       },
     });
@@ -84,8 +86,11 @@ function Screen1() {
   }, []);
 
   return (
-    <div ref={refMain} className="transition-all -mt-[295px] mb-[95px]">
-      <div>
+    <div
+      ref={refMain}
+      className="transition-all -mt-[295px] mb-[95px] relative"
+    >
+      <div className="relative">
         <div>
           <img src="/images/screen1/vector.png" />
         </div>
@@ -99,35 +104,42 @@ function Screen1() {
           developers to build and scale use cases to a mass
           <br /> audience based on Solana and Aptos ecosystems.
         </p>
+        <div className="absolute z-[9999] w-full lg:block left-0 top-0">
+          <ActionLabel
+            className="-top-[93px] left-[585px]"
+            innerClassName="w-[90px] h-[90px] md:w-[150px] md:h-[150px]"
+            imgUrl1="/images/home/icons/solana.png"
+            imgUrl2="/images/home/icons/solana.png"
+            imgClassName="!w-[78px]"
+            dotSName="-left-[75px] top-[2px]"
+            dotCName="-left-[77px] top-[20px]"
+            dot3Name="-right-[40px] -top-[50px]"
+            dot4Name="-right-[25px] -top-[35px]"
+            dot5Name="-left-[40px] top-[10px]"
+          />
+          <ActionLabel
+            className="top-[63px] left-[755px]"
+            innerClassName="w-[90px] h-[90px] md:w-[150px] md:h-[150px]"
+            imgUrl1="/images/home/icons/ts.png"
+            imgUrl2="/images/home/icons/ts.png"
+            imgClassName="!w-[112px]"
+            bHaveBackground={false}
+          />
+          <ActionLabel
+            className="top-[153px] left-[925px]"
+            innerClassName="w-[90px] h-[90px] md:w-[150px] md:h-[150px]"
+            imgUrl1="/images/aptos.png"
+            imgUrl2="/images/aptos.png"
+            imgClassName="!w-[78px]"
+            dotSName="left-[22px] -bottom-[35px]"
+            dotCName="left-[3px] -bottom-[30px]"
+            dot3Name="-right-[20px] -top-[20px]"
+            dot4Name="-right-[10px] -top-[35px]"
+            dot5Name="-right-[40px] -top-[40px]"
+          />
+        </div>
       </div>
-      <div className="absolute z-[9999] w-full lg:block left-0 top-0">
-        <ActionLabel
-          className="-top-[6vh] left-[28vw]"
-          imgUrl1="/images/home/icons/solana.png"
-          imgUrl2="/images/home/icons/solana.png"
-          dotSName="bottom-[7vh] right-[4vw] w-4"
-          dotCName="bottom-[10vh] right-[5vw] w-2"
-          dot3Name="bottom-[9vh] right-[3vw] w-4"
-          dot4Name="bottom-[11vh] left-[7vw] w-1"
-          dot5Name="bottom-[12vh] left-[3.5vw] w-2"
-        />
-        <ActionLabel
-          className="top-[3vh] left-[34.5vw]"
-          imgUrl1="/images/home/icons/ts.png"
-          imgUrl2="/images/home/icons/ts.png"
-          bHaveBackground={false}
-        />
-        <ActionLabel
-          className="top-[10vh] left-[42vw]"
-          imgUrl1="/images/home/icons/aptos.svg"
-          imgUrl2="/images/home/icons/aptos.svg"
-          dotSName="bottom-[8vh] left-[6vw]"
-          dotCName="bottom-[10vh] left-[5vw]"
-          dot3Name="bottom-[9vh] left-[4vw]"
-          dot4Name="top-[5vh] right-[5vw]"
-          dot5Name="top-[7vh] right-[9vw]"
-        />
-      </div>
+
       <div className="flex justify-center mt-40">
         <button className="px-4 py-2 text-base font-medium rounded-full w-52 bg-primary-default hover:bg-primary-default/70">
           Download TowneSquare

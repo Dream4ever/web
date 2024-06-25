@@ -79,8 +79,8 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
         />
         <ActionLabel
           className="top-[27vh] left-[72vw] md:top-[36vh] md:right-[20vw]"
-          imgUrl1="/images/home/icons/solana.png"
-          imgUrl2="/images/home/icons/aptos.svg"
+          imgUrl1="/images/home/icons/aptos.svg"
+          imgUrl2="/images/home/icons/solana.png"
           dotSName="hidden"
           dotCName="top-[7vh] -right-[5vw] md:top-[3vh] md:right-[5vw] md:top-[8vh] md:right-[6vw]"
         />

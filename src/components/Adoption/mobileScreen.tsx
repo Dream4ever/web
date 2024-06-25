@@ -82,32 +82,38 @@ function MobileScreen() {
   return (
     <>
       <div className="flex flex-col" ref={refMain}>
-        <div className="absolute z-[9999] w-full lg:block left-0">
+        <div className="absolute z-[9999] w-full lg:block left-0 top-0">
           <ActionLabel
-            className="bottom-[17vh] left-[9vw]"
+            className="-top-[287px] left-[40px]"
+            innerClassName="w-[90px] h-[90px] md:w-[150px] md:h-[150px]"
             imgUrl1="/images/home/icons/solana.png"
             imgUrl2="/images/home/icons/solana.png"
-            dotSName="bottom-[6vh] right-[19vw]"
-            dotCName="bottom-[8vh] right-[21vw]"
-            dot3Name="bottom-[9vh] right-[17vw]"
-            dot4Name="bottom-[5vh] left-[18vw]"
-            dot5Name="bottom-[7vh] left-[24vw]"
+            imgClassName="!w-[46px]"
+            dotSName="-left-[75px] top-[2px]"
+            dotCName="-left-[77px] top-[20px]"
+            dot3Name="-right-[40px] -top-[50px]"
+            dot4Name="-right-[25px] -top-[35px]"
+            dot5Name="-left-[40px] top-[10px]"
           />
           <ActionLabel
-            className="bottom-[10vh] right-[40vw]"
+            className="-top-[190px] left-[120px]"
+            innerClassName="w-[90px] h-[90px] md:w-[150px] md:h-[150px]"
             imgUrl1="/images/home/icons/ts.png"
             imgUrl2="/images/home/icons/ts.png"
+            imgClassName="!w-[66px]"
             bHaveBackground={false}
           />
           <ActionLabel
-            className="bottom-[6vh] right-[11vw]"
+            className="-top-[160px] right-[25px]"
+            innerClassName="w-[90px] h-[90px] md:w-[150px] md:h-[150px]"
             imgUrl1="/images/home/icons/aptos.svg"
             imgUrl2="/images/home/icons/aptos.svg"
-            dotSName="bottom-[7vh] right-[18vw]"
-            dotCName="bottom-[9vh] right-[20vw]"
-            dot3Name="bottom-[8vh] right-[16vw]"
-            dot4Name="top-[8vh] right-[0vw]"
-            dot5Name="top-[9vh] right-[4vw]"
+            imgClassName="!w-[46px]"
+            dotSName="left-[22px] -bottom-[35px]"
+            dotCName="left-[3px] -bottom-[30px]"
+            dot3Name="-right-[20px] -top-[20px]"
+            dot4Name="-right-[10px] -top-[35px]"
+            dot5Name="-right-[40px] -top-[40px]"
           />
         </div>
         <div className="flex flex-col px-3 justify-stretch">
