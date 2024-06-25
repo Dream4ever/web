@@ -40,8 +40,8 @@ function MobileBackground({ children }: { children?: ReactNode }) {
     });
     ScrollTrigger.create({
       trigger: "#home",
-      start: "top top+=-4500px",
-      end: "top top+=-5000px",
+      start: "top top+=-3500px",
+      end: "top top+=-4000px",
       onUpdate: (self) => {
         if (
           backgroundRef.current != null &&
@@ -161,7 +161,6 @@ function MobileBackground({ children }: { children?: ReactNode }) {
       start: "top top+=-3700px",
       end: "top top+=-4300px",
       onUpdate: (self) => {
-        console.log(self)
         if (
           backgroundRef.current != null &&
           (backgroundRef.current as any).style != null
