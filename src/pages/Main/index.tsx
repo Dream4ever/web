@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import Join from "../../components/Join";
 import Header from "../../components/Header";
 
@@ -9,6 +9,12 @@ const Mobile = lazy(() => import("../../components/Mobile"));
 const Footer = lazy(() => import("../../components/Footer"));
 
 function Main() {
+  useEffect(() => {
+    const onScroll = (e: any) => {
+      console.log(window.scrollY);
+    };
+    window.addEventListener("scroll", onScroll);
+  }, [])
   return (
     <div>
       <Header />

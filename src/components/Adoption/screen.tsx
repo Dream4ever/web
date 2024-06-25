@@ -16,7 +16,7 @@ function Screen1() {
     ScrollTrigger.create({
       trigger: "#adoption",
       start: "top top+=300px",
-      end: "top top+=-000px",
+      end: "top top+=-0px",
       onUpdate: (self) => {
         if (refMain.current != null && (refMain.current as any).style != null) {
           let node = refMain.current as any;
@@ -28,8 +28,8 @@ function Screen1() {
     });
     ScrollTrigger.create({
       trigger: "#adoption",
-      start: "top top+=-800px",
-      end: "top top+=-1100px",
+      start: "top top+=900px",
+      end: "top top+=600px",
       onUpdate: (self) => {
         if (ref1.current != null && (ref1.current as any).style != null) {
           let node = ref1.current as any;
@@ -42,8 +42,8 @@ function Screen1() {
     });
     ScrollTrigger.create({
       trigger: "#adoption",
-      start: "top top+=-1100px",
-      end: "top top+=-1400px",
+      start: "top top+=600px",
+      end: "top top+=300px",
       onUpdate: (self) => {
         if (ref2.current != null && (ref2.current as any).style != null) {
           let node = ref2.current as any;
@@ -56,8 +56,8 @@ function Screen1() {
     });
     ScrollTrigger.create({
       trigger: "#adoption",
-      start: "top top+=-1400px",
-      end: "top top+=-1700px",
+      start: "top top+=300px",
+      end: "top top+=0px",
       onUpdate: (self) => {
         if (ref3.current != null && (ref3.current as any).style != null) {
           let node = ref3.current as any;
@@ -70,8 +70,8 @@ function Screen1() {
     });
     ScrollTrigger.create({
       trigger: "#adoption",
-      start: "top top+=-1700px",
-      end: "top top+=-2000px",
+      start: "top top+=0px",
+      end: "top top+=-300px",
       onUpdate: (self) => {
         if (ref4.current != null && (ref4.current as any).style != null) {
           let node = ref4.current as any;
