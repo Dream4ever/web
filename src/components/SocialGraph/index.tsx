@@ -21,7 +21,7 @@ function SocialGraph() {
       id="socialgraph"
     >
       <Controller>
-        <Scene duration={3200} pin offset={`${offset}px`}>
+        <Scene duration={1000} pin offset={`${offset}px`}>
           <div className="relative flex justify-center w-full">
             <div className="hidden md:block">
               <Screen />

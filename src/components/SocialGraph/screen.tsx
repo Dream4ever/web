@@ -16,8 +16,8 @@ const Screen = () => {
   useMemo(() => {
     ScrollTrigger.create({
       trigger: "#socialgraph",
-      start: "top top+=-400px",
-      end: "top top+=-800px",
+      start: "top top+=600px",
+      end: "top top+=300px",
       onUpdate: (self) => {
         if (ref1.current != null && (ref1.current as any).style != null) {
           let node = ref1.current as any;
@@ -29,8 +29,8 @@ const Screen = () => {
     });
     ScrollTrigger.create({
       trigger: "#socialgraph",
-      start: "top top+=-800px",
-      end: "top top+=-1200px",
+      start: "top top+=300px",
+      end: "top top+=0px",
       onUpdate: (self) => {
         if (ref2.current != null && (ref2.current as any).style != null) {
           let node = ref2.current as any;
@@ -42,8 +42,8 @@ const Screen = () => {
     });
     ScrollTrigger.create({
       trigger: "#socialgraph",
-      start: "top top+=-1200px",
-      end: "top top+=-1600px",
+      start: "top top+=0px",
+      end: "top top+=-300px",
       onUpdate: (self) => {
         if (ref3.current != null && (ref3.current as any).style != null) {
           let node = ref3.current as any;
@@ -55,8 +55,8 @@ const Screen = () => {
     });
     ScrollTrigger.create({
       trigger: "#socialgraph",
-      start: "top top+=-1600px",
-      end: "top top+=-2000px",
+      start: "top top+=-300px",
+      end: "top top+=-600px",
       onUpdate: (self) => {
         if (ref4.current != null && (ref4.current as any).style != null) {
           let node = ref4.current as any;
@@ -68,8 +68,8 @@ const Screen = () => {
     });
     ScrollTrigger.create({
       trigger: "#socialgraph",
-      start: "top top+=-2200px",
-      end: "top top+=-2600px",
+      start: "top top+=-600px",
+      end: "top top+=-900px",
       onUpdate: (self) => {
         if (refDiv.current != null && (refDiv.current as any).style != null) {
           let node = refDiv.current as any;
