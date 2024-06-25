@@ -1,5 +1,5 @@
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { useMemo, useRef } from "react";
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import { useMemo, useRef } from 'react';
 
 function Screen1() {
   const refMain = useRef(null);
@@ -148,9 +148,9 @@ function Screen1() {
             </span>
           </div>
           <div className="flex justify-center mt-20">
-            <button className="px-4 py-2 text-base font-medium text-black rounded-full w-52 bg-secondary-cyan hover:bg-secondary-cyan/70">
+            <button className="px-4 py-2 w-[222px] whitespace-nowrap text-base leading-none font-medium text-black rounded-full  bg-secondary-cyan hover:bg-secondary-cyan/70">
               Download TowneSquare
-              <p className="text-sm">Coming soon</p>
+              <p className="text-sm font-normal">Coming soon</p>
             </button>
           </div>
         </div>
