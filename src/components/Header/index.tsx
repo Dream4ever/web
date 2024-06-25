@@ -17,7 +17,7 @@ const Header: React.FC<HeaderProps> = ({ clickWaitlist }) => {
     <div className="fixed z-20 flex justify-between w-full px-4 py-4 md:px-6">
       <div className="flex items-center gap-2">
         <img
-          className="w-6 h-6 cursor-pointer md:w-8 lg:w-12 md:h-8 lg:h-12"
+          className="cursor-pointer w-7 h-7 md:w-11 md:h-11"
           src={images.logo}
           alt="logo"
           onClick={scrollToTop}
@@ -31,7 +31,7 @@ const Header: React.FC<HeaderProps> = ({ clickWaitlist }) => {
               opacity: 0,
             }}
           >
-            <span className="font-[Urbanist] text-[22px] md:text-[35px] lg:text-[42px] font-bold text-white">
+            <span className="font-[Urbanist] text-[18px] md:text-[28px] font-bold text-white">
               townesquare
             </span>
           </Tween>
