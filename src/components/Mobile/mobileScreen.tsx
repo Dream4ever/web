@@ -18,8 +18,8 @@ const MobileScreen = () => {
   useMemo(() => {
     ScrollTrigger.create({
       trigger: "#mobile",
-      start: "top top+=-300px",
-      end: "top top+=-500px",
+      start: "top top+=300px",
+      end: "top top+=100px",
       onUpdate: (self) => {
         if (ref1.current != null && (ref1.current as any).style != null) {
           let node = ref1.current as any;
@@ -31,8 +31,8 @@ const MobileScreen = () => {
     });
     ScrollTrigger.create({
       trigger: "#mobile",
-      start: "top top+=-500px",
-      end: "top top+=-700px",
+      start: "top top+=100px",
+      end: "top top+=-100px",
       onUpdate: (self) => {
         if (ref2.current != null && (ref2.current as any).style != null) {
           let node = ref2.current as any;
@@ -44,8 +44,8 @@ const MobileScreen = () => {
     });
     ScrollTrigger.create({
       trigger: "#mobile",
-      start: "top top+=-700px",
-      end: "top top+=-900px",
+      start: "top top+=-100px",
+      end: "top top+=-300px",
       onUpdate: (self) => {
         if (ref3.current != null && (ref3.current as any).style != null) {
           let node = ref3.current as any;
@@ -57,8 +57,8 @@ const MobileScreen = () => {
     });
     ScrollTrigger.create({
       trigger: "#mobile",
-      start: "top top+=-900px",
-      end: "top top+=-1100px",
+      start: "top top+=-300px",
+      end: "top top+=-500px",
       onUpdate: (self) => {
         if (ref4.current != null && (ref4.current as any).style != null) {
           let node = ref4.current as any;
@@ -70,8 +70,8 @@ const MobileScreen = () => {
     });
     ScrollTrigger.create({
       trigger: "#mobile",
-      start: "top top+=-1100px",
-      end: "top top+=-1300px",
+      start: "top top+=-500px",
+      end: "top top+=-700px",
       onUpdate: (self) => {
         if (ref5.current != null && (ref5.current as any).style != null) {
           let node = ref5.current as any;
@@ -83,8 +83,8 @@ const MobileScreen = () => {
     });
     ScrollTrigger.create({
       trigger: "#mobile",
-      start: "top top+=-1300px",
-      end: "top top+=-1500px",
+      start: "top top+=-700px",
+      end: "top top+=-900px",
       onUpdate: (self) => {
         if (ref6.current != null && (ref6.current as any).style != null) {
           let node = ref6.current as any;
@@ -96,8 +96,8 @@ const MobileScreen = () => {
     });
     ScrollTrigger.create({
       trigger: "#mobile",
-      start: "top top+=-1500px",
-      end: "top top+=-1700px",
+      start: "top top+=-900px",
+      end: "top top+=-1100px",
       onUpdate: (self) => {
         if (ref7.current != null && (ref7.current as any).style != null) {
           let node = ref7.current as any;
@@ -109,8 +109,8 @@ const MobileScreen = () => {
     });
     ScrollTrigger.create({
       trigger: "#mobile",
-      start: "top top+=-1700px",
-      end: "top top+=-2000px",
+      start: "top top+=-1100px",
+      end: "top top+=-1300px",
       onUpdate: (self) => {
         if (ref8.current != null && (ref8.current as any).style != null) {
           let node = ref8.current as any;

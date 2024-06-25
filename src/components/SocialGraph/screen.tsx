@@ -1,5 +1,5 @@
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { useRef, useMemo } from "react";
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import { useMemo, useRef } from 'react';
 
 const Screen = () => {
 
@@ -157,7 +157,7 @@ const Screen = () => {
               <br />
               registered wallets!
             </p>
-            <p className="pt-4 text-2xl font-medium">
+            <p className="font-[Inter] text-[23px] pt-4 font-medium">
               Directly integrated in the TowneSquare app, CRED<br />
               social graph aggregates social data from all on-<br />
               chain activities to complete the social profile of a<br />

@@ -21,7 +21,7 @@ function Mobile() {
       id="mobile"
     >
       <Controller>
-        <Scene duration={3000} pin offset={`${offset}px`}>
+        <Scene duration={1200} pin offset={`${offset}px`}>
           <div className="relative flex justify-center w-full">
             <div className="hidden md:block">
               <Screen />
