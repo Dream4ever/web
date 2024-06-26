@@ -138,7 +138,7 @@ function Screen1() {
               <br />
               and monetization
             </span>
-            <span className="text-[23px] font-medium font-[Inter]">
+            <span className="text-[23px] font-medium font-[Outfit]">
               TowneSquare enables unique monetization and
               <br />
               financial opportunities for individuals, KOLs,

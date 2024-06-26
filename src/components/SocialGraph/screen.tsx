@@ -157,7 +157,7 @@ const Screen = () => {
               <br />
               registered wallets!
             </p>
-            <p className="font-[Inter] text-[23px] pt-4 font-medium">
+            <p className="font-[Outfit] text-[23px] pt-4 font-medium">
               Directly integrated in the TowneSquare app, CRED<br />
               social graph aggregates social data from all on-<br />
               chain activities to complete the social profile of a<br />
