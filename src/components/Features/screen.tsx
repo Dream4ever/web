@@ -128,7 +128,7 @@ function Screen1() {
           SOCIAL NETWORK ON MOBILE
         </p>
         <p ref={refText} className="pt-4 text-5xl font-bold"> TowneSquare mobile app</p>
-        <div className="mt-28">
+        <div className="mt-8">
           <img src="/images/screen1/vector.png" />
           <div className="flex gap-[72px] mt-4">
             <span className="font-bold text-[40px]">
@@ -147,7 +147,7 @@ function Screen1() {
               <br /> experiences
             </span>
           </div>
-          <div className="flex justify-center mt-20">
+          <div className="flex justify-center mt-8">
             <button className="px-4 py-2 w-[222px] whitespace-nowrap text-base leading-none font-medium text-black rounded-full  bg-secondary-cyan hover:bg-secondary-cyan/70">
               Download TowneSquare
               <p className="text-sm font-normal">Coming soon</p>
