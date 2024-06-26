@@ -16,10 +16,7 @@ function SocialGraph() {
   }, []);
 
   return (
-    <div
-      className="md:block lg:block"
-      id="socialgraph"
-    >
+    <div className="" id="socialgraph">
       <Controller>
         <Scene duration={1000} pin offset={`${offset}px`}>
           <div className="relative flex justify-center w-full">

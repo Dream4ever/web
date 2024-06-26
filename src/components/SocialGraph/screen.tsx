@@ -88,15 +88,15 @@ const Screen = () => {
       >
         <div className="flex flex-col items-center justify-center">
           <div className="flex flex-col items-center justify-center">
-            <p className="pt-4 text-2xl font-semibold bold text">
+            <p className="text-2xl font-semibold bold text">
               Social graph
             </p>
-            <p className="pt-4 text-5xl font-bold">
+            <p className="text-5xl font-bold leading-tight">
               CRED Social graph & profile
             </p>
           </div>
         </div>
-        <div className="flex justify-center mt-20">
+        <div className="flex justify-center mt-8">
           <a
             href="https://x.com/townesquarexyz"
             target="_blank"
@@ -106,7 +106,7 @@ const Screen = () => {
             Register on CRED
           </a>
         </div>
-        <div className="relative w-[1200px] h-[400px] my-[7vh]">
+        <div className="relative w-[1200px] h-[560px] mt-8">
           <div className="absolute top-0 left-0 z-10 transition-all translate-y-[100vh] opacity-0"
             ref={ref1}>
             <img
@@ -145,7 +145,7 @@ const Screen = () => {
           </div>
         </div>
 
-        <div ref={refDiv} className="flex flex-col justify-center mt-[200px] opacity-0">
+        <div ref={refDiv} className="flex flex-col justify-center mt-8 opacity-0">
           <div className="flex flex-col items-start pl-[110px] justify-left">
             <img src="/assets/vector.png" />
           </div>
