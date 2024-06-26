@@ -142,8 +142,8 @@ function Screen1() {
         </div>
       </div>
 
-      <div className="flex justify-center mt-40">
-        <button className="px-4 py-2 text-base font-medium rounded-full w-52 bg-primary-default hover:bg-primary-default/70">
+      <div className="flex justify-center my-8">
+        <button className="px-2 py-2 text-base font-medium rounded-full w-52 bg-primary-default hover:bg-primary-default/70">
           Download TowneSquare
           <p className="text-sm">Coming soon</p>
         </button>
@@ -154,7 +154,7 @@ function Screen1() {
           ref={ref1}
         >
           <img src="/assets/adoption/adopt1.png" />
-          <div className="absolute px-6 bottom-6 ">
+          <div className="absolute px-6 bottom-[70px] ">
             <p className="text-[#FFF] text-[40px] font-semibold">
               Network effect
             </p>
@@ -170,7 +170,7 @@ function Screen1() {
           ref={ref2}
         >
           <img src="/assets/adoption/adopt2.png" />
-          <div className="absolute px-6 top-8">
+          <div className="absolute px-12 top-8">
             <p className="text-[#FFF] text-[40px] font-semibold">
               Consumer-grade
               <br /> User experience
@@ -185,7 +185,7 @@ function Screen1() {
           ref={ref3}
         >
           <img src="/assets/adoption/adopt3.png" />
-          <div className="absolute px-6 top-14">
+          <div className="absolute px-10 top-12">
             <p className="text-[#FFF] text-[40px] font-semibold">
               Developer-
               <br />
@@ -201,7 +201,7 @@ function Screen1() {
           ref={ref4}
         >
           <img src="/assets/adoption/adopt4.png" />
-          <div className="absolute px-6 top-8">
+          <div className="absolute px-12 top-10">
             <p className="text-[#FFF] text-[40px] font-semibold">Low fees</p>
             <p className="text-[#FFFFFF] text-base font-normal">
               Interact directly with your audience and
