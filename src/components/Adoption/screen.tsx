@@ -92,7 +92,7 @@ function Screen1() {
     >
       <div className="relative">
         <div>
-          <img src="/images/screen1/vector.png" />
+          <img src="/assets/vector.png" />
         </div>
         <p className="text-5xl font-bold pt-7">
           Harnessing performant
@@ -108,7 +108,7 @@ function Screen1() {
           <ActionLabel
             className="-top-[93px] left-[585px]"
             innerClassName="w-[90px] h-[90px] md:w-[150px] md:h-[150px]"
-            imgUrl1="/images/home/icons/solana.png"
+            imgUrl1="/assets/home/solana.png"
             // imgUrl2="/images/home/icons/solana.png"
             imgClassName="!w-[78px]"
             dotSName="-left-[75px] top-[2px]"
@@ -121,7 +121,7 @@ function Screen1() {
           <ActionLabel
             className="top-[63px] left-[755px]"
             innerClassName="w-[90px] h-[90px] md:w-[150px] md:h-[150px]"
-            imgUrl1="/images/home/icons/ts.png"
+            imgUrl1="/assets/img/logo.png"
             // imgUrl2="/images/home/icons/ts.png"
             imgClassName="!w-[112px]"
             bHaveBackground={false}
@@ -129,7 +129,7 @@ function Screen1() {
           <ActionLabel
             className="top-[153px] left-[925px]"
             innerClassName="w-[90px] h-[90px] md:w-[150px] md:h-[150px]"
-            imgUrl1="/images/aptos.png"
+            imgUrl1="/assets/home/aptos.svg"
             // imgUrl2="/images/aptos.png"
             imgClassName="!w-[78px]"
             dotSName="left-[22px] -bottom-[35px]"
@@ -153,7 +153,7 @@ function Screen1() {
           className="absolute top-0 left-0 z-10 transition-all translate-y-[100vh] opacity-0"
           ref={ref1}
         >
-          <img src="/images/adoption/adopt1.png" />
+          <img src="/assets/adoption/adopt1.png" />
           <div className="absolute px-6 bottom-6 ">
             <p className="text-[#FFF] text-[40px] font-semibold">
               Network effect
@@ -169,7 +169,7 @@ function Screen1() {
           className="absolute top-0 left-[384px] z-10 transition-all  translate-y-[100vh]"
           ref={ref2}
         >
-          <img src="/images/adoption/adopt2.png" />
+          <img src="/assets/adoption/adopt2.png" />
           <div className="absolute px-6 top-8">
             <p className="text-[#FFF] text-[40px] font-semibold">
               Consumer-grade
@@ -184,7 +184,7 @@ function Screen1() {
           className="absolute top-[240px] left-[384px] z-10 transition-all  translate-y-[100vh]"
           ref={ref3}
         >
-          <img src="/images/adoption/adopt3.png" />
+          <img src="/assets/adoption/adopt3.png" />
           <div className="absolute px-6 top-14">
             <p className="text-[#FFF] text-[40px] font-semibold">
               Developer-
@@ -200,7 +200,7 @@ function Screen1() {
           className="absolute top-[240px] left-[768px] z-10 transition-all  translate-y-[100vh]"
           ref={ref4}
         >
-          <img src="/images/adoption/adopt4.png" />
+          <img src="/assets/adoption/adopt4.png" />
           <div className="absolute px-6 top-8">
             <p className="text-[#FFF] text-[40px] font-semibold">Low fees</p>
             <p className="text-[#FFFFFF] text-base font-normal">

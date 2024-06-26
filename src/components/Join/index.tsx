@@ -31,29 +31,29 @@ function Join() {
                   </div>
                   <div className="flex flex-row gap-2">
                     <img
-                      src="/images/home/btn_google_play.svg"
+                      src="/assets/home/btn_google_play.svg"
                       alt=""
                       className="cursor-pointer"
                     />
                     <img
-                      src="/images/home/btn_app_store.svg"
+                      src="/assets/home/btn_app_store.svg"
                       alt=""
                       className="cursor-pointer"
                     />
                   </div>
                 </div>
                 <img
-                  src="/images/join/first_line.svg"
+                  src="/assets/join/first_line.svg"
                   alt=""
                   className="absolute mt-4 ml-[285px]"
                 />
                 <img
-                  src="/images/join/sec_line.svg"
+                  src="/assets/join/sec_line.svg"
                   alt=""
                   className="absolute"
                 />
                 <img
-                  src="/images/join/join.png"
+                  src="/assets/join/join.png"
                   alt=""
                   className="absolute ml-[630px] -mt-[65px]"
                 />
@@ -62,7 +62,7 @@ function Join() {
             <div className="z-30 block md:hidden">
               <div className="flex w-[338px] h-[416px] border rounded-2xl">
                 <img
-                  src="/images/join/back.png"
+                  src="/assets/join/back.png"
                   alt=""
                   className="absolute w-100vw"
                 />
@@ -81,12 +81,12 @@ function Join() {
                   </div>
                   <div className="flex flex-row gap-2">
                     <img
-                      src="/images/home/btn_google_play.svg"
+                      src="/assets/home/btn_google_play.svg"
                       alt=""
                       className="cursor-pointer"
                     />
                     <img
-                      src="/images/home/btn_app_store.svg"
+                      src="/assets/home/btn_app_store.svg"
                       alt=""
                       className="cursor-pointer"
                     />

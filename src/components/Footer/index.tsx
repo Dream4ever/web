@@ -1,4 +1,3 @@
-import { BsGithub } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 const Footer = (props: any) => {
@@ -18,7 +17,7 @@ const Footer = (props: any) => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src="/images/home/icons/twitter.svg" alt="twitter_image" />
+                <img src="/assets/twitter.svg" alt="twitter_image" />
               </a>
               <a
                 className="items-center justify-center pr-3 mt-1 mr-3"
@@ -26,7 +25,7 @@ const Footer = (props: any) => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src="/images/home/icons/discord.svg" alt=""/>
+                <img src="/assets/discord.svg" alt=""/>
               </a>
               <a
                 className="items-center justify-center pr-3 mt-1 mr-3"
@@ -34,7 +33,7 @@ const Footer = (props: any) => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src="/images/home/icons/github.svg" alt="" />
+                <img src="/assets/github.svg" alt="" />
               </a>
             </div>
           </div>

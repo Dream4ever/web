@@ -85,42 +85,42 @@ function Screen1() {
       ref={refMain}
     >
       <img
-        src="/images/screen1/spline1.png"
+        src="/assets/home/spline1.png"
         className="absolute w-full top-[30vh]"
       />
-      <img src="/images/screen1/spline2.png" className="absolute w-full" />
+      <img src="/assets/home/spline2.png" className="absolute w-full" />
       <div
         className="flex flex-col items-center"
       >
         <div className="relative">
           <img
-            src="/images/screen1/phone.png"
+            src="/assets/home/phone.png"
             alt="sign"
-            className="relative z-20 transition-all"
+            className="relative z-20 transition-all w-[380px]"
           />
           <img
-            src="/images/screen1/clip1.png"
-            className="absolute z-10 transition-all -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2"
+            src="/assets/home/clip1.png"
+            className="absolute z-10 transition-all -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 w-[176px]"
             ref={ref1}
           />
           <img
-            src="/images/screen1/clip2.png"
-            className="absolute z-10 transition-all -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2"
+            src="/assets/home/clip2.png"
+            className="absolute z-10 transition-all -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 w-[176px]"
             ref={ref2}
           />
           <img
-            src="/images/screen1/clip3.png"
-            className="absolute z-10 transition-all -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2"
+            src="/assets/home/clip3.png"
+            className="absolute z-10 transition-all -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 w-[176px]"
             ref={ref3}
           />
           <img
-            src="/images/screen1/clip4.png"
-            className="absolute z-10 transition-all -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2"
+            src="/assets/home/clip4.png"
+            className="absolute z-10 transition-all -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 w-[176px]"
             ref={ref4}
           />
           <img
-            src="/images/screen1/clip5.png"
-            className="absolute z-10 transition-all -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2"
+            src="/assets/home/clip5.png"
+            className="absolute z-10 transition-all -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 w-[176px]"
             ref={ref5}
           />
         </div>
@@ -129,7 +129,7 @@ function Screen1() {
         </p>
         <p ref={refText} className="pt-4 text-5xl font-bold"> TowneSquare mobile app</p>
         <div className="mt-28">
-          <img src="/images/screen1/vector.png" />
+          <img src="/assets/vector.png" />
           <div className="flex gap-[72px] mt-4">
             <span className="font-bold text-[40px]">
               The app for social

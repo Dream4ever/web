@@ -110,7 +110,7 @@ const Screen = () => {
           <div className="absolute top-0 left-0 z-10 transition-all translate-y-[100vh] opacity-0"
             ref={ref1}>
             <img
-              src="/images/socialgraph/social1.png"
+              src="/assets/social/social1.png"
             />
             <div className="absolute px-6 top-14">
               <p className="text-[#FFF] text-[40px] font-semibold">Complete your <br /> Social graph profile</p>
@@ -120,7 +120,7 @@ const Screen = () => {
           <div className="absolute top-0 left-[764px] z-10 transition-all  translate-y-[100vh]"
             ref={ref2}>
             <img
-              src="/images/socialgraph/social2.png"
+              src="/assets/social/social2.png"
             />
             <div className="absolute text-center top-40 left-[70px]">
               <p className="text-[#FFF] text-[40px] font-semibold">Earn $CRED<br /> Rewards</p>
@@ -129,14 +129,14 @@ const Screen = () => {
           </div>
 
           <img
-            src="/images/socialgraph/social3.png"
+            src="/assets/social/social3.png"
             className="absolute top-[290px] left-[384px] z-10 transition-all  translate-y-[100vh]"
             ref={ref3}
           />
           <div className="absolute top-[290px] left-[1px] z-10 transition-all  translate-y-[100vh]"
             ref={ref4}>
             <img
-              src="/images/socialgraph/social4.png"
+              src="/assets/social/social4.png"
             />
             <div className="absolute text-center top-10 left-[72px]">
               <p className="text-[#FFF] text-[40px] font-semibold">Integrated in</p>
@@ -147,7 +147,7 @@ const Screen = () => {
 
         <div ref={refDiv} className="flex flex-col justify-center mt-[200px] opacity-0">
           <div className="flex flex-col items-start pl-[110px] justify-left">
-            <img src="/images/screen1/vector.png" />
+            <img src="/assets/vector.png" />
           </div>
           <div className="flex items-center justify-center gap-28 text-start">
             <p className="pt-4 text-[40px] font-bold">

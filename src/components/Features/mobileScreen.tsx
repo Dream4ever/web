@@ -104,41 +104,41 @@ function MobileScreen() {
       ref={refMain}
     >
       <img
-        src="/images/screen1/spline1.png"
+        src="/assets/home/spline1.png"
         className="absolute w-full top-[30vh] md:block hidden"
       />
-      <img src="/images/screen1/spline2.png" className="absolute hidden w-full md:block" />
+      <img src="/assets/home/spline2.png" className="absolute hidden w-full md:block" />
       <div
         className="flex flex-col items-center"
       >
         <div className="relative flex justify-center w-full">
           <img
-            src="/images/screen1/phone.png"
+            src="/assets/home/phone.png"
             alt="sign"
             className="relative z-20 transition-all md:w-full w-[50%] h-full"
           />
           <img
-            src="/images/screen1/clip1.png"
+            src="/assets/home/clip1.png"
             className="absolute top-[30vh] left-[2vw] z-10 transition-all translate-y-[100vh] opacity-0 w-[30%]"
             ref={ref1}
           />
           <img
-            src="/images/screen1/clip2.png"
+            src="/assets/home/clip2.png"
             className="absolute top-[40vh] left-[35vw] z-10 transition-all translate-y-[100vh] opacity-0 w-[30%]"
             ref={ref2}
           />
           <img
-            src="/images/screen1/clip3.png"
+            src="/assets/home/clip3.png"
             className="absolute top-[50vh] left-[2vw] z-10 transition-all translate-y-[100vh] opacity-0 w-[30%]"
             ref={ref3}
           />
           <img
-            src="/images/screen1/clip4.png"
+            src="/assets/home/clip4.png"
             className="absolute top-[35vh] left-[68vw] z-10 transition-all translate-y-[100vh] opacity-0 w-[30%]"
             ref={ref4}
           />
           <img
-            src="/images/screen1/clip5.png"
+            src="/assets/home/clip5.png"
             className="absolute top-[53vh] left-[68vw] z-10 transition-all translate-y-[100vh] opacity-0 w-[30%]"
             ref={ref5}
           />
@@ -148,7 +148,7 @@ function MobileScreen() {
         </p>
         <p className="pt-4 text-4xl font-bold text-center md:text-5xl"> TowneSquare <br />mobile app</p>
         <div className="w-full px-4 mt-[70px]">
-          <img src="/images/screen1/vector.png" />
+          <img src="/assets/vector.png" />
           <div className="flex flex-col gap-4 mt-4">
             <span className="font-bold text-[28px]">
               The app for social

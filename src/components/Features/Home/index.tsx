@@ -37,16 +37,16 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
       className="relative flex items-end justify-center w-full md:h-[50vh] opacity-100"
     >
       <div className="absolute top-0 left-0 z-0 w-full">
-        <img src="/images/banner.png" className="absolute top-0 right-0 w-[160px] md:w-auto" />
+        <img src="/assets/home/banner.png" className="absolute top-0 right-0 w-[160px] md:w-auto" />
       </div>
       <div className="absolute top-0 left-0 z-0 hidden w-full h-screen lg:block md:block">
         <img
-          src="/images/home/middle_web.svg"
+          src="/assets/home/middle_web.svg"
           alt="background"
           className="absolute hidden md:block lg:block md:w-full md:left-0 md:bottom-0"
         />
         <img
-          src="/images/home/top_web.svg"
+          src="/assets/home/top_web.svg"
           alt="background"
           className="absolute hidden top-0 right-0 h-[248px] w-[408px] md:block lg:block"
         />
@@ -56,8 +56,8 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
           className="top-[33vh] -left-[2vh] md:top-[33vh] md:left-[18vw] lg:top-[33vh] lg:left-[18vw]"
           label1="942"
           label2="1.325"
-          imgUrl1={"/images/home/icons/swap.svg"}
-          imgUrl2={"/images/home/icons/comment.svg"}
+          imgUrl1={"/assets/home/swap.svg"}
+          imgUrl2={"/assets/home/comment.svg"}
           dotSName="bottom-[8vh] left-[5vw] md:bottom-[11vh] md:left-[3vw] lg:bottom-[11vh] lg:left-[4vw]"
           dotCName="bottom-[10vh] left-[0vw] md:bottom-[5vh] md:left-[4vw] lg:bottom-[5vh] lg:left-[6vw]"
         />
@@ -72,27 +72,27 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
           className="top-[5.5vh] right-[10vw] md:-top-[3vh] md:right-[28vw]"
           label1="$2,842"
           label2="$1,185"
-          imgUrl1="/images/home/icons/heart.svg"
-          imgUrl2="/images/home/icons/budget.svg"
+          imgUrl1="/assets/home/heart.svg"
+          imgUrl2="/assets/home/budget.svg"
           dotSName="-top-[3vh] right-[15vw] md:-top-[13vh] md:right-[3vw] lg:-top-[5vh] lg:right-[3vw]"
           dotCName="-top-[2vh] right-[3vw] md:-top-[8vh] md:right-[5vw] lg:-top-[3vh] lg:right-[5vw]"
         />
         <ActionLabel
           className="top-[27vh] left-[72vw] md:top-[36vh] md:right-[20vw]"
-          imgUrl1="/images/home/icons/aptos.svg"
-          imgUrl2="/images/home/icons/solana.png"
+          imgUrl1="/assets/home/aptos.svg"
+          imgUrl2="/assets/home/solana.png"
           dotSName="hidden"
           dotCName="top-[7vh] -right-[5vw] md:top-[3vh] md:right-[5vw] md:top-[8vh] md:right-[6vw]"
         />
       </div>
       <div className="absolute z-0 block w-full md:hidden">
         <img
-          src="/images/home/left_mobile.svg"
+          src="/assets/home/left_mobile.svg"
           alt="background"
           className="top-0 left-0 hidden md:block lg:block"
         />
         <img
-          src="/images/home/right_mobile.svg"
+          src="/assets/home/right_mobile.svg"
           alt="background"
           className="absolute top-[20vh] hidden md:block lg:block right-0"
         />
@@ -104,8 +104,8 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
         </span>
         <ActionFade
           className="w-[200px] md:w-[264px] h-[58px] md:h-[74px]"
-          comp1={<img src="/images/home/btn_aptos.svg" />}
-          comp2={<img src="/images/home/btn_solana.svg" />}
+          comp1={<img src="/assets/home/btn_aptos.svg" />}
+          comp2={<img src="/assets/home/btn_solana.svg" />}
         />
         <span className="text-[20px] lg:text-[32px] font-medium mt-6">
           The Non-EVM Social Layer
@@ -114,10 +114,10 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
         </span>
         <div className="flex justify-center w-full gap-2 mt-6 lg:gap-6 md:gap-6 md:item-center lg:justify-center">
           <button>
-            <img src="/images/home/btn_google_play.svg" alt="" />
+            <img src="/assets/home/btn_google_play.svg" alt="" />
           </button>
           <button>
-            <img src="/images/home/btn_app_store.svg" alt="" />
+            <img src="/assets/home/btn_app_store.svg" alt="" />
           </button>
         </div>
       </div>

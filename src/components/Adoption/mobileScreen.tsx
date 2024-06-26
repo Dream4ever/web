@@ -86,8 +86,8 @@ function MobileScreen() {
           <ActionLabel
             className="-top-[287px] left-[40px]"
             innerClassName="w-[90px] h-[90px] md:w-[150px] md:h-[150px]"
-            imgUrl1="/images/home/icons/solana.png"
-            imgUrl2="/images/home/icons/solana.png"
+            imgUrl1="/assets/home/solana.png"
+            // imgUrl2="/assets/home/solana.png"
             imgClassName="!w-[46px]"
             dotSName="-left-[75px] top-[2px]"
             dotCName="-left-[77px] top-[20px]"
@@ -98,16 +98,16 @@ function MobileScreen() {
           <ActionLabel
             className="-top-[190px] left-[120px]"
             innerClassName="w-[90px] h-[90px] md:w-[150px] md:h-[150px]"
-            imgUrl1="/images/home/icons/ts.png"
-            imgUrl2="/images/home/icons/ts.png"
+            imgUrl1="/assets/img/logo.png"
+            // imgUrl2="/assets/home/ts.png"
             imgClassName="!w-[66px]"
             bHaveBackground={false}
           />
           <ActionLabel
             className="-top-[160px] right-[25px]"
             innerClassName="w-[90px] h-[90px] md:w-[150px] md:h-[150px]"
-            imgUrl1="/images/home/icons/aptos.svg"
-            imgUrl2="/images/home/icons/aptos.svg"
+            imgUrl1="/assets/home/aptos.svg"
+            // imgUrl2="/assets/home/aptos.svg"
             imgClassName="!w-[46px]"
             dotSName="left-[22px] -bottom-[35px]"
             dotCName="left-[3px] -bottom-[30px]"
@@ -118,7 +118,7 @@ function MobileScreen() {
         </div>
         <div className="flex flex-col px-3 justify-stretch">
           <div>
-            <img src="/images/screen1/vector.png" />
+            <img src="/assets/vector.png" />
           </div>
           <p className="pt-4 text-[28px] md:text-5xl font-bold">
             Harnessing performant
@@ -138,7 +138,7 @@ function MobileScreen() {
           <div className="absolute top-0 left-0 z-10 transition-all translate-y-[100vh] opacity-0"
             ref={ref1}>
             <img
-              src="/images/adoption/mobile1.png"
+              src="/assets/adoption/mobile1.png"
             />
             <div className="absolute bottom-6 left-6">
               <p className="text-[#FFF] text-[28px] font-semibold">Network effect</p>
@@ -148,7 +148,7 @@ function MobileScreen() {
           <div className="absolute top-[380px] left-[0px] z-10 transition-all  translate-y-[100vh]"
             ref={ref2}>
             <img
-              src="/images/adoption/mobile2.png"
+              src="/assets/adoption/mobile2.png"
             />
             <div className="absolute left-6 top-14">
               <p className="text-[#FFF] text-[28px] font-semibold">Consumer-grade <br />User experience</p>
@@ -159,7 +159,7 @@ function MobileScreen() {
           <div className="absolute top-[615px] left-[0px] z-10 transition-all  translate-y-[100vh]"
             ref={ref3}>
             <img
-              src="/images/adoption/mobile3.png"
+              src="/assets/adoption/mobile3.png"
             />
             <div className="absolute left-6 top-20">
               <p className="text-[#FFF] text-[28px] font-semibold">Developer <br /> - friendly</p>
@@ -169,7 +169,7 @@ function MobileScreen() {
           <div className="absolute top-[615px] left-[175px] z-10 transition-all  translate-y-[100vh]"
             ref={ref4}>
             <img
-              src="/images/adoption/mobile4.png"
+              src="/assets/adoption/mobile4.png"
             />
             <div className="absolute left-6 top-[102px]">
               <p className="text-[#FFF] text-[28px] font-semibold">Low fees</p>

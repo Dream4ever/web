@@ -139,42 +139,42 @@ const MobileScreen = () => {
 
         <div className="relative w-full h-[550px] my-[3vh]">
           <img
-            src="/images/mobile/hooray.png"
+            src="/assets/mobile/hooray.png"
             className="absolute top-[80px] left-10 z-10 w-[90px] transition-all translate-y-[100vh] opacity-0"
             ref={ref1}
           />
           <img
-            src="/images/mobile/coollist.png"
+            src="/assets/mobile/coollist.png"
             className="absolute -top-[00px] left-[180px] z-10 w-[135px] transition-all  translate-y-[100vh]"
             ref={ref2}
           />
           <img
-            src="/images/mobile/fireavatar.png"
+            src="/assets/mobile/fireavatar.png"
             className="absolute top-36 left-[140px] w-[135px] z-10 transition-all  translate-y-[100vh]"
             ref={ref3}
           />
           <img
-            src="/images/mobile/head.png"
+            src="/assets/mobile/head.png"
             className="absolute top-[285px] left-[140px] w-[75px] z-10 transition-all  translate-y-[100vh]"
             ref={ref4}
           />
           <img
-            src="/images/mobile/evolve.png"
+            src="/assets/mobile/evolve.png"
             className="absolute top-[200px] left-0 w-[132px] z-10 transition-all translate-y-[100vh] opacity-0"
             ref={ref5}
           />
           <img
-            src="/images/mobile/avatar.png"
+            src="/assets/mobile/avatar.png"
             className="absolute top-[285px] left-[230px] w-[108px] z-10 transition-all  translate-y-[100vh]"
             ref={ref6}
           />
           <img
-            src="/images/mobile/sloths.png"
+            src="/assets/mobile/sloths.png"
             className="absolute top-[370px] left-[60px] w-[132px] z-10 transition-all  translate-y-[100vh]"
             ref={ref7}
           />
           <img
-            src="/images/mobile/mobileimg.png"
+            src="/assets/mobile/mobileimg.png"
             className="absolute top-[400px] left-[230px] w-[72px] z-10 transition-all  translate-y-[100vh]"
             ref={ref8}
           />

@@ -87,7 +87,7 @@ const MobileScreen = () => {
           className="absolute top-0 w-[325px] left-2 z-10 transition-all translate-y-[100vh] opacity-0"
           ref={ref1}
         >
-          <img src="/images/socialgraph/mobile1.png" />
+          <img src="/assets/social/mobile1.png" />
           <div className="absolute pl-6 bottom-5">
             <p className="text-[#FFF] text-[28px] font-semibold">
               Complete your Social <br />
@@ -102,7 +102,7 @@ const MobileScreen = () => {
           className="absolute top-[405px] left-2 w-[325px] z-10 transition-all  translate-y-[100vh]"
           ref={ref2}
         >
-          <img src="/images/socialgraph/mobile2.png" />
+          <img src="/assets/social/mobile2.png" />
           <div className="absolute pl-6 text-center top-40">
             <p className="text-[#FFF] text-[28px] font-semibold">
               Earn $CRED Rewards
@@ -116,13 +116,13 @@ const MobileScreen = () => {
           className="absolute top-[810px] w-[325px] left-2 z-10 transition-all  translate-y-[100vh]"
           ref={ref3}
         >
-          <img src="/images/socialgraph/mobile3.png" />
+          <img src="/assets/social/mobile3.png" />
         </div>
         <div
           className="absolute top-[1015px] w-[325px] left-2 z-10 transition-all  translate-y-[100vh]"
           ref={ref4}
         >
-          <img src="/images/socialgraph/mobile4.png" />
+          <img src="/assets/social/mobile4.png" />
           <div className="absolute pl-20 text-center top-8">
             <p className="text-[#FFF] text-[28px] font-semibold">
               Integrated in
@@ -138,7 +138,7 @@ const MobileScreen = () => {
 
       <div className="flex flex-col px-4 mt-[72px]">
         <div className="flex items-start justify-start">
-          <img src="/images/screen1/vector.png" />
+          <img src="/assets/vector.png" />
         </div>
         <div className="flex flex-col">
           <p className="pt-4 text-[28px] font-medium">
