@@ -148,12 +148,12 @@ const Screen = () => {
             Cool Sloths mobile mint
           </p>
         </div>
-        <div className="flex justify-center mt-10">
+        <div className="flex justify-center mt-8">
           <button className="h-12 px-4 py-2 text-base font-medium rounded-full w-52 bg-primary-default hover:bg-primary-default/70">
-            Check out Cool Sloths
+            Follow @CoolSlothsxyz
           </button>
         </div>
-        <div className="relative w-[1200px] h-[400px] my-36">
+        <div className="relative w-[1200px] h-[600px] mt-[92px]">
           <img
             src="/assets/mobile/hooray.png"
             className="absolute top-[80px] left-32 z-10 transition-all translate-y-[100vh] opacity-0 w-[176px]"
@@ -171,7 +171,7 @@ const Screen = () => {
           />
           <img
             src="/assets/mobile/head.png"
-            className="absolute -top-16 left-[919px] z-10 transition-all  translate-y-[100vh] w-[176px]"
+            className="absolute -top-[60px] left-[919px] z-10 transition-all  translate-y-[100vh] w-[176px]"
             ref={ref4}
           />
           <img
@@ -196,7 +196,7 @@ const Screen = () => {
           />
         </div>
 
-        <div ref={refDiv} className="flex flex-col items-center justify-center text-center mt-[170px] opacity-0">
+        <div ref={refDiv} className="flex flex-col items-center justify-center mt-8 text-center opacity-0">
           <p className="text-[23px] font-medium">
             <span className="font-extrabold">TowneSquare</span> is the home of the 1st Web3 mobile mint experience,<br />
             powered by the TowneSquare Mini-App module called Tile
