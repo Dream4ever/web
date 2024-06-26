@@ -127,7 +127,7 @@ function Screen1() {
             bHaveBackground={false}
           />
           <ActionLabel
-            className="top-[153px] left-[925px]"
+            className="top-[123px] left-[925px]"
             innerClassName="w-[90px] h-[90px] md:w-[150px] md:h-[150px]"
             imgUrl1="/assets/home/aptos.svg"
             // imgUrl2="/images/aptos.png"
@@ -142,23 +142,23 @@ function Screen1() {
         </div>
       </div>
 
-      <div className="flex justify-center my-8">
+      <div className="flex justify-center mt-8">
         <button className="px-2 py-2 text-base font-medium rounded-full w-52 bg-primary-default hover:bg-primary-default/70">
           Download TowneSquare
           <p className="text-sm">Coming soon</p>
         </button>
       </div>
-      <div className="relative w-[1200px] h-[465px] mt-20">
+      <div className="relative w-[1200px] h-[465px] mt-8">
         <div
           className="absolute top-0 left-0 z-10 transition-all translate-y-[100vh] opacity-0"
           ref={ref1}
         >
-          <img src="/assets/adoption/adopt1.png" className="w-[368px]"/>
-          <div className="absolute px-6 bottom-[70px] ">
-            <p className="text-[#FFF] text-[40px] font-semibold">
+          <img src="/assets/adoption/adopt1.png" className="w-[368px]" />
+          <div className="absolute px-6 bottom-[78px] ">
+            <p className="text-[#FFF] text-[40px] font-semibold leading-[120%]">
               Network effect
             </p>
-            <p className="text-[#FFFFFF] text-base font-normal">
+            <p className="text-[#FFFFFF] text-base font-normal pt-3">
               Connect with users from high-value DeFi
               <br /> & NFT communities. Earn rewards while <br /> inviting users
               into the ecosystem.
@@ -169,13 +169,13 @@ function Screen1() {
           className="absolute top-0 left-[384px] z-10 transition-all  translate-y-[100vh]"
           ref={ref2}
         >
-          <img src="/assets/adoption/adopt2.png" className="w-[752px]"/>
-          <div className="absolute px-12 top-8">
-            <p className="text-[#FFF] text-[40px] font-semibold">
+          <img src="/assets/adoption/adopt2.png" className="w-[752px]" />
+          <div className="absolute px-12 top-10">
+            <p className="text-[#FFF] text-[40px] font-semibold leading-[120%]">
               Consumer-grade
               <br /> User experience
             </p>
-            <p className="text-[#FFFFFF] text-base font-normal">
+            <p className="text-[#FFFFFF] text-base font-normal pt-3">
               Sign up, pay, and transact within seconds
             </p>
           </div>
@@ -185,13 +185,13 @@ function Screen1() {
           ref={ref3}
         >
           <img src="/assets/adoption/adopt3.png" className="w-[368px]" />
-          <div className="absolute px-10 top-12">
-            <p className="text-[#FFF] text-[40px] font-semibold">
+          <div className="absolute pl-12 top-10">
+            <p className="text-[#FFF] text-[40px] font-semibold leading-[120%]">
               Developer-
               <br />
               friendly
             </p>
-            <p className="text-[#FFFFFF] text-base font-normal">
+            <p className="text-[#FFFFFF] text-base font-normal pt-3">
               Supporting both Rust & Move language
             </p>
           </div>
@@ -200,10 +200,10 @@ function Screen1() {
           className="absolute top-[240px] left-[768px] z-10 transition-all  translate-y-[100vh]"
           ref={ref4}
         >
-          <img src="/assets/adoption/adopt4.png" className="w-[368px]"/>
-          <div className="absolute px-12 top-10">
-            <p className="text-[#FFF] text-[40px] font-semibold">Low fees</p>
-            <p className="text-[#FFFFFF] text-base font-normal">
+          <img src="/assets/adoption/adopt4.png" className="w-[368px]" />
+          <div className="absolute pl-12 top-[54px]">
+            <p className="text-[#FFF] text-[40px] font-semibold leading-[120%]">Low fees</p>
+            <p className="text-[#FFFFFF] text-base font-normal pt-3">
               Interact directly with your audience and
               <br /> no middleman with low fees
             </p>
