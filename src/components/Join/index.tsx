@@ -1,22 +1,13 @@
 function Join() {
   return (
-    <div
-      id="join"
-      className="mt-[100px]"
-      data-component="Early"
-    >
+    <div id="join" className="mt-[100px]" data-component="Early">
       <div className="z-20">
         <div className="relative w-full h-[55vh] overflow-hidden lg:overflow-visible">
           <div className="flex justify-center">
             <div className="hidden md:block">
-              <div
-                className="flex w-[944px] h-[414px] border rounded-2xl border-[#FFF]/30"
-                style={{
-                  backgroundImage:
-                    "linear-gradient(101deg, rgba(94, 64, 158, 0.40) 20.36%, rgba(119, 92, 178, 0.40) 53.12%, rgba(94, 64, 158, 0.40) 96.24%)",
-                }}
-              >
-                <div className="z-20 flex flex-col pl-8 py-14">
+              <div className="relative flex rounded-2xl">
+                <img src="/assets/join/join.png" alt="" className="w-[944px]" />
+                <div className="absolute z-20 flex flex-col pl-8 pt-[124px]">
                   <p className="text-[#FFF] text-[40px] font-semibold">
                     Join the Web3 revolution
                   </p>
@@ -42,21 +33,6 @@ function Join() {
                     />
                   </div>
                 </div>
-                <img
-                  src="/assets/join/first_line.svg"
-                  alt=""
-                  className="absolute mt-4 ml-[285px]"
-                />
-                <img
-                  src="/assets/join/sec_line.svg"
-                  alt=""
-                  className="absolute"
-                />
-                <img
-                  src="/assets/join/join.png"
-                  alt=""
-                  className="absolute ml-[630px] -mt-[65px]"
-                />
               </div>
             </div>
             <div className="z-30 block md:hidden">

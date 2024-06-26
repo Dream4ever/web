@@ -86,8 +86,8 @@ function MobileScreen() {
           <ActionLabel
             className="-top-[287px] left-[40px]"
             innerClassName="w-[90px] h-[90px] md:w-[150px] md:h-[150px]"
-            imgUrl1="/assets/home/solana.png"
-            // imgUrl2="/assets/home/solana.png"
+            imgUrl1="/assets/home/solana.svg"
+            // imgUrl2="/assets/home/solana.svg"
             imgClassName="!w-[46px]"
             dotSName="-left-[75px] top-[2px]"
             dotCName="-left-[77px] top-[20px]"
@@ -98,7 +98,7 @@ function MobileScreen() {
           <ActionLabel
             className="-top-[190px] left-[120px]"
             innerClassName="w-[90px] h-[90px] md:w-[150px] md:h-[150px]"
-            imgUrl1="/assets/img/logo.png"
+            imgUrl1="/assets/img/logo.svg"
             // imgUrl2="/assets/home/ts.png"
             imgClassName="!w-[66px]"
             bHaveBackground={false}

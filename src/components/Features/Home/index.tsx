@@ -80,7 +80,7 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
         <ActionLabel
           className="top-[27vh] left-[72vw] md:top-[36vh] md:right-[20vw]"
           imgUrl1="/assets/home/aptos.svg"
-          imgUrl2="/assets/home/solana.png"
+          imgUrl2="/assets/home/solana.svg"
           dotSName="hidden"
           dotCName="top-[7vh] -right-[5vw] md:top-[3vh] md:right-[5vw] md:top-[8vh] md:right-[6vw]"
         />

@@ -156,42 +156,42 @@ const Screen = () => {
         <div className="relative w-[1200px] h-[400px] my-36">
           <img
             src="/assets/mobile/hooray.png"
-            className="absolute top-[80px] left-32 z-10 transition-all translate-y-[100vh] opacity-0"
+            className="absolute top-[80px] left-32 z-10 transition-all translate-y-[100vh] opacity-0 w-[176px]"
             ref={ref1}
           />
           <img
             src="/assets/mobile/coollist.png"
-            className="absolute -top-[60px] left-[434px] z-10 transition-all  translate-y-[100vh]"
+            className="absolute -top-[60px] left-[434px] z-10 transition-all  translate-y-[100vh] w-[272px]"
             ref={ref2}
           />
           <img
             src="/assets/mobile/fireavatar.png"
-            className="absolute top-8 left-[724px] z-10 transition-all  translate-y-[100vh]"
+            className="absolute top-8 left-[724px] z-10 transition-all  translate-y-[100vh] w-[176px]"
             ref={ref3}
           />
           <img
             src="/assets/mobile/head.png"
-            className="absolute -top-16 left-[919px] z-10 transition-all  translate-y-[100vh]"
+            className="absolute -top-16 left-[919px] z-10 transition-all  translate-y-[100vh] w-[176px]"
             ref={ref4}
           />
           <img
             src="/assets/mobile/evolve.png"
-            className="absolute top-[330px] left-8 z-10 transition-all translate-y-[100vh] opacity-0"
+            className="absolute top-[330px] left-8 z-10 transition-all translate-y-[100vh] opacity-0 w-[272px]"
             ref={ref5}
           />
           <img
             src="/assets/mobile/avatar.png"
-            className="absolute top-[230px] left-[324px] z-10 transition-all  translate-y-[100vh]"
+            className="absolute top-[230px] left-[324px] z-10 transition-all  translate-y-[100vh] w-[272px]"
             ref={ref6}
           />
           <img
             src="/assets/mobile/sloths.png"
-            className="absolute top-[230px] left-[615px] z-10 transition-all  translate-y-[100vh]"
+            className="absolute top-[230px] left-[615px] z-10 transition-all  translate-y-[100vh] w-[176px]"
             ref={ref7}
           />
           <img
             src="/assets/mobile/mobileimg.png"
-            className="absolute top-[230px] left-[810px] z-10 transition-all  translate-y-[100vh]"
+            className="absolute top-[230px] left-[810px] z-10 transition-all  translate-y-[100vh] w-[272px]"
             ref={ref8}
           />
         </div>
