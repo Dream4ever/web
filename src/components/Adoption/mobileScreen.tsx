@@ -84,7 +84,7 @@ function MobileScreen() {
       <div className="flex flex-col" ref={refMain}>
         <div className="absolute z-[9999] w-full lg:block left-0 top-0">
           <ActionLabel
-            className="-top-[287px] left-[40px]"
+            className="-top-[287px] left-[10vw]"
             innerClassName="w-[90px] h-[90px] md:w-[150px] md:h-[150px]"
             imgUrl1="/assets/home/solana.svg"
             // imgUrl2="/assets/home/solana.svg"
@@ -96,7 +96,7 @@ function MobileScreen() {
             dot5Name="-left-[40px] top-[10px]"
           />
           <ActionLabel
-            className="-top-[190px] left-[120px]"
+            className="-top-[190px] left-[33vw]"
             innerClassName="w-[90px] h-[90px] md:w-[150px] md:h-[150px]"
             imgUrl1="/assets/img/logo.svg"
             // imgUrl2="/assets/home/ts.png"
@@ -104,7 +104,7 @@ function MobileScreen() {
             bHaveBackground={false}
           />
           <ActionLabel
-            className="-top-[160px] right-[25px]"
+            className="-top-[140px] right-[12vw]"
             innerClassName="w-[90px] h-[90px] md:w-[150px] md:h-[150px]"
             imgUrl1="/assets/home/aptos.svg"
             // imgUrl2="/assets/home/aptos.svg"

@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import "./index.css";
 import ActionFade from "../ActionFade";
 import Dot from "./dot";
+import { useRotation } from "./RotationContext";
 interface Props {
   bHaveBackground?: false;
   className: string;
@@ -36,6 +37,7 @@ const ActionLabel: React.FC<Props> = ({
   nDotBackground,
 }) => {
   const actionRef = useRef<any>();
+  const { rotation, setRotation } = useRotation();
 
   const handleMouseMove = (event: any) => {
     const actionSubRefCurrent = actionRef.current;
@@ -48,7 +50,8 @@ const ActionLabel: React.FC<Props> = ({
       const xRotation = (clientY - centerY) / 3;
       const yRotation = (clientX - centerX) / 3;
       mainLabel.style.transition = "none";
-      mainLabel.style.transform = `rotateY(${yRotation}deg) rotateX(${xRotation}deg)`;
+      // mainLabel.style.transform = `rotateY(${yRotation}deg) rotateX(${xRotation}deg)`;
+      setRotation({ x: xRotation, y: yRotation, transition: "none" });
     }
   };
 
@@ -58,8 +61,16 @@ const ActionLabel: React.FC<Props> = ({
     if (mainLabel) {
       mainLabel.style.transition = "all 0.5s";
       mainLabel.style.transform = `rotateY(0deg) rotateX(0deg)`;
+      setRotation({ x: 0, y: 0, transition: "all 0.5s" });
     }
   };
+
+  useEffect(() => {
+    if (actionRef.current) {
+      actionRef.current.style.transition = rotation.transition;
+      actionRef.current.style.transform = `rotateY(${rotation.y}deg) rotateX(${rotation.x}deg)`;
+    }
+  }, [rotation]);
 
   return (
     <div
@@ -69,17 +80,14 @@ const ActionLabel: React.FC<Props> = ({
     >
       <div
         ref={actionRef}
-        className={`relative flex flex-col justify-center items-center w-[60px] h-[60px] md:w-20 md:h-20 gap-1 md:p-2 bg-white/10 ${
-          dotCName ? "border border-[#AAAAAA]" : ""
-        } item rounded-2xl ${
-          bHaveBackground ? "bg-[#FFFFFF12]" : ""
-        } ${innerClassName}`}
+        className={`relative flex flex-col justify-center items-center w-[60px] h-[60px] md:w-20 md:h-20 gap-1 md:p-2 bg-white/10 ${dotCName ? "border border-[#AAAAAA]" : ""
+          } item rounded-2xl ${bHaveBackground ? "bg-[#FFFFFF12]" : ""
+          } ${innerClassName}`}
       >
         {label2 || imgUrl2 ? (
           <ActionFade
-            className={` ${
-              dotCName ? "w-[20px] md:w-[37px]" : "w-[60px] md:w-[65px]"
-            } ${imgClassName}`}
+            className={` ${dotCName ? "w-[20px] md:w-[37px]" : "w-[60px] md:w-[65px]"
+              } ${imgClassName}`}
             comp1={
               <div className="flex flex-col items-center">
                 {label1 && (
