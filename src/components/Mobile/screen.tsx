@@ -149,9 +149,14 @@ const Screen = () => {
           </p>
         </div>
         <div className="flex justify-center mt-8">
-          <button className="h-12 px-4 py-2 text-base font-medium rounded-full w-52 bg-primary-default hover:bg-primary-default/70">
-            Follow @CoolSlothsxyz
-          </button>
+          <a
+            href="https://x.com/CoolSlothsxyz"
+            target="_blank"
+            rel="noreferrer"
+            className="px-4 h-[52px] py-3 text-base text-center font-medium rounded-full w-[200px] bg-primary-default hover:bg-primary-default/70"
+          >
+            <p className="text-base font-medium leading-7">Follow @CoolSlothsxyz</p>
+          </a>
         </div>
         <div className="relative w-[1200px] h-[600px] mt-[92px]">
           <img

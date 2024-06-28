@@ -98,7 +98,7 @@ const Screen = () => {
         </div>
         <div className="flex justify-center mt-8">
           <a
-            href="https://x.com/townesquarexyz"
+            href="https://cred.townesquare.xyz/"
             target="_blank"
             rel="noreferrer"
             className="px-4 py-2 text-base font-medium text-black text-center rounded-full w-48 h-12 bg-[#FFFFFF] hover:bg-[#FFFFFF]/70 flex justify-center items-center"

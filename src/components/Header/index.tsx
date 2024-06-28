@@ -62,8 +62,7 @@ const Header: React.FC<HeaderProps> = ({ clickWaitlist }) => {
           </a>
         </div>
         <button
-          className="hidden md:block px-6 py-2 text-base text-white w-[170px] font-medium bg-[#9264F8] hover:bg-[#9C6EEB] active:bg-[#AAAAAA] rounded-full cursor-pointer"
-          // onClick={clickWaitlist}
+          className="hidden md:block justify-center items-center px-6 py-2 text-base text-white w-[170px] h-12 leading-4 font-medium bg-[#9264F8] hover:bg-[#9C6EEB] active:bg-[#AAAAAA] rounded-full cursor-pointer"
         >
           Download app
           <p className="text-sm font-normal">Coming soon</p>
