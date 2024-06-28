@@ -8,6 +8,7 @@ import MobileScreen from "./mobileScreen";
 import Background from "./background";
 import MobileBackground from "./mobileBackground";
 import Home from "./Home";
+import { useRotation } from "../../RotationContext";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -35,9 +36,21 @@ function Features() {
     ScrollTrigger.refresh();
   }, []);
 
+  const { rotation, setRotation } = useRotation();
+
+  const handleMouseMove = (event: any) => {
+      const { clientX, clientY } = event;
+      const centerX = window.innerWidth/2;
+      const centerY = window.innerHeight/2;
+      const xRotation = (clientY - centerY) / 20;
+      const yRotation = (clientX - centerX) / 20;
+
+      setRotation({ x: xRotation, y: yRotation, transition: "none" });
+  };
+
   return (
     <div
-      className="features-wrapper component md:block lg:block"
+      onMouseMove={handleMouseMove}
       id="home"
     >
       <Controller>

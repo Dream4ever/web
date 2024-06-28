@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import "./index.css";
 import ActionFade from "../ActionFade";
 import Dot from "./dot";
-import { useRotation } from "./RotationContext";
+import { useRotation } from "../../../../RotationContext";
 interface Props {
   bHaveBackground?: false;
   className: string;
@@ -39,32 +39,6 @@ const ActionLabel: React.FC<Props> = ({
   const actionRef = useRef<any>();
   const { rotation, setRotation } = useRotation();
 
-  const handleMouseMove = (event: any) => {
-    const actionSubRefCurrent = actionRef.current;
-    const mainLabel = actionRef.current;
-    if (mainLabel) {
-      const labelPosition = actionSubRefCurrent.getBoundingClientRect();
-      const { clientX, clientY } = event;
-      const centerX = labelPosition.left + labelPosition.width / 2;
-      const centerY = labelPosition.top + labelPosition.height / 2;
-      const xRotation = (clientY - centerY) / 3;
-      const yRotation = (clientX - centerX) / 3;
-      mainLabel.style.transition = "none";
-      // mainLabel.style.transform = `rotateY(${yRotation}deg) rotateX(${xRotation}deg)`;
-      setRotation({ x: xRotation, y: yRotation, transition: "none" });
-    }
-  };
-
-  const handleMouseLeave = () => {
-    const mainLabel = actionRef.current;
-
-    if (mainLabel) {
-      mainLabel.style.transition = "all 0.5s";
-      mainLabel.style.transform = `rotateY(0deg) rotateX(0deg)`;
-      setRotation({ x: 0, y: 0, transition: "all 0.5s" });
-    }
-  };
-
   useEffect(() => {
     if (actionRef.current) {
       actionRef.current.style.transition = rotation.transition;
@@ -75,8 +49,6 @@ const ActionLabel: React.FC<Props> = ({
   return (
     <div
       className={`absolute w-[100px] h-[100px] md:w-[250px] md:h-[250px] flex justify-center items-center transition-all ${className}`}
-      onMouseMove={(e) => handleMouseMove(e)}
-      onMouseLeave={(e) => handleMouseLeave()}
     >
       <div
         ref={actionRef}
