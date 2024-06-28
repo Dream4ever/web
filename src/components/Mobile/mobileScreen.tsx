@@ -132,12 +132,21 @@ const MobileScreen = () => {
           <p className="text-lg font-semibold bold text">
             COMPOSABLE NFT COLLECTION
           </p>
-          <p className="pt-4 text-4xl font-bold text-center">
-            Cool Sloths mobile mint
+          <p className="pt-4 text-4xl font-bold text-center leading-tight">
+            Cool Sloths <br /> mobile mint
           </p>
         </div>
-
-        <div className="relative w-full h-[550px] my-[3vh]">
+        <div className="flex justify-center my-10">
+          <a
+            href="https://x.com/CoolSlothsxyz"
+            target="_blank"
+            rel="noreferrer"
+            className="px-4 h-[52px] py-3 text-base text-center font-medium rounded-full w-[200px] bg-primary-default hover:bg-primary-default/70"
+          >
+            <p className="text-base font-medium leading-7">Follow @CoolSlothsxyz</p>
+          </a>
+        </div>
+        <div className="relative w-full h-[550px] mb-[3vh]">
           <img
             src="/assets/mobile/hooray.png"
             className="absolute top-[80px] left-10 z-10 w-[90px] transition-all translate-y-[100vh] opacity-0"
@@ -184,15 +193,9 @@ const MobileScreen = () => {
           <p className="text-[18px] font-medium">
             <span className="font-extrabold">TowneSquare</span> is the home of the 1st<br />Web3 mobile mint experience,<br />
             powered by the TowneSquare Mini-<br />App module called Tile
-
           </p>
         </div>
-        <div className="flex justify-center mt-12">
-          <button className="px-3 py-3 text-base font-medium rounded-full w-52 bg-[#9264F8]">
-            Check out Cool Sloths
-          </button>
-        </div>
-      </div> 
+      </div>
     </>
   );
 };

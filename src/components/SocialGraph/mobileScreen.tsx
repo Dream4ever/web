@@ -20,9 +20,8 @@ const MobileScreen = () => {
         if (ref1.current != null && (ref1.current as any).style != null) {
           let node = ref1.current as any;
           node.style.opacity = calcOpacity(self.progress);
-          node.style.transform = `translate(0px, calc(${
-            100 * (1 - self.progress)
-          }vh))`;
+          node.style.transform = `translate(0px, calc(${100 * (1 - self.progress)
+            }vh))`;
         }
       },
     });
@@ -34,9 +33,8 @@ const MobileScreen = () => {
         if (ref2.current != null && (ref2.current as any).style != null) {
           let node = ref2.current as any;
           node.style.opacity = calcOpacity(self.progress);
-          node.style.transform = `translate(0px, calc(${
-            100 * (1 - self.progress)
-          }vh))`;
+          node.style.transform = `translate(0px, calc(${100 * (1 - self.progress)
+            }vh))`;
         }
       },
     });
@@ -48,9 +46,8 @@ const MobileScreen = () => {
         if (ref3.current != null && (ref3.current as any).style != null) {
           let node = ref3.current as any;
           node.style.opacity = calcOpacity(self.progress);
-          node.style.transform = `translate(0px, calc(${
-            100 * (1 - self.progress)
-          }vh))`;
+          node.style.transform = `translate(0px, calc(${100 * (1 - self.progress)
+            }vh))`;
         }
       },
     });
@@ -62,9 +59,8 @@ const MobileScreen = () => {
         if (ref4.current != null && (ref4.current as any).style != null) {
           let node = ref4.current as any;
           node.style.opacity = calcOpacity(self.progress);
-          node.style.transform = `translate(0px, calc(${
-            100 * (1 - self.progress)
-          }vh))`;
+          node.style.transform = `translate(0px, calc(${100 * (1 - self.progress)
+            }vh))`;
         }
       },
     });
@@ -76,13 +72,23 @@ const MobileScreen = () => {
       <div className="flex flex-col items-center justify-center">
         <div className="flex flex-col items-center justify-center">
           <p className="text-lg font-semibold pt-14 bold text">Social graph</p>
-          <p className="pt-4 text-4xl font-bold text-center">
+          <p className="pt-4 text-4xl font-bold text-center leading-tight">
             CRED Social graph <br />
             &profile
           </p>
         </div>
       </div>
-      <div className="relative w-full h-[1190px] my-[2vh]">
+      <div className="flex justify-center my-10">
+        <a
+          href="https://cred.townesquare.xyz/"
+          target="_blank"
+          rel="noreferrer"
+          className="px-4 py-2 text-base font-medium text-black text-center rounded-full w-48 h-12 bg-[#FFFFFF] hover:bg-[#FFFFFF]/70 flex justify-center items-center"
+        >
+          Register on CRED
+        </a>
+      </div>
+      <div className="relative w-full h-[1190px]">
         <div
           className="absolute top-0 w-[325px] left-2 z-10 transition-all translate-y-[100vh] opacity-0"
           ref={ref1}
@@ -160,11 +166,6 @@ const MobileScreen = () => {
             DeFi, NFT, gaming, payments, etc.
           </p>
         </div>
-      </div>
-      <div className="flex justify-center mt-[60px]">
-        <button className="px-4 py-3 text-base font-medium text-black rounded-full w-52 bg-[#FFFFFF]">
-          Register on CRED
-        </button>
       </div>
     </div>
   );
