@@ -2,47 +2,47 @@ import { Link } from "react-router-dom";
 
 const Footer = (props: any) => {
   return (
-    <footer className="w-full relative z-50 pt-8 md:h-[279px] flex flex-col justify-between pb-8 bg-[#211738]">
+    <footer className="w-full relative z-50 pt-8 md:h-[207px] flex flex-col justify-between pb-8 bg-[#211738]">
       <div className="grid grid-cols-2 max-md:grid-cols-1">
-        <div className="grid grid-cols-6 pb-[70px] max-md:grid-cols-1 max-md:px-12">
+        <div className="grid grid-cols-6 pb-[70px]  max-md:grid-cols-1 max-md:px-12">
           <div></div>
           <div>
-            <div className="pb-4 text-lg font-semibold text-white font-Outfit">
+            <div className="text-sm font-semibold text-white font-Outfit">
               Follow us
             </div>
-            <div className="flex">
+            <div className="flex gap-[30px] mt-2">
               <a
-                className="items-center justify-center pr-3 mt-1 mr-3"
+                className="items-center justify-center"
                 href="https://twitter.com/TowneSquarexyz"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src="/assets/twitter.svg" alt="twitter_image" />
+                <img src="/assets/twitter.png" alt="twitter_image" className="w-6"/>
               </a>
               <a
-                className="items-center justify-center pr-3 mt-1 mr-3"
+                className="items-center justify-center"
                 href="https://discord.gg/yMRmqFzrDW"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src="/assets/discord.svg" alt="" />
+                <img src="/assets/discord.png" alt="" />
               </a>
               <a
-                className="items-center justify-center pr-3 mt-1 mr-3"
+                className="items-center justify-center"
                 href="https://github.com/TowneSquare"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src="/assets/github.svg" alt="" />
+                <img src="/assets/github.png" alt="" />
               </a>
             </div>
           </div>
         </div>
         <div className="grid grid-cols-4 max-md:grid-cols-2 max-md:px-12 ">
           <div className="block max-md:hidden"></div>
-          <div className="flex flex-col space-y-3 mb-12">
-            <div className="text-lg font-bold text-white font-Outfit">Docs</div>
-            <div className="text-[#CCCCCC] text-lg font-Outfit flex flex-col space-y-2">
+          <div className="flex flex-col mb-12 space-y-3">
+            <div className="text-sm font-bold text-white font-Outfit">Docs</div>
+            <div className="text-[#CCCCCC] text-sm font-Outfit flex flex-col space-y-2">
               <a
                 href="https://github.com/TowneSquare"
                 target="_blank"
@@ -60,19 +60,19 @@ const Footer = (props: any) => {
             </div>
           </div>
           <div className="flex flex-col space-y-3">
-            <div className="text-lg font-bold text-white font-Outfit">
+            <div className="text-sm font-bold text-white font-Outfit">
               Legal
             </div>
-            <div className="text-[#CCCCCC] text-lg font-Outfit flex flex-col space-y-2">
+            <div className="text-[#CCCCCC] text-sm font-Outfit flex flex-col space-y-2">
               <Link to="/TermsOfService">Terms of Service</Link>
               <Link to="/PrivacyPolicy">Privacy Policy</Link>
             </div>
           </div>
-          <div className="flex flex-col space-y-3">
-            <div className="text-lg font-bold text-white font-Outfit">
+          <div className="flex flex-col space-y-2">
+            <div className="text-sm font-bold text-white font-Outfit">
               Community
             </div>
-            <div className="text-[#CCCCCC] text-lg font-Outfit flex flex-col space-y-2">
+            <div className="text-[#CCCCCC] text-sm font-Outfit flex flex-col space-y-2">
               <a
                 href="https://twitter.com/TowneSquarexyz"
                 target="_blank"
@@ -100,7 +100,7 @@ const Footer = (props: any) => {
       <div className="hidden md:contents lg:contents">
         <div className="grid grid-cols-12 max-md:grid-cols-1 max-md:px-12 max-md:py-12">
           <div></div>
-          <div className="text-[#CCCCCC] text-lg font-Outfit col-span-11">
+          <div className="text-[#CCCCCC] text-sm font-Outfit col-span-11">
             Copyright © {new Date().getFullYear()} TowneSquare. All rights
             reserved.
           </div>
