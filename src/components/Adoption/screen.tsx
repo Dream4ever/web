@@ -119,7 +119,7 @@ function Screen1() {
             nDotBackground={0}
           />
           <ActionLabel
-            className="top-[63px] left-[755px]"
+            className="top-[50px] left-[740px]"
             innerClassName="w-[90px] h-[90px] md:w-[150px] md:h-[150px]"
             imgUrl1="/assets/img/logo.svg"
             // imgUrl2="/images/home/icons/ts.png"
@@ -127,7 +127,7 @@ function Screen1() {
             bHaveBackground={false}
           />
           <ActionLabel
-            className="top-[123px] left-[925px]"
+            className="top-[110px] left-[920px]"
             innerClassName="w-[90px] h-[90px] md:w-[150px] md:h-[150px]"
             imgUrl1="/assets/home/aptos.svg"
             // imgUrl2="/images/aptos.png"
@@ -142,13 +142,7 @@ function Screen1() {
         </div>
       </div>
 
-      <div className="flex justify-center mt-8">
-        <button className="px-2 py-2 text-base font-medium rounded-full w-52 bg-primary-default hover:bg-primary-default/70">
-          Download TowneSquare
-          <p className="text-sm">Coming soon</p>
-        </button>
-      </div>
-      <div className="relative w-[1200px] h-[465px] mt-8">
+      <div className="relative w-[1200px] h-[465px] mt-[116px]">
         <div
           className="absolute top-0 left-0 z-10 transition-all translate-y-[100vh] opacity-0"
           ref={ref1}
