@@ -90,22 +90,22 @@ const ActionLabel: React.FC<Props> = ({
               } ${imgClassName}`}
             comp1={
               <div className="flex flex-col items-center">
-                {label1 && (
-                  <p className="text-[14px] md:text-[17px]">{label1}</p>
-                )}
                 <div className="flex justify-center">
                   <img src={imgUrl1} className="w-full" />
                 </div>
+                {label1 && (
+                  <p className="text-[14px] md:text-[17px]">{label1}</p>
+                )}
               </div>
             }
             comp2={
               <div className="flex flex-col items-center">
-                {label2 && (
-                  <p className="text-[14px] md:text-[17px]">{label2}</p>
-                )}
                 <div className="flex justify-center">
                   <img src={imgUrl2} className="w-full" />
                 </div>
+                {label2 && (
+                  <p className="text-[14px] md:text-[17px]">{label2}</p>
+                )}
               </div>
             }
           />
