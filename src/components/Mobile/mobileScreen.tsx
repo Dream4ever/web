@@ -126,13 +126,13 @@ const MobileScreen = () => {
   return (
     <>
       <div
-        className="flex flex-col mt-[100px] mb-[300px]"
+        className="flex flex-col mb-[150px]"
       >
         <div className="flex flex-col items-center justify-center">
           <p className="text-lg font-semibold bold text">
             COMPOSABLE NFT COLLECTION
           </p>
-          <p className="pt-4 text-4xl font-bold text-center leading-tight">
+          <p className="pt-4 text-4xl font-bold leading-tight text-center">
             Cool Sloths <br /> mobile mint
           </p>
         </div>
