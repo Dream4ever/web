@@ -72,7 +72,7 @@ const MobileScreen = () => {
       <div className="flex flex-col items-center justify-center">
         <div className="flex flex-col items-center justify-center">
           <p className="text-lg font-semibold pt-14 bold text">Social graph</p>
-          <p className="pt-4 text-4xl font-bold text-center leading-tight">
+          <p className="pt-4 text-4xl font-bold leading-tight text-center">
             CRED Social graph <br />
             &profile
           </p>

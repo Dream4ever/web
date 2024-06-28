@@ -34,7 +34,7 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
   return (
     <div
       ref={homeRef}
-      className="relative flex items-end justify-center w-full md:h-[50vh] opacity-100"
+      className="relative flex items-end justify-center w-full h-[60vh] opacity-100"
     >
       <div className="absolute top-0 left-0 z-0 w-full">
         <img src="/assets/home/banner.png" className="absolute top-0 right-0 w-[160px] md:w-auto" />

@@ -44,7 +44,7 @@ const Header: React.FC<HeaderProps> = ({ clickWaitlist }) => {
             target="_blank"
             rel="noreferrer"
           >
-            <img src="/assets/twitter.svg" alt="twitter_image" />
+            <img src="/assets/twitter.png" alt="twitter_image" className="w-8" />
           </a>
         </div>
         <div className="w-6 h-6 md:w-8 md:h-8">
