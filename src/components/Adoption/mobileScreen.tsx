@@ -138,7 +138,7 @@ function MobileScreen() {
           <div className="absolute top-0 left-0 z-10 transition-all translate-y-[100vh] opacity-0"
             ref={ref1}>
             <img
-              src="/assets/adoption/mobile1.png"
+              src="/assets/adoption/mobile1.png" className="w-[340px]"
             />
             <div className="absolute bottom-6 left-6">
               <p className="text-[#FFF] text-[28px] font-semibold">Network effect</p>
@@ -148,7 +148,7 @@ function MobileScreen() {
           <div className="absolute top-[380px] left-[0px] z-10 transition-all  translate-y-[100vh]"
             ref={ref2}>
             <img
-              src="/assets/adoption/mobile2.png"
+              src="/assets/adoption/mobile2.png" className="w-[340px]"
             />
             <div className="absolute left-6 top-14">
               <p className="text-[#FFF] text-[28px] font-semibold">Consumer-grade <br />User experience</p>
@@ -159,7 +159,7 @@ function MobileScreen() {
           <div className="absolute top-[615px] left-[0px] z-10 transition-all  translate-y-[100vh]"
             ref={ref3}>
             <img
-              src="/assets/adoption/mobile3.png"
+              src="/assets/adoption/mobile3.png" className="w-[166px]"
             />
             <div className="absolute left-6 top-20">
               <p className="text-[#FFF] text-[28px] font-semibold">Developer <br /> - friendly</p>
@@ -169,7 +169,7 @@ function MobileScreen() {
           <div className="absolute top-[615px] left-[175px] z-10 transition-all  translate-y-[100vh]"
             ref={ref4}>
             <img
-              src="/assets/adoption/mobile4.png"
+              src="/assets/adoption/mobile4.png" className="w-[166px]"
             />
             <div className="absolute left-6 top-[102px]">
               <p className="text-[#FFF] text-[28px] font-semibold">Low fees</p>
