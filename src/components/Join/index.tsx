@@ -40,7 +40,7 @@ function Join() {
           <img
             src="/assets/join/back.png"
             alt=""
-            className="absolute w-100vw"
+            className="absolute w-[336px]"
           />
           <div className="z-20 flex flex-col items-center justify-center text-center py-14">
             <p className="text-[#FFF] text-[40px] font-semibold">
