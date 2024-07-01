@@ -126,9 +126,9 @@ const MobileScreen = () => {
   return (
     <>
       <div
-        className="flex flex-col mb-[150px]"
+        className="flex flex-col mb-[90px]"
       >
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center mt-20">
           <p className="text-lg font-semibold bold text">
             COMPOSABLE NFT COLLECTION
           </p>

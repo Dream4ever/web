@@ -17,18 +17,24 @@ function SocialGraph() {
 
   return (
     <div className="" id="socialgraph">
-      <Controller>
-        <Scene duration={1000} pin offset={`${offset}px`}>
-          <div className="relative flex justify-center w-full">
-            <div className="hidden md:block">
+      <div className="hidden md:block">
+        <Controller>
+          <Scene duration={1000} pin offset={`${offset}px`}>
+            <div className="relative flex justify-center w-full">
               <Screen />
             </div>
-            <div className="block md:hidden">
+          </Scene>
+        </Controller>
+      </div>
+      <div className="block md:hidden">
+        <Controller>
+          <Scene duration={700} pin offset={`${offset}px`}>
+            <div className="relative flex justify-center w-full">
               <MobileScreen />
             </div>
-          </div>
-        </Scene>
-      </Controller>
+          </Scene>
+        </Controller>
+      </div>
     </div>
   );
 }

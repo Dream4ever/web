@@ -2,9 +2,9 @@ function Join() {
   return (
     <div
       id="join"
-      className="mt-[100px] mb-[100px] z-20 relative w-full flex justify-center"
+      className="relative z-20 flex justify-center w-full "
     >
-      <div className="hidden md:block">
+      <div className="mt-[100px] mb-[100px] hidden md:block">
         <div className="relative flex rounded-2xl">
           <img src="/assets/join/join.png" alt="" className="w-[944px]" />
           <div className="absolute z-20 flex flex-col pl-8 pt-[124px]">
@@ -35,7 +35,7 @@ function Join() {
           </div>
         </div>
       </div>
-      <div className="z-30 block md:hidden">
+      <div className="mt-[40px] mb-[40px] z-30 block md:hidden">
         <div className="flex w-[338px] h-[416px] border rounded-2xl">
           <img
             src="/assets/join/back.png"

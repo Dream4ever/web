@@ -14,22 +14,25 @@ function Adoption() {
   }, []);
 
   return (
-    <div
-      className=""
-      id="adoption"
-    >
-      <Controller>
-        <Scene duration={1000} pin offset={`${offset}px`}>
-          <div className="flex items-center justify-center">
-            <div className="hidden md:contents lg:contents">
+    <div className="" id="adoption">
+      <div className="hidden md:block">
+        <Controller>
+          <Scene duration={1000} pin offset={`${offset}px`}>
+            <div className="flex items-center justify-center">
               <Screen />
             </div>
-            <div className="contents md:hidden lg:hidden">
+          </Scene>
+        </Controller>
+      </div>
+      <div className="block md:hidden">
+        <Controller>
+          <Scene duration={700} pin offset={`${offset}px`}>
+            <div className="flex items-center justify-center">
               <MobileScreen />
             </div>
-          </div>
-        </Scene>
-      </Controller>
+          </Scene>
+        </Controller>
+      </div>
     </div>
   );
 }
