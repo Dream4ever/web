@@ -43,10 +43,10 @@ function Join() {
             className="absolute w-[336px]"
           />
           <div className="z-20 flex flex-col items-center justify-center text-center py-14">
-            <p className="text-[#FFF] text-[40px] font-semibold">
+            <p className="text-[#FFF] text-[40px] font-semibold leading-[120%]">
               Join the Web3 revolution
             </p>
-            <p className="text-[#FFF] text-[23px] font-medium">
+            <p className="text-[#FFF] text-[23px] pt-2 font-medium">
               Download TowneSquare now!
             </p>
             <div className="py-10">
