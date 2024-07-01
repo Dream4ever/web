@@ -20,8 +20,8 @@ function MobileScreen() {
       onUpdate: (self) => {
         if (refMain.current != null && (refMain.current as any).style != null) {
           let node = refMain.current as any;
-          const off = window.innerWidth > 768 ? 0 : 40;
-          node.style.transform = `translate(0, calc(${-off * self.progress}px))`;
+          // const off = window.innerWidth > 768 ? 0 : 40;
+          // node.style.transform = `translate(0, calc(${-off * self.progress}px))`;
         }
       },
     });
@@ -86,10 +86,10 @@ function MobileScreen() {
 
   return (
     <>
-      <div className="flex flex-col -mt-[250px] mb-[80px] relative" ref={refMain}>
-        <div className="absolute z-[9999] w-full lg:block left-0 top-0">
+      <div className="flex flex-col items-center -mt-[570px] mb-[80px] relative w-full" ref={refMain}>
+        <div className="relative z-[9999] w-full h-[274px] overflow-x-hidden">
           <ActionLabel
-            className="-top-[287px] left-[10vw]"
+            className="0 left-[10vw]"
             innerClassName="w-[90px] h-[90px] md:w-[150px] md:h-[150px]"
             imgUrl1="/assets/home/solana.svg"
             // imgUrl2="/assets/home/solana.svg"
@@ -101,7 +101,7 @@ function MobileScreen() {
             dot5Name="-left-[40px] top-[10px]"
           />
           <ActionLabel
-            className="-top-[190px] left-[33vw]"
+            className="top-[97px] left-[33vw]"
             innerClassName="w-[90px] h-[90px] md:w-[150px] md:h-[150px]"
             imgUrl1="/assets/img/logo.svg"
             // imgUrl2="/assets/home/ts.png"
@@ -109,7 +109,7 @@ function MobileScreen() {
             bHaveBackground={false}
           />
           <ActionLabel
-            className="-top-[140px] right-[0vw]"
+            className="top-[147px] right-[0vw]"
             innerClassName="w-[90px] h-[90px] md:w-[150px] md:h-[150px]"
             imgUrl1="/assets/home/aptos.svg"
             // imgUrl2="/assets/home/aptos.svg"
@@ -140,7 +140,7 @@ function MobileScreen() {
           </p>
         </div>
 
-        <div className="relative w-full min-h-[870px] mt-20">
+        <div className="relative w-[340px] min-h-[870px] mt-20">
           <div
             className="absolute top-0 left-0 z-10 transition-all translate-y-[100vh] opacity-0"
             ref={ref1}

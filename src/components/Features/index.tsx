@@ -30,7 +30,9 @@ function Features() {
         if (ref.current != null && (ref.current as any).style != null) {
           let node = ref.current as any;
           const off = window.innerWidth > 768 ? 720 : 680;
-          node.style.transform = `translate(0, calc(-${off * self.progress}px))`;
+          node.style.transform = `translate(0, calc(-${
+            off * self.progress
+          }px))`;
         }
       },
     });
@@ -39,25 +41,30 @@ function Features() {
 
   const { rotation, setRotation } = useRotation();
 
+  useEffect(() => {
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, []);
+  
   const handleMouseMove = (event: any) => {
-      const { clientX, clientY } = event;
-      const centerX = window.innerWidth/2;
-      const centerY = window.innerHeight/2;
-      const xRotation = (clientY - centerY) / 20;
-      const yRotation = (clientX - centerX) / 20;
+    const { clientX, clientY } = event;
+    const centerX = window.innerWidth / 2;
+    const centerY = window.innerHeight / 2;
+    const xRotation = (clientY - centerY) / 20;
+    const yRotation = (clientX - centerX) / 20;
 
-      setRotation({ x: xRotation, y: yRotation, transition: "none" });
+    setRotation({ x: xRotation, y: yRotation, transition: "none" });
   };
 
   return (
     <div
-      onMouseMove={handleMouseMove}
+      // onMouseMove={handleMouseMove}
       id="home"
     >
       <Controller>
         <Scene duration={2500} pin offset={`${offset}px`}>
           <div className="relative w-full">
-            {window.innerWidth < 768 ? (<MobileBackground />) : (<Background />)}
+            {window.innerWidth < 768 ? <MobileBackground /> : <Background />}
             <div ref={ref}>
               <Home />
               <div className="hidden md:block">
