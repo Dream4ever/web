@@ -121,12 +121,12 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
         <img
           src="/assets/home/middle_web.svg"
           alt="background"
-          className="absolute hidden md:block lg:block md:w-full md:left-0 md:bottom-0"
+          className="absolute hidden md:block md:w-full md:left-0 md:bottom-0"
         />
         <img
           src="/assets/home/top_web.svg"
           alt="background"
-          className="absolute hidden top-0 right-0 h-[248px] w-[408px] md:block lg:block"
+          className="absolute hidden top-0 right-0 h-[248px] w-[408px] md:block"
         />
       </div>
     </div>

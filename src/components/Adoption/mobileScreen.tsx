@@ -20,7 +20,8 @@ function MobileScreen() {
       onUpdate: (self) => {
         if (refMain.current != null && (refMain.current as any).style != null) {
           let node = refMain.current as any;
-          // node.style.transform = `translate(0, calc(${-269 * self.progress}px))`;
+          const off = window.innerWidth > 768 ? 0 : 40;
+          node.style.transform = `translate(0, calc(${-off * self.progress}px))`;
         }
       },
     });
