@@ -55,9 +55,26 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
           className="absolute hidden top-0 right-0 h-[248px] w-[408px] md:block lg:block"
         />
       </div>
-      <div className="absolute z-[9999] w-full min-h-[900px] lg:block left-0 top-0">
+      <div className="absolute z-[9999] w-full left-0 bottom-0">
         <ActionLabel
-          className="top-[33vh] -left-[2vh] md:top-[33vh] md:left-[18vw] lg:top-[33vh] lg:left-[18vw]"
+          className="bottom-[320px] left-[2vw] md:bottom-[320px] md:left-[28vw]"
+          label1="#MOON"
+          label2="#HODL"
+          dotSName="-top-[2vh] left-[10vw] md:-top-[4vh] md:left-[4vw] lg:-top-[1vh] lg:left-[7vw]"
+          dotCName="-top-[2vh] left-[0vw] md:-top-[10vh] md:left-[2vw] lg:-top-[2vh] lg:left-[5vw]"
+        />
+        <ActionLabel
+          className="bottom-[290px] right-[2vw] md:bottom-[240px] md:right-[28vw]"
+          label1="$2,842"
+          label2="$1,185"
+          imgUrl1="/assets/home/heart.svg"
+          imgUrl2="/assets/home/budget.svg"
+          imgClassName="w-[29px] md:w-[33px]"
+          dotSName="-top-[3vh] right-[15vw] md:-top-[13vh] md:right-[3vw] lg:-top-[5vh] lg:right-[3vw]"
+          dotCName="-top-[2vh] right-[3vw] md:-top-[8vh] md:right-[5vw] lg:-top-[3vh] lg:right-[5vw]"
+        />
+        <ActionLabel
+          className="bottom-[50px] -left-[5vw] md:bottom-[30px] md:left-[15vw]"
           label1="942"
           label2="1.325"
           imgUrl1={"/assets/home/swap.svg"}
@@ -66,25 +83,10 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
           dotCName="bottom-[10vh] left-[0vw] md:bottom-[5vh] md:left-[4vw] lg:bottom-[5vh] lg:left-[6vw]"
         />
         <ActionLabel
-          className="top-[5.5vh] left-[13vw] md:-top-[4vh] md:left-[28vw]"
-          label1="#MOON"
-          label2="#HODL"
-          dotSName="-top-[2vh] left-[10vw] md:-top-[4vh] md:left-[4vw] lg:-top-[1vh] lg:left-[7vw]"
-          dotCName="-top-[2vh] left-[0vw] md:-top-[10vh] md:left-[2vw] lg:-top-[2vh] lg:left-[5vw]"
-        />
-        <ActionLabel
-          className="top-[5.5vh] right-[10vw] md:-top-[3vh] md:right-[28vw]"
-          label1="$2,842"
-          label2="$1,185"
-          imgUrl1="/assets/home/heart.svg"
-          imgUrl2="/assets/home/budget.svg"
-          dotSName="-top-[3vh] right-[15vw] md:-top-[13vh] md:right-[3vw] lg:-top-[5vh] lg:right-[3vw]"
-          dotCName="-top-[2vh] right-[3vw] md:-top-[8vh] md:right-[5vw] lg:-top-[3vh] lg:right-[5vw]"
-        />
-        <ActionLabel
-          className="top-[27vh] left-[72vw] md:top-[36vh] md:right-[20vw]"
+          className="bottom-[20px] -right-[4vw] md:bottom-[0px] md:right-[20vw]"
           imgUrl1="/assets/home/aptos.svg"
           imgUrl2="/assets/home/solana.svg"
+          imgClassName="w-[29px] md:w-[37px]"
           dotSName="hidden"
           dotCName="top-[7vh] -right-[5vw] md:top-[3vh] md:right-[5vw] md:top-[8vh] md:right-[6vw]"
         />

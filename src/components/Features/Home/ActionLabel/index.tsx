@@ -63,7 +63,7 @@ const ActionLabel: React.FC<Props> = ({
             comp1={
               <div className="flex flex-col items-center">
                 <div className="flex justify-center">
-                  <img src={imgUrl1} className="w-full" />
+                  <img src={imgUrl1} className={`w-full ${imgClassName}`} />
                 </div>
                 {label1 && (
                   <p className="text-[14px] md:text-[17px]">{label1}</p>
@@ -73,7 +73,7 @@ const ActionLabel: React.FC<Props> = ({
             comp2={
               <div className="flex flex-col items-center">
                 <div className="flex justify-center">
-                  <img src={imgUrl2} className="w-full" />
+                  <img src={imgUrl2} className={`w-full ${imgClassName}`} />
                 </div>
                 {label2 && (
                   <p className="text-[14px] md:text-[17px]">{label2}</p>
