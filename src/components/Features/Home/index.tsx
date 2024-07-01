@@ -44,35 +44,35 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
           />
         </div>
 
-        <div className="absolute z-[9999] w-full left-0 bottom-0">
+        <div className="absolute z-[0] w-full left-0 bottom-0">
           <ActionLabel
-            className="bottom-[320px] left-[2vw] md:bottom-[320px] md:left-[28vw]"
+            className="bottom-[320px] left-[1vw] md:bottom-[320px] md:left-[28vw]"
             label1="#MOON"
             label2="#HODL"
-            dotSName="-top-[2vh] left-[10vw] md:-top-[4vh] md:left-[4vw] lg:-top-[1vh] lg:left-[7vw]"
-            dotCName="-top-[2vh] left-[0vw] md:-top-[10vh] md:left-[2vw] lg:-top-[2vh] lg:left-[5vw]"
+            // dotSName="-top-[2vh] left-[10vw] md:-top-[4vh] md:left-[4vw] lg:-top-[1vh] lg:left-[7vw]"
+            dotCName="-top-[2vh] -left-[50vw] md:-top-[10vh] md:left-[2vw] lg:-top-[2vh] lg:left-[5vw]"
           />
           <ActionLabel
-            className="bottom-[290px] right-[2vw] md:bottom-[240px] md:right-[28vw]"
+            className="bottom-[290px] -right-[5vw] md:bottom-[240px] md:right-[28vw]"
             label1="$2,842"
             label2="$1,185"
             imgUrl1="/assets/home/heart.svg"
             imgUrl2="/assets/home/budget.svg"
             imgClassName="w-[29px] md:w-[33px]"
-            dotSName="-top-[3vh] right-[15vw] md:-top-[13vh] md:right-[3vw] lg:-top-[5vh] lg:right-[3vw]"
-            dotCName="-top-[2vh] right-[3vw] md:-top-[8vh] md:right-[5vw] lg:-top-[3vh] lg:right-[5vw]"
+            dotSName="-top-[50px] right-[115px] md:-top-[13vh] md:right-[3vw] lg:-top-[5vh] lg:right-[3vw]"
+            dotCName="-top-[80px] right-[95px] md:-top-[8vh] md:right-[5vw] lg:-top-[3vh] lg:right-[5vw]"
           />
           <ActionLabel
-            className="bottom-[50px] -left-[5vw] md:bottom-[30px] md:left-[15vw]"
+            className="bottom-[50px] -left-[40px] md:bottom-[30px] md:left-[15vw]"
             label1="942"
             label2="1.325"
             imgUrl1={"/assets/home/swap.svg"}
             imgUrl2={"/assets/home/comment.svg"}
-            dotSName="bottom-[8vh] left-[5vw] md:bottom-[11vh] md:left-[3vw] lg:bottom-[11vh] lg:left-[4vw]"
-            dotCName="bottom-[10vh] left-[0vw] md:bottom-[5vh] md:left-[4vw] lg:bottom-[5vh] lg:left-[6vw]"
+            dotSName="bottom-[127px] left-[40px] md:bottom-[11vh] md:left-[3vw] lg:bottom-[11vh] lg:left-[4vw]"
+            dotCName="bottom-[85px] left-[60px] md:bottom-[5vh] md:left-[4vw] lg:bottom-[5vh] lg:left-[6vw]"
           />
           <ActionLabel
-            className="bottom-[20px] -right-[4vw] md:bottom-[0px] md:right-[20vw]"
+            className="bottom-[10px] -right-[45px] md:bottom-[0px] md:right-[20vw]"
             imgUrl1="/assets/home/aptos.svg"
             imgUrl2="/assets/home/solana.svg"
             imgClassName="w-[29px] md:w-[37px]"

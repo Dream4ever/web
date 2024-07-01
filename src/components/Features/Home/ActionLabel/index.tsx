@@ -52,7 +52,7 @@ const ActionLabel: React.FC<Props> = ({
     >
       <div
         ref={actionRef}
-        className={`relative flex flex-col justify-center items-center w-[60px] h-[60px] md:w-20 md:h-20 gap-1 md:p-2 bg-white/10 ${dotCName ? "border border-[#AAAAAA]" : ""
+        className={`relative flex flex-col justify-center items-center w-[72px] h-[72px] md:w-20 md:h-20 gap-1 md:p-2 bg-white/10 ${dotCName ? "border border-[#AAAAAA]" : ""
           } item rounded-2xl ${bHaveBackground ? "bg-[#FFFFFF12]" : ""
           } ${innerClassName}`}
       >
