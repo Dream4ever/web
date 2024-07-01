@@ -17,7 +17,7 @@ const Footer = (props: any) => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src="/assets/twitter.svg" alt="twitter_image" className="w-6"/>
+                <img src="/assets/twitter.svg" alt="twitter_image" className="h-[21px]"/>
               </a>
               <a
                 className="items-center justify-center"
@@ -25,7 +25,7 @@ const Footer = (props: any) => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src="/assets/discord.svg" alt="" />
+                <img src="/assets/discord.svg" alt=""  className="h-[21px]"/>
               </a>
               <a
                 className="items-center justify-center"
@@ -33,7 +33,7 @@ const Footer = (props: any) => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src="/assets/github.svg" alt="" />
+                <img src="/assets/github.svg" alt=""  className="h-[21px]"/>
               </a>
             </div>
           </div>
