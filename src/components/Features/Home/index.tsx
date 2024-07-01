@@ -34,10 +34,14 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
   return (
     <div
       ref={homeRef}
-      className="relative flex items-end justify-center w-full h-[60vh] opacity-100"
+      className="relative flex items-end justify-center w-full h-[50vh] opacity-100"
+      style={{ height: `calc(50vh + 170px)` }}
     >
       <div className="absolute top-0 left-0 z-0 w-full">
-        <img src="/assets/home/banner.png" className="absolute top-0 right-0 w-[160px] md:w-auto" />
+        <img
+          src="/assets/home/banner.png"
+          className="absolute top-0 right-0 w-[160px] md:w-auto"
+        />
       </div>
       <div className="absolute top-0 left-0 z-0 hidden w-full h-screen lg:block md:block">
         <img
@@ -99,7 +103,7 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
       </div>
 
       <div className="z-10 flex flex-col items-center text-center md:pr-10 lg:pr-0">
-        <span className="text-[36px] md:text-[48px] lg:text-[56px] font-bold mt-[115px]">
+        <span className="text-[36px] md:text-[48px] lg:text-[56px] font-bold">
           The Web 3 social network on
         </span>
         <ActionFade

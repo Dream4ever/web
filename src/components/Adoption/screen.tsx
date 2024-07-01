@@ -15,14 +15,12 @@ function Screen1() {
   useMemo(() => {
     ScrollTrigger.create({
       trigger: "#adoption",
-      start: "top top+=300px",
-      end: "top top+=-0px",
+      start: "top top+=3000px",
+      end: "top top+=0px",
       onUpdate: (self) => {
         if (refMain.current != null && (refMain.current as any).style != null) {
           let node = refMain.current as any;
-          node.style.transform = `translate(0%, calc(${
-            50 * self.progress
-          }vh - ${290 * self.progress}px))`;
+          node.style.transform = `translate(0%, calc(${390 * self.progress}px))`;
         }
       },
     });
@@ -88,7 +86,7 @@ function Screen1() {
   return (
     <div
       ref={refMain}
-      className="-mt-[295px] mb-[300px] relative"
+      className="-mt-[520px] mb-[590px] relative"
     >
       <div className="relative">
         <div>

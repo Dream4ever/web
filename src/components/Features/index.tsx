@@ -29,7 +29,7 @@ function Features() {
       onUpdate: (self) => {
         if (ref.current != null && (ref.current as any).style != null) {
           let node = ref.current as any;
-          node.style.transform = `translate(0, calc(-${10*self.progress}vh - ${495 * self.progress}px))`;
+          node.style.transform = `translate(0, calc(-${720 * self.progress}px))`;
         }
       },
     });

@@ -81,7 +81,7 @@ function Screen1() {
 
   return (
     <div
-      className="relative w-full mt-40 mb-[100px]"
+      className="relative w-full mt-40"
       ref={refMain}
     >
       <img
