@@ -32,7 +32,7 @@ function MobileScreen() {
       onUpdate: (self) => {
         if (ref1.current != null && (ref1.current as any).style != null) {
           let node = ref1.current as any;
-          self.progress === 1 ? node.style.zIndex = 30 : node.style.zIndex = 10;
+          
           node.style.opacity = calcOpacity(self.progress);
           node.style.transform = `translate(0px, calc(${100 * (1 - self.progress)
             }vh))`;
@@ -48,7 +48,7 @@ function MobileScreen() {
           let node = ref2.current as any;
           node.style.transform = `translate(0px, calc(${100 * (1 - self.progress)
             }vh))`;
-          self.progress === 1 ? node.style.zIndex = 30 : node.style.zIndex = 10;
+          
           node.style.opacity = calcOpacity(self.progress);
         }
       },
@@ -62,7 +62,7 @@ function MobileScreen() {
           let node = ref3.current as any;
           node.style.transform = `translate(0px, calc(${100 * (1 - self.progress)
             }vh))`;
-          self.progress === 1 ? node.style.zIndex = 30 : node.style.zIndex = 10;
+          
           node.style.opacity = calcOpacity(self.progress);
         }
       },
@@ -76,7 +76,7 @@ function MobileScreen() {
           let node = ref4.current as any;
           node.style.transform = `translate(0px, calc(${100 * (1 - self.progress)
             }vh))`;
-          self.progress === 1 ? node.style.zIndex = 30 : node.style.zIndex = 10;
+          
           node.style.opacity = calcOpacity(self.progress);
         }
       },
@@ -90,7 +90,7 @@ function MobileScreen() {
           let node = ref5.current as any;
           node.style.transform = `translate(0px, calc(${100 * (1 - self.progress)
             }vh))`;
-          self.progress === 1 ? node.style.zIndex = 30 : node.style.zIndex = 10;
+          
           node.style.opacity = calcOpacity(self.progress);
         }
       },
@@ -119,27 +119,27 @@ function MobileScreen() {
           />
           <img
             src="/assets/home/clip1.png"
-            className="absolute top-[30vh] left-[2vw] z-10 transition-all translate-y-[100vh] opacity-0 w-[30%]"
+            className="absolute top-[30vh] left-[2vw] z-30 transition-all translate-y-[100vh] opacity-0 w-[30%]"
             ref={ref1}
           />
           <img
             src="/assets/home/clip2.png"
-            className="absolute top-[40vh] left-[35vw] z-10 transition-all translate-y-[100vh] opacity-0 w-[30%]"
+            className="absolute top-[40vh] left-[35vw] z-30 transition-all translate-y-[100vh] opacity-0 w-[30%]"
             ref={ref2}
           />
           <img
             src="/assets/home/clip3.png"
-            className="absolute top-[50vh] left-[2vw] z-10 transition-all translate-y-[100vh] opacity-0 w-[30%]"
+            className="absolute top-[50vh] left-[2vw] z-30 transition-all translate-y-[100vh] opacity-0 w-[30%]"
             ref={ref3}
           />
           <img
             src="/assets/home/clip4.png"
-            className="absolute top-[35vh] left-[68vw] z-10 transition-all translate-y-[100vh] opacity-0 w-[30%]"
+            className="absolute top-[35vh] left-[68vw] z-30 transition-all translate-y-[100vh] opacity-0 w-[30%]"
             ref={ref4}
           />
           <img
             src="/assets/home/clip5.png"
-            className="absolute top-[53vh] left-[68vw] z-10 transition-all translate-y-[100vh] opacity-0 w-[30%]"
+            className="absolute top-[53vh] left-[68vw] z-30 transition-all translate-y-[100vh] opacity-0 w-[30%]"
             ref={ref5}
           />
         </div>

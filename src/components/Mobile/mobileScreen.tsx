@@ -143,7 +143,7 @@ const MobileScreen = () => {
             rel="noreferrer"
             className="px-4 h-[52px] py-3 text-base text-center font-medium rounded-full w-[200px] bg-primary-default hover:bg-primary-default/70"
           >
-            <p className="text-base font-medium leading-7">Follow @CoolSlothsxyz</p>
+            <p className="text-base font-medium leading-0 whitespace-nowrap">Follow @CoolSlothsxyz</p>
           </a>
         </div>
         <div className="relative w-full h-[550px] mb-[3vh]">
