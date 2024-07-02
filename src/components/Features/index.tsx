@@ -45,7 +45,7 @@ function Features() {
     window.addEventListener("mousemove", handleMouseMove);
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
-  
+
   const handleMouseMove = (event: any) => {
     const { clientX, clientY } = event;
     const centerX = window.innerWidth / 2;
@@ -64,7 +64,12 @@ function Features() {
       <Controller>
         <Scene duration={2500} pin offset={`${offset}px`}>
           <div className="relative w-full">
-            {window.innerWidth < 768 ? <MobileBackground /> : <Background />}
+            <div className="hidden md:block">
+              <Background />
+            </div>
+            <div className="block md:hidden">
+              <MobileBackground />
+            </div>
             <div ref={ref}>
               <Home />
               <div className="hidden md:block">

@@ -201,7 +201,7 @@ function MobileBackground({ children }: { children?: ReactNode }) {
 
   return (
     <div
-      className="fixed inset-0 w-full h-screen"
+      className="fixed inset-0 w-full h-[150vh]"
       style={{ background: bgStart }}
       ref={backgroundRef}
     ></div>
