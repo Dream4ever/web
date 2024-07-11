@@ -24,10 +24,6 @@ const TermsOfService = () => {
             Terms of Service
           </h1>
           <div>
-            <p className="md:text-[22px] mb-8 md:eading-[34px] font-normal font-Outfit">
-              Terms of Service eTown PTE. LTD. <br /> Last Updated: Aug 1st,
-              2023
-            </p>
             <div className="mb-8">
               <p className="md:text-[22px] nd:leading-[34px] font-normal font-Outfit">
                 <b>Etown PTD. LTD..</b> ("TowneSquare", the "Company", "we", "us" or "our") is a blockchain development
