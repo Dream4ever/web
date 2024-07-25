@@ -91,8 +91,7 @@ function MobileScreen() {
           <ActionLabel
             className="0 left-[10vw]"
             innerClassName="w-[90px] h-[90px] md:w-[150px] md:h-[150px]"
-            imgUrl1="/assets/home/solana.svg"
-            // imgUrl2="/assets/home/solana.svg"
+            imgUrl1="/assets/home/aptos.svg"
             imgClassName="!w-[46px]"
             dotSName="-left-[75px] top-[2px]"
             dotCName="-left-[77px] top-[20px]"

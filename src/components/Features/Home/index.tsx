@@ -74,7 +74,7 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
           <ActionLabel
             className="bottom-[10px] -right-[45px] md:bottom-[0px] md:right-[20vw]"
             imgUrl1="/assets/home/aptos.svg"
-            imgUrl2="/assets/home/solana.svg"
+            imgUrl2="/assets/home/aptos.svg"
             imgClassName="w-[29px] md:w-[37px]"
             dotSName="hidden"
             dotCName="top-[7vh] -right-[5vw] md:top-[3vh] md:right-[5vw] md:top-[8vh] md:right-[6vw]"
@@ -100,7 +100,7 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
           <ActionFade
             className="w-[200px] md:w-[264px] h-[58px] md:h-[74px]"
             comp1={<img src="/assets/home/btn_aptos.svg" />}
-            comp2={<img src="/assets/home/btn_solana.svg" />}
+            comp2={<img src="/assets/home/btn_aptos.svg" />}
           />
           <span className="text-[20px] lg:text-[32px] font-medium mt-6">
             The Non-EVM Social Layer
