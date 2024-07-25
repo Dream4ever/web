@@ -109,7 +109,7 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
           </span>
           <div className="flex justify-center w-full gap-2 mt-6 lg:gap-6 md:gap-6 md:item-center lg:justify-center">
             <button>
-              <img src="/assets/home/btn_google_play.svg" alt="" />
+              <img src="/assets/home/android.svg" alt="" />
             </button>
             <button>
               <img src="/assets/home/btn_app_store.svg" alt="" />
