@@ -22,7 +22,7 @@ function Join() {
             </div>
             <div className="flex flex-row gap-2">
               <img
-                src="/assets/home/btn_google_play.svg"
+                src="/assets/home/android.svg"
                 alt=""
                 className="cursor-pointer"
               />
