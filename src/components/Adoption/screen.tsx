@@ -98,17 +98,17 @@ function Screen1() {
           blockchains for adoption
         </p>
         <p className="pt-5 text-xl font-medium">
-          TowneSquare network empowers creators &<br />
-          developers to build and scale use cases to a mass
-          <br /> audience based on Solana and Aptos ecosystems.
+          TowneSquare network empowers creators & developers to <br />
+          build and scale use cases to a mass audience based on
+          <br />performant blockchain ecosystems like Aptos.
         </p>
         <div className="absolute z-[9999] w-full lg:block left-0 top-0">
           <ActionLabel
             className="-top-[93px] left-[585px]"
             innerClassName="w-[90px] h-[90px] md:w-[150px] md:h-[150px]"
-            imgUrl1="/assets/home/aptos.svg"
+            imgUrl1="/assets/home/logo.svg"
             // imgUrl2="/images/home/icons/solana.svg"
-            imgClassName="!w-[78px]"
+            imgClassName="!w-[170px]"
             dotSName="-left-[75px] top-[2px]"
             dotCName="-left-[77px] top-[20px]"
             dot3Name="-right-[40px] -top-[50px]"

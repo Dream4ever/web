@@ -134,8 +134,7 @@ function MobileScreen() {
             creators & developers to build and <br />
             scale use cases to a mass audience
             <br />
-            based on Solana and Aptos <br />
-            ecosystems.
+            based on performant blockchain ecosystems like Aptos.
           </p>
         </div>
 
