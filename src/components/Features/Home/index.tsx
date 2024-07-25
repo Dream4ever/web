@@ -103,7 +103,7 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
             comp2={<img src="/assets/home/btn_aptos.svg" />}
           />
           <span className="text-[20px] lg:text-[32px] font-medium mt-6">
-            The Non-EVM Social Layer
+            The Most Performant Social Layer
             <br></br>
             for Mass Adoption
           </span>
