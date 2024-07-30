@@ -30,7 +30,7 @@ function Join() {
           </div>
           <div className="flex">
             <div className="mr-6">
-              <img src="/assets/join/qr_code.svg" alt="" />
+              <img src="/assets/join/android_qr_code.png" className="w-[173px] rounded-xl" alt="" />
             </div>
             <div className="w-[370px] -mt-4">
               <p className="mb-1 text-base font-semibold leading-normal uppercase">Minimal requirements:</p>
@@ -38,10 +38,14 @@ function Join() {
               <p className="mb-1 text-base font-semibold leading-normal uppercase">APK public key (SHA-256 digest):</p>
               <p className="font-normal text-baes leading-[150%] text-wrap break-words">4F06ECEEE4CC7FDD88E817CCD2E4B58390FE89A94345C35832832A68114BA94F</p>
               <div className="z-30 mt-4">
-                <button className="hidden md:block justify-center items-center px-6 py-2 text-base text-white w-[280px] h-[50px] leading-4 font-medium bg-secondary-cyan hover:bg-[#00EEDC] active:bg-[#AAAAAA] rounded-full cursor-pointer text-[#121212]">
+                <a
+                  href="https://drive.google.com/file/d/16WF8V-0Rp-2DJEmDW678VOgG-d-7RFge/view?usp=sharing"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hidden md:block justify-center items-center text-center px-6 py-2 text-base text-white w-[280px] h-[50px] leading-4 font-medium bg-secondary-cyan hover:bg-[#00EEDC] active:bg-[#AAAAAA] rounded-full cursor-pointer text-[#121212]">
                   Download APK package V1.0.4
-                  <p className="text-sm font-normal text-[#121212]">Coming soon</p>
-                </button>
+                  <p className="text-sm font-normal text-center text-[#121212]">Coming soon</p>
+                </a>
               </div>
             </div>
           </div>
@@ -51,7 +55,7 @@ function Join() {
             <p className="text-[29px] font-bold leading-[150.3%]">iOS</p>
           </div>
           <div className="mt-6 mr-6">
-            <img src="/assets/join/qr_code.svg" alt="" />
+            <img src="/assets/join/app_store.png" className="w-[173px] rounded-xl" alt="" />
           </div>
         </div>
         <div className="flex flex-col mt-14">
