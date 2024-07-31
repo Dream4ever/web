@@ -97,11 +97,9 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
           <span className="text-[36px] md:text-[48px] lg:text-[56px] font-bold">
             The Web 3 social network on
           </span>
-          <ActionFade
-            className="w-[200px] md:w-[264px] h-[58px] md:h-[74px]"
-            comp1={<img src="/assets/home/btn_aptos.svg" />}
-            comp2={<img src="/assets/home/btn_aptos.svg" />}
-          />
+          <div className="w-[200px] md:w-[264px] h-[58px] md:h-[74px]">
+            <img src="/assets/home/btn_aptos.svg" alt="APTOS"/>
+          </div>
           <span className="text-[20px] lg:text-[32px] font-medium mt-6">
             The Most Performant Social Layer
             <br></br>

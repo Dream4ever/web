@@ -14,14 +14,16 @@ const scrollToTop = () => {
 
 const Header: React.FC<HeaderProps> = ({ clickWaitlist }) => {
   return (
-    <div className="fixed z-20 flex justify-between w-full px-4 py-4 md:px-6">
+    <div className="fixed z-[9999] flex justify-between w-full px-4 py-4 md:px-6">
       <div className="flex items-center gap-2">
-        <img
-          className="cursor-pointer w-7 h-7 md:w-11 md:h-11"
-          src={images.logo}
-          alt="logo"
-          onClick={scrollToTop}
-        />
+        <a href="/">
+          <img
+            className="cursor-pointer w-7 h-7 md:w-11 md:h-11"
+            src={images.logo}
+            alt="logo"
+            onClick={scrollToTop}
+          />
+        </a>
         <ScrollTrigger start="0px" end="220px" scrub={0.5}>
           <Tween
             from={{
@@ -64,10 +66,9 @@ const Header: React.FC<HeaderProps> = ({ clickWaitlist }) => {
             />
           </a>
         </div>
-        <button className="hidden md:block justify-center items-center px-6 py-2 text-base text-white w-[170px] h-12 leading-4 font-medium bg-[#9264F8] hover:bg-[#9C6EEB] active:bg-[#AAAAAA] rounded-full cursor-pointer">
+        <a href="/download" className="hidden md:block justify-center text-center items-center px-6 py-4 text-base text-white w-[170px] h-12 leading-4 font-medium bg-[#9264F8] hover:bg-[#9C6EEB] active:bg-[#AAAAAA] rounded-full cursor-pointer">
           Download app
-          <p className="text-sm font-normal">Coming soon</p>
-        </button>
+        </a>
       </div>
     </div>
   );
