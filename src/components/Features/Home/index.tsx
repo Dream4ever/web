@@ -98,7 +98,7 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
             The Web 3 social network on
           </span>
           <div className="w-[200px] md:w-[264px] h-[58px] md:h-[74px]">
-            <img src="/assets/home/btn_aptos.svg" alt="APTOS"/>
+            <img src="/assets/home/btn_aptos.svg" alt="APTOS" />
           </div>
           <span className="text-[20px] lg:text-[32px] font-medium mt-6">
             The Most Performant Social Layer
@@ -106,12 +106,12 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
             for Mass Adoption
           </span>
           <div className="flex justify-center w-full gap-2 mt-6 lg:gap-2 md:gap-2 md:item-center lg:justify-center">
-            <button>
+            <a href="https://storage.googleapis.com/townesquare/Townesquare_Android.apk" target="_blank" rel="noreferrer">
               <img src="/assets/join/android.svg" alt="" />
-            </button>
-            <button>
+            </a>
+            <a href="https://apps.apple.com/us/app/townesquare/id6504888208" target="_blank" rel="noreferrer">
               <img src="/assets/join/app-store.svg" alt="" />
-            </button>
+            </a>
           </div>
         </div>
       </div>
