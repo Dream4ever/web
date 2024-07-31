@@ -105,12 +105,12 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
             <br></br>
             for Mass Adoption
           </span>
-          <div className="flex justify-center w-full gap-2 mt-6 lg:gap-6 md:gap-6 md:item-center lg:justify-center">
+          <div className="flex justify-center w-full gap-2 mt-6 lg:gap-2 md:gap-2 md:item-center lg:justify-center">
             <button>
-              <img src="/assets/home/android.svg" alt="" />
+              <img src="/assets/join/android.svg" alt="" />
             </button>
             <button>
-              <img src="/assets/home/btn_app_store.svg" alt="" />
+              <img src="/assets/join/app-store.svg" alt="" />
             </button>
           </div>
         </div>

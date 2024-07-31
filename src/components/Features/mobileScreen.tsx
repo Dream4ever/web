@@ -169,9 +169,8 @@ function MobileScreen() {
             </span>
           </div>
           <div className="flex justify-center mt-14">
-            <button className="px-4 py-2 text-base font-medium text-black rounded-full w-60 bg-secondary-cyan">
+            <button className="px-4 py-4 text-base font-medium text-black rounded-full w-60 bg-secondary-cyan">
               Download TowneSquare
-              <p className="text-sm">Coming soon</p>
             </button>
           </div>
         </div>

@@ -28,17 +28,16 @@ function Join() {
                 onClick={() => { toggleDownload() }}
               >
                 Download TowneSquare
-                <p className="text-sm">Coming soon</p>
               </button>
             </div>
             <div className="flex flex-row gap-2">
               <img
-                src="/assets/home/android.svg"
+                src="/assets/join/android.svg"
                 alt=""
                 className="cursor-pointer"
               />
               <img
-                src="/assets/home/btn_app_store.svg"
+                src="/assets/join/app-store.svg"
                 alt=""
                 className="cursor-pointer"
               />
@@ -63,17 +62,16 @@ function Join() {
             <div className="py-10">
               <button className="px-4 py-2.5 w-[211px] h-[51px] text-base text-[#121212] font-medium leading-none bg-[#00EEFD] hover:bg-[#388b91] active:bg-[#AAAAAA] rounded-full cursor-pointer">
                 Download TowneSquare
-                <p className="text-sm">Coming soon</p>
               </button>
             </div>
             <div className="flex flex-row gap-2">
               <img
-                src="/assets/home/android.svg"
+                src="/assets/join/android.svg"
                 alt=""
                 className="cursor-pointer"
               />
               <img
-                src="/assets/home/btn_app_store.svg"
+                src="/assets/join/app-store.svg"
                 alt=""
                 className="cursor-pointer"
               />
