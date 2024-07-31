@@ -32,7 +32,7 @@ function MobileScreen() {
       onUpdate: (self) => {
         if (ref1.current != null && (ref1.current as any).style != null) {
           let node = ref1.current as any;
-          
+
           node.style.opacity = calcOpacity(self.progress);
           node.style.transform = `translate(0px, calc(${100 * (1 - self.progress)
             }vh))`;
@@ -48,7 +48,7 @@ function MobileScreen() {
           let node = ref2.current as any;
           node.style.transform = `translate(0px, calc(${100 * (1 - self.progress)
             }vh))`;
-          
+
           node.style.opacity = calcOpacity(self.progress);
         }
       },
@@ -62,7 +62,7 @@ function MobileScreen() {
           let node = ref3.current as any;
           node.style.transform = `translate(0px, calc(${100 * (1 - self.progress)
             }vh))`;
-          
+
           node.style.opacity = calcOpacity(self.progress);
         }
       },
@@ -76,7 +76,7 @@ function MobileScreen() {
           let node = ref4.current as any;
           node.style.transform = `translate(0px, calc(${100 * (1 - self.progress)
             }vh))`;
-          
+
           node.style.opacity = calcOpacity(self.progress);
         }
       },
@@ -90,7 +90,7 @@ function MobileScreen() {
           let node = ref5.current as any;
           node.style.transform = `translate(0px, calc(${100 * (1 - self.progress)
             }vh))`;
-          
+
           node.style.opacity = calcOpacity(self.progress);
         }
       },
@@ -169,9 +169,11 @@ function MobileScreen() {
             </span>
           </div>
           <div className="flex justify-center mt-14">
-            <button className="px-4 py-4 text-base font-medium text-black rounded-full w-60 bg-secondary-cyan">
+            <a
+              href="/download"
+              className="px-4 py-4 text-base font-medium text-center text-black rounded-full w-60 bg-secondary-cyan">
               Download TowneSquare
-            </button>
+            </a>
           </div>
         </div>
       </div>

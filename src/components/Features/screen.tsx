@@ -148,9 +148,11 @@ function Screen1() {
             </span>
           </div>
           <div className="flex justify-center mt-8">
-            <button className="px-4 py-5 w-[222px] whitespace-nowrap text-base leading-none font-medium text-black rounded-full  bg-secondary-cyan hover:bg-secondary-cyan/70">
+            <a
+              href='/download'
+              className="px-4 py-5 w-[222px] whitespace-nowrap text-base text-center leading-none font-medium text-black rounded-full  bg-secondary-cyan hover:bg-secondary-cyan/70">
               Download TowneSquare
-            </button>
+            </a>
           </div>
         </div>
       </div>
