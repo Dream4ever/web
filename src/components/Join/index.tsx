@@ -39,7 +39,7 @@ function Join() {
               <p className="font-normal text-baes leading-[150%] text-wrap break-words">4F06ECEEE4CC7FDD88E817CCD2E4B58390FE89A94345C35832832A68114BA94F</p>
               <div className="z-30 mt-4">
                 <a
-                  href="https://drive.google.com/file/d/16WF8V-0Rp-2DJEmDW678VOgG-d-7RFge/view?usp=sharing"
+                  href="https://storage.googleapis.com/townesquare/Townesquare_Android.apk"
                   target="_blank"
                   rel="noreferrer"
                   className="hidden md:block justify-center items-center text-center px-6 py-2 text-base text-white w-[280px] h-[50px] leading-4 font-medium bg-secondary-cyan hover:bg-[#00EEDC] active:bg-[#AAAAAA] rounded-full cursor-pointer text-[#121212]">
