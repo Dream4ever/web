@@ -1,0 +1,14 @@
+.mainLabel {
+  perspective: 200px;
+  transform-style: preserve-3d;
+  transition: transform 0.1s ease-out;
+  will-change: transform;
+}
+
+.subCircle {
+  transform: translateZ(200px);
+}
+#purple
+{
+  transform: translateZ(50px);  
+}
