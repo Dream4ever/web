@@ -31,16 +31,20 @@ function Join() {
               </button>
             </div>
             <div className="flex flex-row gap-2">
-              <img
-                src="/assets/join/android.svg"
-                alt=""
-                className="cursor-pointer"
-              />
-              <img
-                src="/assets/join/app-store.svg"
-                alt=""
-                className="cursor-pointer"
-              />
+              <a href="download">
+                <img
+                  src="/assets/join/android.svg"
+                  alt=""
+                  className="cursor-pointer"
+                />
+              </a>
+              <a href="/download">
+                <img
+                  src="/assets/join/app-store.svg"
+                  alt=""
+                  className="cursor-pointer"
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -65,16 +69,20 @@ function Join() {
               </button>
             </div>
             <div className="flex flex-row gap-2">
-              <img
-                src="/assets/join/android.svg"
-                alt=""
-                className="cursor-pointer"
-              />
-              <img
-                src="/assets/join/app-store.svg"
-                alt=""
-                className="cursor-pointer"
-              />
+              <a href="/download">
+                <img
+                  src="/assets/join/android.svg"
+                  alt=""
+                  className="cursor-pointer"
+                />
+              </a>
+              <a href="/download">
+                <img
+                  src="/assets/join/app-store.svg"
+                  alt=""
+                  className="cursor-pointer"
+                />
+              </a>
             </div>
           </div>
         </div>
