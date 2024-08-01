@@ -106,10 +106,10 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
             for Mass Adoption
           </span>
           <div className="flex justify-center w-full gap-2 mt-6 lg:gap-2 md:gap-2 md:item-center lg:justify-center">
-            <a href="https://storage.googleapis.com/townesquare/Townesquare_Android.apk" target="_blank" rel="noreferrer">
+            <a href="/download">
               <img src="/assets/join/android.svg" alt="" />
             </a>
-            <a href="https://apps.apple.com/us/app/townesquare/id6504888208" target="_blank" rel="noreferrer">
+            <a href="/download">
               <img src="/assets/join/app-store.svg" alt="" />
             </a>
           </div>

@@ -31,14 +31,14 @@ function Join() {
               </button>
             </div>
             <div className="flex flex-row gap-2">
-              <a href="https://storage.googleapis.com/townesquare/Townesquare_Android.apk" target="_blank" rel="noreferrer">
+              <a href="download">
                 <img
                   src="/assets/join/android.svg"
                   alt=""
                   className="cursor-pointer"
                 />
               </a>
-              <a href="https://apps.apple.com/us/app/townesquare/id6504888208" target="_blank" rel="noreferrer">
+              <a href="/download">
                 <img
                   src="/assets/join/app-store.svg"
                   alt=""
@@ -69,14 +69,14 @@ function Join() {
               </button>
             </div>
             <div className="flex flex-row gap-2">
-              <a href="https://apps.apple.com/us/app/townesquare/id6504888208" target="_blank" rel="noreferrer">
+              <a href="/download">
                 <img
                   src="/assets/join/android.svg"
                   alt=""
                   className="cursor-pointer"
                 />
               </a>
-              <a href="https://apps.apple.com/us/app/townesquare/id6504888208" target="_blank" rel="noreferrer">
+              <a href="/download">
                 <img
                   src="/assets/join/app-store.svg"
                   alt=""
