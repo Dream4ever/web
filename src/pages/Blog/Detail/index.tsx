@@ -29,10 +29,10 @@ const Detail = () => {
   };
 
   return (
-    <div className="bg-black">
+    <div className="bg-[#111111]">
       <Header />
       <div id="join" className="z-20 flex justify-center w-full ">
-        <div className=" mt-[70px] flex flex-col  gap-12 px-4 md:px-[60px] py-8 z-50">
+        <div className=" mt-[70px] flex flex-col gap-12 px-4 md:px-[60px] py-8 z-50">
           <div className="mx-4 md:mx-32">
             <div className="hidden gap-3 mb-12 md:flex">
               <Link to="/blog" className="text-base font-medium leading-[150%] font-Outfit text-primary-default hover:text-primary-default/30">
@@ -71,7 +71,7 @@ const Detail = () => {
           </div>
           <div className="flex-col hidden md:flex">
             <p className="text-[22px] font-medium leading-[28px] mb-8">You might also be interested in</p>
-            <div className="flex-col hidden grid-cols-3 mb-20 md:grid">
+            <div className="flex-col hidden grid-cols-3 gap-4 mb-20 md:grid">
               {CardLists.map((card, index) => (
                 <Card data={card} key={index} />
               ))}
@@ -79,7 +79,7 @@ const Detail = () => {
           </div>
           <div className="flex flex-col items-center w-full md:hidden">
             <p className="text-[22px] font-medium text-center leading-[28px] mb-8">You might also be interested in</p>
-            <div className="grid w-full grid-cols-3 mb-20 md:hidden blog-details">
+            <div className="grid w-full grid-cols-3 gap-4 mb-20 md:hidden blog-details">
               <Slider {...settings}>
                 {CardLists.map((card, index) => (
                   <Card data={card} key={index} />

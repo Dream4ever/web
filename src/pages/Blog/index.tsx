@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Card from "./Card";
@@ -11,8 +11,30 @@ export interface CardType {
 };
 
 const Blog = () => {
+
+  const contentRef = useRef<any>(null);
+  const backgroundRef = useRef<any>(null);
+
+  const toggleMouseOver = () => {
+    (contentRef.current as any).style.color = "#B882FF";
+    (backgroundRef.current as any).style.background = "linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))";
+  }
+
+  const toggleMouseOut = () => {
+    (contentRef.current as any).style.color = "#FFFFFF";
+    (backgroundRef.current as any).style.background = "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))";
+  }
+
+  const toggleMouseClick = () => {
+    (contentRef.current as any).style.color = "#6646AE"
+  }
+
+  const toggleMouseUp = () => {
+    (contentRef.current as any).style.color = "#FFFFFF"
+  }
+
   return (
-    <div className="bg-black">
+    <div className="bg-[#111111]">
       <Header />
       <div id="join" className="relative z-20 flex justify-center w-full">
         <div className="absolute top-0 left-0 z-0 hidden w-full md:block">
@@ -28,8 +50,17 @@ const Blog = () => {
         <div className=" mt-[70px] w-full flex flex-col  gap-12 px-[16px] py-8 z-50">
           <div className="flex flex-col items-center justify-center text-center">
             <p className="md:text-5xl text-4xl font-bold text-center font-Outfit leading-[150.3%] mb-20 mt-3">Town Blog</p>
-            <div className="hidden mb-12 md:block">
-              <img src="/assets/blog/main_back.png" className="w-[1216px]" alt="" />
+            <div className='relative z-50 items-start justify-start hidden mb-12 md:block' onMouseUp={toggleMouseUp} onMouseOver={toggleMouseOver} onMouseOut={toggleMouseOut} onClick={toggleMouseClick}>
+              <img src="/assets/blog/main_back.png" className="w-[1216px] inset-0 -z-10" alt=""
+              />
+              <div ref={backgroundRef} className='absolute inset-0 opacity-50 bg-gradient-to-b from-transparent to-black'
+                style={{ background: 'linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))' }}
+              />
+              <div className="items-start justify-start ">
+                <button className="absolute bottom-40 left-10 px-[10px] py-1 bg-primary-default rounded-md mb-4 font-Outfit text-sm font-medium leading-[20px]">Monad</button>
+                <p ref={contentRef} className="absolute bottom-16 left-10 text-[32px] font-semibold leading-[40px] font-Outfit mb-6 text-start">Monad on rise! How it will change the crypto<br /> as we know it</p>
+                <p className="absolute bottom-10 left-10 text-base font-normal font-Outfit leading-[24px]">August 20, 2022</p>
+              </div>
             </div>
             <div className="block w-screen mt-4 md:hidden">
               <img src="/assets/blog/mobile_back.png" className="w-[100%]" alt="" />
