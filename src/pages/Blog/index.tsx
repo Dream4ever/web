@@ -12,25 +12,14 @@ export interface CardType {
 
 const Blog = () => {
 
-  const contentRef = useRef<any>(null);
   const backgroundRef = useRef<any>(null);
 
   const toggleMouseOver = () => {
-    (contentRef.current as any).style.color = "#B882FF";
     (backgroundRef.current as any).style.background = "linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))";
   }
 
   const toggleMouseOut = () => {
-    (contentRef.current as any).style.color = "#FFFFFF";
     (backgroundRef.current as any).style.background = "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))";
-  }
-
-  const toggleMouseClick = () => {
-    (contentRef.current as any).style.color = "#6646AE"
-  }
-
-  const toggleMouseUp = () => {
-    (contentRef.current as any).style.color = "#FFFFFF"
   }
 
   return (
@@ -50,7 +39,7 @@ const Blog = () => {
         <div className=" mt-[70px] w-full flex flex-col  gap-12 px-[16px] py-8 z-50">
           <div className="flex flex-col items-center justify-center text-center">
             <p className="md:text-5xl text-4xl font-bold text-center font-Outfit leading-[150.3%] mb-20 mt-3">Town Blog</p>
-            <div className='relative z-50 items-start justify-start hidden mb-12 md:block' onMouseUp={toggleMouseUp} onMouseOver={toggleMouseOver} onMouseOut={toggleMouseOut} onClick={toggleMouseClick}>
+            <div className='relative z-50 items-start justify-start hidden mb-12 md:block group' onMouseOver={toggleMouseOver} onMouseOut={toggleMouseOut}>
               <img src="/assets/blog/main_back.png" className="w-[1216px] inset-0 -z-10" alt=""
               />
               <div ref={backgroundRef} className='absolute inset-0 opacity-50 bg-gradient-to-b from-transparent to-black'
@@ -58,7 +47,7 @@ const Blog = () => {
               />
               <div className="items-start justify-start ">
                 <button className="absolute bottom-40 left-10 px-[10px] py-1 bg-primary-default rounded-md mb-4 font-Outfit text-sm font-medium leading-[20px]">Monad</button>
-                <p ref={contentRef} className="absolute bottom-16 left-10 text-[32px] font-semibold leading-[40px] font-Outfit mb-6 text-start">Monad on rise! How it will change the crypto<br /> as we know it</p>
+                <p className="group-hover:text-[#B882FF] group-active:text-[#6646AE] absolute bottom-16 left-10 text-[32px] font-semibold leading-[40px] font-Outfit mb-6 text-start">Monad on rise! How it will change the crypto<br /> as we know it</p>
                 <p className="absolute bottom-10 left-10 text-base font-normal font-Outfit leading-[24px]">August 20, 2022</p>
               </div>
             </div>
