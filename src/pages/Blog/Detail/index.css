@@ -1,0 +1,15 @@
+.blog-details .slick-slider .slick-arrow {
+  display: none !important;
+}
+.blog-details .slick-track {
+  display: flex;
+  gap: 16px; 
+}
+.blog-details .slick-initialized .slick-slide
+{
+    width: 260px !important;
+}
+.blog-details .slick-initialized .slick-slide > div 
+{
+    width: 260px !important;
+}

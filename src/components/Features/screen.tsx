@@ -94,33 +94,33 @@ function Screen1() {
       >
         <div className="relative">
           <img
-            src="/assets/home/phone.png"
+            src="/assets/home/new_phone.svg"
             alt="sign"
-            className="relative z-20 transition-all w-[380px]"
+            className="relative z-20 transition-all"
           />
           <img
-            src="/assets/home/clip1.png"
-            className="absolute z-10 transition-all -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 w-[176px]"
+            src="/assets/home/clip1.svg"
+            className="absolute z-10 transition-all -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 "
             ref={ref1}
           />
           <img
-            src="/assets/home/clip2.png"
-            className="absolute z-10 transition-all -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 w-[176px]"
+            src="/assets/home/clip2.svg"
+            className="absolute z-10 transition-all -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 "
             ref={ref2}
           />
           <img
-            src="/assets/home/clip3.png"
-            className="absolute z-10 transition-all -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 w-[176px]"
+            src="/assets/home/clip3.svg"
+            className="absolute z-10 transition-all -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 "
             ref={ref3}
           />
           <img
-            src="/assets/home/clip4.png"
-            className="absolute z-10 transition-all -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 w-[176px]"
+            src="/assets/home/clip4.svg"
+            className="absolute z-10 transition-all -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 "
             ref={ref4}
           />
           <img
-            src="/assets/home/clip5.png"
-            className="absolute z-10 transition-all -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 w-[176px]"
+            src="/assets/home/clip5.svg"
+            className="absolute z-10 transition-all -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 "
             ref={ref5}
           />
         </div>

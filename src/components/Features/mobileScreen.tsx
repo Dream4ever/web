@@ -113,32 +113,32 @@ function MobileScreen() {
       >
         <div className="relative flex justify-center w-full">
           <img
-            src="/assets/home/phone.png"
+            src="/assets/home/new_phone.svg"
             alt="sign"
-            className="relative z-20 transition-all md:w-full w-[50%] h-full"
+            className="relative z-20 transition-all md:w-full w-[70%] h-full"
           />
           <img
-            src="/assets/home/clip1.png"
+            src="/assets/home/clip1.svg"
             className="absolute top-[30vh] left-[2vw] z-30 transition-all translate-y-[100vh] opacity-0 w-[30%]"
             ref={ref1}
           />
           <img
-            src="/assets/home/clip2.png"
+            src="/assets/home/clip2.svg"
             className="absolute top-[40vh] left-[35vw] z-30 transition-all translate-y-[100vh] opacity-0 w-[30%]"
             ref={ref2}
           />
           <img
-            src="/assets/home/clip3.png"
+            src="/assets/home/clip3.svg"
             className="absolute top-[50vh] left-[2vw] z-30 transition-all translate-y-[100vh] opacity-0 w-[30%]"
             ref={ref3}
           />
           <img
-            src="/assets/home/clip4.png"
+            src="/assets/home/clip4.svg"
             className="absolute top-[35vh] left-[68vw] z-30 transition-all translate-y-[100vh] opacity-0 w-[30%]"
             ref={ref4}
           />
           <img
-            src="/assets/home/clip5.png"
+            src="/assets/home/clip5.svg"
             className="absolute top-[53vh] left-[68vw] z-30 transition-all translate-y-[100vh] opacity-0 w-[30%]"
             ref={ref5}
           />

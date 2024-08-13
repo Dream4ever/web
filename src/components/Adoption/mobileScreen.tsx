@@ -91,8 +91,8 @@ function MobileScreen() {
           <ActionLabel
             className="0 left-[10vw]"
             innerClassName="w-[90px] h-[90px] md:w-[150px] md:h-[150px]"
-            imgUrl1="/assets/home/aptos.svg"
-            imgClassName="!w-[46px]"
+            imgUrl1="/assets/home/logo.svg"
+            imgClassName="!w-[76px]"
             dotSName="-left-[75px] top-[2px]"
             dotCName="-left-[77px] top-[20px]"
             dot3Name="-right-[40px] -top-[50px]"
@@ -110,7 +110,7 @@ function MobileScreen() {
           <ActionLabel
             className="top-[147px] right-[0vw]"
             innerClassName="w-[90px] h-[90px] md:w-[150px] md:h-[150px]"
-            imgUrl1="/assets/home/aptos.svg"
+            imgUrl1="/assets/home/monad.svg"
             // imgUrl2="/assets/home/aptos.svg"
             imgClassName="!w-[46px]"
             dotSName="left-[22px] -bottom-[35px]"

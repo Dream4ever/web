@@ -4,6 +4,8 @@ import TermsOfService from "./pages/TermsOfService";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import { RotationProvider } from "./RotationContext";
 import Download from "./pages/Download";
+import Blog from "./pages/Blog";
+import Detail from "./pages/Blog/Detail";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
           <Route path="/TermsOfService" element={<TermsOfService />} />
           <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
           <Route path="download" element={<Download />} />
+          <Route path="blog" element={<Blog />} />
+          <Route path="/blog/detail" element={<Detail />} />
         </Routes>
       </RotationProvider>
     </div>

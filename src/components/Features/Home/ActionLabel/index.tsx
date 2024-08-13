@@ -42,7 +42,7 @@ const ActionLabel: React.FC<Props> = ({
   useEffect(() => {
     if (actionRef.current) {
       actionRef.current.style.transition = rotation.transition;
-      actionRef.current.style.transform = `rotateY(${rotation.y}deg) rotateX(${rotation.x}deg)`;
+      actionRef.current.style.transform = `rotateY(${rotation.y/2}deg) rotateX(${rotation.x/2}deg)`;
     }
   }, [rotation]);
 

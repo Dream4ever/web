@@ -37,12 +37,6 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
         className="relative flex items-end justify-center w-full h-[50vh] opacity-100 overflow-hidden"
         style={{ height: `calc(50vh + 170px)` }}
       >
-        <div className="absolute top-0 left-0 z-0 w-full">
-          <img
-            src="/assets/home/banner.png"
-            className="absolute top-0 right-0 w-[160px] md:w-auto"
-          />
-        </div>
 
         <div className="absolute z-[0] w-full left-0 bottom-0">
           <ActionLabel
@@ -73,9 +67,9 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
           />
           <ActionLabel
             className="bottom-[10px] -right-[45px] md:bottom-[0px] md:right-[20vw]"
-            imgUrl1="/assets/home/aptos.svg"
-            imgUrl2="/assets/home/aptos.svg"
-            imgClassName="w-[29px] md:w-[37px]"
+            imgUrl1="/assets/home/monad.svg"
+            imgUrl2="/assets/home/monad.svg"
+            imgClassName="w-[29px] md:w-[42px]"
             dotSName="hidden"
             dotCName="top-[7vh] -right-[5vw] md:top-[3vh] md:right-[5vw] md:top-[8vh] md:right-[6vw]"
           />
@@ -98,22 +92,28 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
             The Web 3 social network on
           </span>
           <div className="w-[200px] md:w-[264px] h-[58px] md:h-[74px]">
-            <img src="/assets/home/btn_aptos.svg" alt="APTOS" />
+            <img src="/assets/home/btn_monad.svg" alt="APTOS" />
           </div>
           <span className="text-[20px] lg:text-[32px] font-medium mt-6">
-            The Most Performant Social Layer
-            <br></br>
-            for Mass Adoption
+            The consumer-facing layer for<br />
+            user onboarding to Web3
           </span>
-          <div className="flex justify-center w-full gap-2 mt-6 lg:gap-2 md:gap-2 md:item-center lg:justify-center">
+          {/* <div className="flex justify-center w-full gap-2 mt-6 lg:gap-2 md:gap-2 md:item-center lg:justify-center">
             <a href="/download">
               <img src="/assets/join/android.svg" alt="" />
             </a>
             <a href="/download">
               <img src="/assets/join/app-store.svg" alt="" />
             </a>
-          </div>
+          </div> */}
         </div>
+      </div>
+      <div className="absolute top-0 left-0 z-0 block w-full h-screen md:hidden">
+        <img
+          src="/assets/home/mobile_top_web.svg"
+          alt="background"
+          className="absolute block md:hidden top-0 -right-0 h-[127px] w-[161px] opacity-40"
+        />
       </div>
       <div className="absolute top-0 left-0 z-0 hidden w-full h-screen md:block">
         <img
@@ -122,9 +122,9 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
           className="absolute hidden md:block md:w-full md:left-0 md:bottom-0"
         />
         <img
-          src="/assets/home/top_web.svg"
+          src="/assets/home/new_top_web.svg"
           alt="background"
-          className="absolute hidden top-0 right-0 h-[248px] w-[408px] md:block"
+          className="absolute hidden -top-[139px] -right-20 h-[248px] w-[408px] md:block"
         />
       </div>
     </div>

@@ -127,7 +127,7 @@ function Screen1() {
           <ActionLabel
             className="top-[110px] left-[920px]"
             innerClassName="w-[90px] h-[90px] md:w-[150px] md:h-[150px]"
-            imgUrl1="/assets/home/aptos.svg"
+            imgUrl1="/assets/home/monad.svg"
             // imgUrl2="/images/aptos.png"
             imgClassName="!w-[78px]"
             dotSName="left-[22px] -bottom-[35px]"
