@@ -17,7 +17,7 @@ function App() {
           <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
           <Route path="download" element={<Download />} />
           <Route path="blog" element={<Blog />} />
-          <Route path="/blog/detail" element={<Detail />} />
+          <Route path="/blog/wtg-is-a-consumer-layer" element={<Detail />} />
         </Routes>
       </RotationProvider>
     </div>
