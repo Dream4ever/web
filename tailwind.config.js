@@ -5,6 +5,7 @@ module.exports = {
     extend: {},
     fontFamily: {
       Outfit: ["Outfit", "sans-serif"],
+      Georgian: ["Noto Sans Georgian", "Noto Sans Georgian"],
     },
     colors: {
       "primary-default": "#9264F8",
