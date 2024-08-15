@@ -10,7 +10,7 @@ const Card: React.FC<Props> = ({ data }) => {
 
   return (
     <div className={`flex flex-col w-full md:w-[383px] h-[477px] p-4 border rounded-xl border-[#5D5D5D] group hover:bg-[#1B1B1B] hover:cursor-pointer gap-4`}
-      onClick={() => { navigate('/blog/wtg-is-a-consumer-layer') }}>
+      onClick={() => { navigate('/blog/wtf-is-a-consumer-layer') }}>
       <img src={data.image} className="w-[351px]" alt="" />
       <div className="flex flex-col items-start justify-between p-2 ">
         <button className="h-7 px-[10px] py-1 bg-primary-default text-sm font-Outfit font-medium leading-[20px] mb-3 rounded-md">{data.label}</button>

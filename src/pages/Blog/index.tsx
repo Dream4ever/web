@@ -2,6 +2,8 @@ import React, { useRef } from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Card from "./Card";
+import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 export interface CardType {
   image: string,
@@ -12,6 +14,8 @@ export interface CardType {
 
 const Blog = () => {
 
+  const navigate = useNavigate();
+
   const backgroundRef = useRef<any>(null);
 
   const toggleMouseOver = () => {
@@ -21,9 +25,16 @@ const Blog = () => {
   const toggleMouseOut = () => {
     (backgroundRef.current as any).style.background = "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))";
   }
-
   return (
     <div className="bg-[#111111]">
+      <Helmet>
+        <title>Wtf is a consumer-facing layer?</title>
+        <meta property="og:type" content="article" />
+        <meta name="description" content="Wtf is a consumer-facing layer?" />
+        <meta property="og:image" content="https://www.townesquare.xyz/blog_preview.png" />
+        <meta property="og:title" content="Wtf is a consumer-facing layer?" />
+        <meta property="og:description" content="Wtf is a consumer-facing layer?" />
+      </Helmet>
       <Header />
       <div id="join" className="relative z-20 flex justify-center w-full">
         <div className="absolute top-0 left-0 z-0 hidden w-full md:block">
@@ -36,19 +47,19 @@ const Blog = () => {
           <img src="/assets/blog/mobile_line_pink.svg" className="absolute z-0 w-full top-16" alt="" />
           <img src="/assets/blog/mobile_line_green.svg" className="absolute top-0 z-0 w-full" alt="" />
         </div>
-        <div className=" mt-[70px] w-full flex flex-col  gap-12 px-[16px] py-8 z-50">
+        <div className=" mt-[70px] mb-[180px] w-full flex flex-col  gap-12 px-[16px] py-8 z-50">
           <div className="flex flex-col items-center justify-center text-center">
-            <p className="md:text-5xl text-4xl font-bold text-center font-Outfit leading-[150.3%] mb-20 mt-3">Town Blog</p>
-            <div className='relative z-50 items-start justify-start hidden mb-12 md:block group' onMouseOver={toggleMouseOver} onMouseOut={toggleMouseOut}>
-              <img src="/assets/blog/main_back.png" className="w-[1216px] inset-0 -z-10" alt=""
+            {/* <p className="md:text-5xl text-4xl font-bold text-center font-Outfit leading-[150.3%] mb-20 mt-3">Town Blog</p> */}
+            <div className='relative z-50 items-start justify-start hidden mb-12 md:block group' onClick={() => navigate('/blog/wtf-is-a-consumer-layer')} onMouseOver={toggleMouseOver} onMouseOut={toggleMouseOut}>
+              <img src="/assets/blog/blog_back.svg" className="w-[1216px] inset-0 -z-10" alt=""
               />
               <div ref={backgroundRef} className='absolute inset-0 opacity-50 bg-gradient-to-b from-transparent to-black'
                 style={{ background: 'linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))' }}
               />
               <div className="items-start justify-start ">
-                <button className="absolute bottom-40 left-10 px-[10px] py-1 bg-primary-default rounded-md mb-4 font-Outfit text-sm font-medium leading-[20px]">Monad</button>
-                <p className="group-hover:text-[#B882FF] group-active:text-[#6646AE] absolute bottom-16 left-10 text-[32px] font-semibold leading-[40px] font-Outfit mb-6 text-start">Monad on rise! How it will change the crypto<br /> as we know it</p>
-                <p className="absolute bottom-10 left-10 text-base font-normal font-Outfit leading-[24px]">August 20, 2022</p>
+                <button className="absolute bottom-40 left-10 px-[10px] py-1 bg-primary-default rounded-md mb-4 font-Outfit text-sm font-medium leading-[20px]">Composable NFT</button>
+                <p className="group-hover:text-[#B882FF] group-active:text-[#6646AE] absolute bottom-20 left-10 text-[32px] font-semibold leading-[40px] font-Outfit mb-6 text-start">Wtf is a consumer-facing layer?</p>
+                <p className="absolute bottom-10 left-10 text-base font-normal font-Outfit leading-[24px]">Aug 15th, 2024</p>
               </div>
             </div>
             <div className="block w-screen mt-4 md:hidden">
@@ -59,12 +70,12 @@ const Blog = () => {
                 <p className="text-base font-normal leading-[150%] text-[#999] mt-2">August 20, 2022</p>
               </div>
             </div>
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+            {/* <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
               {CardList.map((card, index) => (
                 <Card data={card} key={index} />
               ))}
-            </div>
-            <button className="px-6 py-2 mt-10 mb-4 text-base font-bold leading-normal border-2 rounded-full border-primary-default hover:text-primary-default font-Outfit">Load more</button>
+            </div> */}
+            {/* <button className="px-6 py-2 mt-10 mb-4 text-base font-bold leading-normal border-2 rounded-full border-primary-default hover:text-primary-default font-Outfit">Load more</button> */}
           </div>
         </div>
       </div>
