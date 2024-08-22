@@ -43,7 +43,7 @@ const Download = () => {
                       target="_blank"
                       rel="noreferrer"
                       className="hidden md:block justify-center items-center text-center px-6 py-4 text-base text-white w-[280px] h-[50px] leading-4 font-medium bg-secondary-cyan hover:bg-[#00EEDC] active:bg-[#AAAAAA] rounded-full cursor-pointer text-[#121212]">
-                      Download APK package V1.0.4
+                      Download APK package
                     </a>
                   </div>
                 </div>
@@ -85,7 +85,7 @@ const Download = () => {
               target="_blank"
               rel="noreferrer"
               className="justify-center items-center text-center px-6 py-4 text-base text-white w-full h-[50px] leading-4 font-medium bg-secondary-cyan hover:bg-[#00EEDC] active:bg-[#AAAAAA] rounded-full cursor-pointer text-[#121212]">
-              Download APK package V1.0.4
+              Download APK package
             </a>
           </div>
           <div className="z-50 mt-4">

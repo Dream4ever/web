@@ -24,10 +24,10 @@ function Join() {
               Download TowneSquare now!
             </p>
             <div className="py-12">
-              <button className="px-4 py-2.5 w-[211px] h-[51px] text-base text-[#121212] font-medium leading-none bg-[#00EEFD] hover:bg-[#388b91] active:bg-[#AAAAAA] rounded-full cursor-pointer"
+              <button className="px-4 py-2.5 w-[251px] h-[51px] text-base text-[#121212] font-medium leading-none bg-[#00EEFD] hover:bg-[#388b91] active:bg-[#AAAAAA] rounded-full cursor-pointer"
                 onClick={() => { toggleDownload() }}
               >
-                Download TowneSquare
+                Download TowneSquare App
               </button>
             </div>
             <div className="flex flex-row gap-2">
@@ -64,8 +64,8 @@ function Join() {
               Download TowneSquare now!
             </p>
             <div className="py-10">
-              <button className="px-4 py-2.5 w-[211px] h-[51px] text-base text-[#121212] font-medium leading-none bg-[#00EEFD] hover:bg-[#388b91] active:bg-[#AAAAAA] rounded-full cursor-pointer">
-                Download TowneSquare
+              <button className="px-4 py-2.5 w-[251px] h-[51px] text-base text-[#121212] font-medium leading-none bg-[#00EEFD] hover:bg-[#388b91] active:bg-[#AAAAAA] rounded-full cursor-pointer">
+                Download TowneSquare App
               </button>
             </div>
             <div className="flex flex-row gap-2">
