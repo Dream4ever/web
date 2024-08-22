@@ -150,8 +150,8 @@ function Screen1() {
           <div className="flex justify-center mt-8">
             <a
               href='/download'
-              className="px-4 py-5 w-[222px] whitespace-nowrap text-base text-center leading-none font-medium text-black rounded-full  bg-secondary-cyan hover:bg-secondary-cyan/70">
-              Download TowneSquare
+              className="px-4 py-5 w-[252px] whitespace-nowrap text-base text-center leading-none font-medium text-black rounded-full  bg-secondary-cyan hover:bg-secondary-cyan/70">
+              Download TowneSquare App
             </a>
           </div>
         </div>

@@ -172,7 +172,7 @@ function MobileScreen() {
             <a
               href="/download"
               className="px-4 py-4 text-base font-medium text-center text-black rounded-full w-60 bg-secondary-cyan">
-              Download TowneSquare
+              Download TowneSquare App
             </a>
           </div>
         </div>
