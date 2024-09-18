@@ -21,7 +21,7 @@ function MainV3() {
         </div>
       </div>
       {/* section 1 */}
-      <div className="flex flex-col items-center w-full h-screen pt-48 pb-40 bg-cover bg-index-s1-bg">
+      <div className="flex flex-col items-center w-full h-screen pt-56 pb-40 bg-cover bg-index-s1-bg">
         {/* content on the left and right */}
         <div className="flex items-center gap-x-20">
           <div className="flex flex-col gap-y-8">
@@ -32,7 +32,7 @@ function MainV3() {
               Creating distribution channels for Web3 applications<br />with customizable onboarding links.
             </span>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col -space-y-10">
             <GradientBorderCard text="users" />
             <GradientBorderCard primary={true}>
               <img src="/assets/main_v3/ts-logo.png" className="w-[220px] h-auto" alt="logo" />
