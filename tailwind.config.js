@@ -23,6 +23,10 @@ module.exports = {
         'header-bg': '#1B1B1BCC',
         'dark-lg': '#0E0E0E',
         'dark-md': '#151516',
+        'bg-card-from': '#3F3949',
+        'bg-card-to': '#2E2E31',
+        'bg-card-primary-from': '#A663EE',
+        'bg-card-primary-to': '#643695',
       },
       backgroundImage: {
         "vision-bg-mobile": "url('../public/images/vision_bg_mobile.svg')",

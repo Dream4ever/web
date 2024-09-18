@@ -9,25 +9,25 @@ type GradientBorderCardProps = {
 }
 
 const GradientBorderCard: React.FC<GradientBorderCardProps> = ({
-  text,
+  text = '',
   primary = false,
   last = false,
   children,
 }) => {
+  const wrapperBg = primary ? 'from-bg-card-primary-from/80 to-bg-card-primary-to/80'
+    : last ? 'from-bg-card-from to-bg-card-to'
+      : 'from-bg-card-from/50 to-bg-card-to/50'
+
   return (
     // card wrapper
-    <div
-      className={`relative flex items-center justify-center overflow-hidden gradient-border-card
-        bg-gradient-to-l
-        ${primary ? 'from-[#A663EEE5] to-[#643695E5]' : 'from-[#3F3949E5] to-[#2E2E31E5]'}
-        `}
-    >
+    <div className={`relative flex items-center justify-center overflow-hidden gradient-border-card
+        bg-gradient-to-l ${wrapperBg}`}>
       {/* card content */}
       <span className='text-2xl font-semibold text-white uppercase font-Outfit'>
-        {text || ''}
+        {text}
       </span>
       {children}
-  </div>
+    </div>
   )
 }
 
