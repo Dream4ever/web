@@ -20,6 +20,7 @@ module.exports = {
         "primary-default": "#9264F8",
         "secondary-cyan": "#00EEFD",
         black: "#000000",
+        'primary-light': '#B882FF',
         'header-bg': '#1B1B1BCC',
         'dark-lg': '#0E0E0E',
         'dark-md': '#151516',
@@ -27,6 +28,7 @@ module.exports = {
         'bg-card-to': '#2E2E31',
         'bg-card-primary-from': '#A663EE',
         'bg-card-primary-to': '#643695',
+        'gray-light': '#AAAAAA',
       },
       backgroundImage: {
         'index-s1-bg': "url('../public/assets/main_v3/bg-curve-top.png')",

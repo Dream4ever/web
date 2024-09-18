@@ -21,13 +21,26 @@ function MainV3() {
         </div>
       </div>
       {/* section 1 */}
-      <div className="flex flex-col items-center w-full h-screen pt-48 bg-cover gap-y-4 bg-index-s1-bg">
-        <GradientBorderCard text="users" />
-        <GradientBorderCard primary={true}>
-          <img src="/assets/main_v3/ts-logo.png" className="w-[220px] h-auto" alt="logo" />
-        </GradientBorderCard>
-        <GradientBorderCard text="web3 dapps" />
-        <GradientBorderCard text="chains" last={true} />
+      <div className="flex flex-col items-center w-full h-screen pt-48 pb-40 bg-cover gap-y-4 bg-index-s1-bg">
+        {/* content on the left and right */}
+        <div className="flex items-center gap-x-20">
+          <div className="flex flex-col gap-y-8">
+            <span className="text-[43px] font-semibold leading-tight font-Outfit">
+              <span className="text-primary-light">Onboard anyone</span> to your Web3 app,<br />anywhere anytime
+            </span>
+            <span className="text-2xl leading-normal tracking-wide text-gray-light font-Outfit">
+              Creating distribution channels for Web3 applications<br />with customizable onboarding links.
+            </span>
+          </div>
+          <div className="flex flex-col">
+            <GradientBorderCard text="users" />
+            <GradientBorderCard primary={true}>
+              <img src="/assets/main_v3/ts-logo.png" className="w-[220px] h-auto" alt="logo" />
+            </GradientBorderCard>
+            <GradientBorderCard text="web3 dapps" />
+            <GradientBorderCard text="chains" last={true} />
+          </div>
+        </div>
       </div>
       <div className="w-full h-screen bg-dark-md"></div>
     </div>
