@@ -29,6 +29,7 @@ module.exports = {
         'bg-card-primary-to': '#643695',
       },
       backgroundImage: {
+        'index-s1-bg': "url('../public/assets/main_v3/bg-curve-top.png')",
         "vision-bg-mobile": "url('../public/images/vision_bg_mobile.svg')",
         "vision-bg": "url('../public/images/vision_bg.svg')",
         "vision-bg-tablet": "url('../public/images/vision_bg_tablet.svg')",

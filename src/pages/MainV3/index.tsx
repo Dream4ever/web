@@ -3,7 +3,7 @@ import GradientBorderCard from "../../components/GradientBorderCard"
 function MainV3() {
   return (
     // page wrapper
-    <div className="relative flex flex-col items-center">
+    <div className="relative flex flex-col items-center bg-dark-lg">
       <div className="fixed">
         <img className="h-auto w-bg-lines" src="/assets/main_v3/bg-lines.png" alt="bg-line" />
       </div>
@@ -21,7 +21,7 @@ function MainV3() {
         </div>
       </div>
       {/* section 1 */}
-      <div className="flex flex-col items-center w-full h-screen pt-48 gap-y-4 bg-dark-lg">
+      <div className="flex flex-col items-center w-full h-screen pt-48 bg-cover gap-y-4 bg-index-s1-bg">
         <GradientBorderCard text="users" />
         <GradientBorderCard>
           <img src="/assets/main_v3/ts-logo.png" className="w-[220px] h-auto" alt="logo" />
