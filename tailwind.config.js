@@ -43,6 +43,9 @@ module.exports = {
         web: "url('../public/images/home/left_web.svg')",
         "feature-line": "url('../public/images/features/feature_line_1.svg')",
       },
+      zIndex: {
+        'max': '99999',
+      },
     },
     fontFamily: {
       Outfit: ["Outfit", "sans-serif"],
