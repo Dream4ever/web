@@ -14,9 +14,9 @@ const GradientBorderCard: React.FC<GradientBorderCardProps> = ({
   last = false,
   children,
 }) => {
-  const wrapperBg = primary ? 'from-bg-card-primary-from/80 to-bg-card-primary-to/80'
+  const wrapperBg = primary ? 'from-bg-card-primary-from/90 to-bg-card-primary-to/90'
     : last ? 'from-bg-card-from to-bg-card-to'
-      : 'from-bg-card-from/50 to-bg-card-to/50'
+      : 'from-bg-card-from/90 to-bg-card-to/90'
 
   return (
     // card wrapper
