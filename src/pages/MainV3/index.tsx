@@ -1,10 +1,37 @@
+import { useState } from "react"
+
 import GradientBorderCard from "../../components/GradientBorderCard"
 
+const features = [
+  {
+    title: 'Modular on-chain actions',
+    description: 'Use features from any DApp to power your onboarding experience',
+    w: 436,
+  },
+  {
+    title: 'Customizable onboarding flow creation',
+    description: 'Embed multiple actions from DEX, bridge, etc. in your onboarding channel',
+    w: 436,
+  },
+  {
+    title: 'Sharable anytime anywhere',
+    description: 'Generate an onboarding action link for your onboarding app for anyone, anywhere',
+    w: 523,
+  },
+  {
+    title: 'Support multiple wallet onboard options',
+    description: 'Generate an onboarding action link for your onboarding app for anyone',
+    w: 678,
+  },
+]
+
 function MainV3() {
+  const [activeFeature, setActiveFeature] = useState(0)
+
   return (
     // page wrapper
     <div className="relative flex flex-col items-center bg-dark-lg">
-      <div className="fixed">
+      <div className="fixed pointer-events-none">
         <img className="h-auto w-bg-lines" src="/assets/main_v3/bg-lines.png" alt="bg-line" />
       </div>
       {/* header */}
@@ -42,7 +69,39 @@ function MainV3() {
           </div>
         </div>
       </div>
-      <div className="w-full h-screen bg-dark-md"></div>
+      {/* section 2 */}
+      <div className="flex flex-col items-center w-full h-screen bg-dark-base/30 pt-25 rounded-3xl">
+        <div className="flex flex-col items-center gap-y-3 w-[729px]">
+          <span className="text-xl font-bold leading-tight font-Outfit text-primary-light">FEATURES</span>
+          <span className="font-Outfit font-medium text-4.5xl leading-tight text-center">Embed however many onboarding actions in one singular onboarding flow</span>
+        </div>
+        <div className="flex items-center mt-32 gap-x-20">
+          {/* feature list on the left */}
+          <div className="flex flex-col border-l w-feature-list border-l-gray-base">
+            {features.map((feature, i) => (
+              // feature item
+              <div key={i} className={`flex flex-col gap-y-1.5 pl-8 -ml-px cursor-pointer
+                ${i === activeFeature ? 'py-7 border-l-4 border-primary-light' : 'py-11'}
+              `} onClick={() => setActiveFeature(i)}>
+                <span className={`text-2xl
+                  ${i === activeFeature ? 'text-primary-light font-semibold' : 'text-gray-light'}
+                `}>{feature.title}</span>
+                {i === activeFeature && (
+                  <span className="text-xl">{feature.description}</span>
+                )}
+              </div>
+            ))}
+          </div>
+          <img
+            src={`/assets/main_v3/feature-${activeFeature + 1}.png`}
+            alt="feature-img"
+            style={{
+              width: `${features[activeFeature].w}px`,
+              height: 'auto',
+            }}
+          />
+        </div>
+      </div>
     </div>
   )
 }

@@ -3,9 +3,13 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      spacing: {
+        '25': '100px',
+      },
       width: {
         'header': '1200px',
         'bg-lines': '1140px',
+        'feature-list': '531px',
       },
       height: {
         'header': '102px',
@@ -24,11 +28,16 @@ module.exports = {
         'header-bg': '#1B1B1BCC',
         'dark-lg': '#0E0E0E',
         'dark-md': '#151516',
+        'dark-base': '#262429',
         'bg-card-from': '#3F3949',
         'bg-card-to': '#2E2E31',
         'bg-card-primary-from': '#A663EE',
         'bg-card-primary-to': '#643695',
+        'gray-base': '#D9D9D9',
         'gray-light': '#AAAAAA',
+      },
+      fontSize: {
+        '4.5xl': '40px',
       },
       backgroundImage: {
         'index-s1-bg': "url('../public/assets/main_v3/bg-curve-top.png')",
