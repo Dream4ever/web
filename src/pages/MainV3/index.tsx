@@ -23,11 +23,11 @@ function MainV3() {
       {/* section 1 */}
       <div className="flex flex-col items-center w-full h-screen pt-48 bg-cover gap-y-4 bg-index-s1-bg">
         <GradientBorderCard text="users" />
-        <GradientBorderCard>
+        <GradientBorderCard primary={true}>
           <img src="/assets/main_v3/ts-logo.png" className="w-[220px] h-auto" alt="logo" />
         </GradientBorderCard>
         <GradientBorderCard text="web3 dapps" />
-        <GradientBorderCard text="chains" />
+        <GradientBorderCard text="chains" last={true} />
       </div>
       <div className="w-full h-screen bg-dark-md"></div>
     </div>
