@@ -16,6 +16,14 @@ module.exports = {
       borderRadius: {
         'header': '136px',
       },
+      colors: {
+        "primary-default": "#9264F8",
+        "secondary-cyan": "#00EEFD",
+        black: "#000000",
+        'header-bg': '#1B1B1BCC',
+        'dark-lg': '#0E0E0E',
+        'dark-md': '#151516',
+      },
       backgroundImage: {
         "vision-bg-mobile": "url('../public/images/vision_bg_mobile.svg')",
         "vision-bg": "url('../public/images/vision_bg.svg')",
@@ -32,14 +40,6 @@ module.exports = {
     fontFamily: {
       Outfit: ["Outfit", "sans-serif"],
       Georgian: ["Noto Sans Georgian", "Noto Sans Georgian"],
-    },
-    colors: {
-      "primary-default": "#9264F8",
-      "secondary-cyan": "#00EEFD",
-      black: "#000000",
-      'header-bg': '#1B1B1BCC',
-      'dark-lg': '#0E0E0E',
-      'dark-md': '#151516',
     },
   },
   plugins: [],
