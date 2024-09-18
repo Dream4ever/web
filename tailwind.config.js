@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       width: {
         'header': '1200px',
+        'bg-lines': '1140px',
       },
       height: {
         'header': '102px',
