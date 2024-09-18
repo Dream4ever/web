@@ -1,3 +1,5 @@
+import GradientBorderCard from "../../components/GradientBorderCard"
+
 function MainV3() {
   return (
     // page wrapper
@@ -18,6 +20,16 @@ function MainV3() {
           <img src="/assets/main_v3/discord.png" className="w-[30px] h-auto" alt="logo" />
         </div>
       </div>
+      {/* section 1 */}
+      <div className="flex flex-col items-center w-screen h-screen pt-48 gap-y-4 bg-dark-lg">
+        <GradientBorderCard text="users" />
+        <GradientBorderCard>
+          <img src="/assets/main_v3/ts-logo.png" className="w-[220px] h-auto" alt="logo" />
+        </GradientBorderCard>
+        <GradientBorderCard text="web3 dapps" />
+        <GradientBorderCard text="chains" />
+      </div>
+      <div className="w-screen h-screen bg-dark-md"></div>
     </div>
   )
 }
