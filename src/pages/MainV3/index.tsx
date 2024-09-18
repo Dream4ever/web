@@ -21,7 +21,7 @@ function MainV3() {
         </div>
       </div>
       {/* section 1 */}
-      <div className="flex flex-col items-center w-screen h-screen pt-48 gap-y-4 bg-dark-lg">
+      <div className="flex flex-col items-center w-full h-screen pt-48 gap-y-4 bg-dark-lg">
         <GradientBorderCard text="users" />
         <GradientBorderCard>
           <img src="/assets/main_v3/ts-logo.png" className="w-[220px] h-auto" alt="logo" />
@@ -29,7 +29,7 @@ function MainV3() {
         <GradientBorderCard text="web3 dapps" />
         <GradientBorderCard text="chains" />
       </div>
-      <div className="w-screen h-screen bg-dark-md"></div>
+      <div className="w-full h-screen bg-dark-md"></div>
     </div>
   )
 }
