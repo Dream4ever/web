@@ -2,7 +2,20 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      width: {
+        'header': '1200px',
+      },
+      height: {
+        'header': '102px',
+      },
+      margin: {
+        'header': '50px',
+      },
+      borderRadius: {
+        'header': '136px',
+      },
+    },
     fontFamily: {
       Outfit: ["Outfit", "sans-serif"],
       Georgian: ["Noto Sans Georgian", "Noto Sans Georgian"],
@@ -11,6 +24,9 @@ module.exports = {
       "primary-default": "#9264F8",
       "secondary-cyan": "#00EEFD",
       black: "#000000",
+      'header-bg': '#1B1B1BCC',
+      'dark-lg': '#0E0E0E',
+      'dark-md': '#151516',
     },
     backgroundImage: {
       "vision-bg-mobile": "url('../public/images/vision_bg_mobile.svg')",
