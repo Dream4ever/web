@@ -21,7 +21,7 @@ function MainV3() {
         </div>
       </div>
       {/* section 1 */}
-      <div className="flex flex-col items-center w-full h-screen pt-48 pb-40 bg-cover gap-y-4 bg-index-s1-bg">
+      <div className="flex flex-col items-center w-full h-screen pt-48 pb-40 bg-cover bg-index-s1-bg">
         {/* content on the left and right */}
         <div className="flex items-center gap-x-20">
           <div className="flex flex-col gap-y-8">
