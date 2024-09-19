@@ -11,6 +11,7 @@ module.exports = {
         'header': '1200px',
         'bg-lines': '1140px',
         'feature-list': '531px',
+        'section-header': '729px',
       },
       height: {
         'header': '102px',
