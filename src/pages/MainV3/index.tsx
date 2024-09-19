@@ -25,6 +25,24 @@ const features = [
   },
 ]
 
+function SectionHeader({ sectionName, title, subTitle }: { sectionName: string, title: string, subTitle?: string }) {
+  return (
+    <div className="flex flex-col items-center gap-y-3 font-Outfit w-section-header">
+      <span className="text-xl font-bold leading-tight text-primary-light">
+        {sectionName}
+      </span>
+      <span className="font-medium text-4.5xl leading-tight text-center">
+        {title}
+      </span>
+      {subTitle && (
+        <span className="text-2xl leading-tight text-center text-gray-light">
+          {subTitle}
+        </span>
+      )}
+    </div>
+  )
+}
+
 function MainV3() {
   const [activeFeature, setActiveFeature] = useState(0)
 
@@ -71,14 +89,10 @@ function MainV3() {
       </div>
       {/* section 2 */}
       <div className="flex flex-col items-center w-full bg-dark-base/30 pt-25 pb-50 rounded-3xl">
-        <div className="flex flex-col items-center gap-y-3 w-[729px]">
-          <span className="text-xl font-bold leading-tight font-Outfit text-primary-light">
-            FEATURES
-          </span>
-          <span className="font-Outfit font-medium text-4.5xl leading-tight text-center">
-            Embed however many onboarding actions in one singular onboarding flow
-          </span>
-        </div>
+        <SectionHeader
+          sectionName="FEATURES"
+          title="Embed however many onboarding actions in one singular onboarding flow"
+        />
         <div className="flex items-center mt-32 gap-x-20">
           {/* feature list on the left */}
           <div className="flex flex-col border-l w-feature-list border-l-gray-base">
