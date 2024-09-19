@@ -39,6 +39,7 @@ module.exports = {
         'gray-light': '#AAAAAA',
       },
       fontSize: {
+        '2.5xl': '28px',
         '4.5xl': '40px',
       },
       backgroundImage: {

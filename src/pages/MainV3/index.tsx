@@ -122,6 +122,38 @@ function MainV3() {
           </div>
         </div>
       </div>
+      {/* section 3 */}
+      <div className="flex flex-col items-center w-full pt-25">
+        <SectionHeader
+          sectionName="ONBOARDING LINKS"
+          title="Onboarding Links to bring users from anywhere to your DApp"
+          subTitle="Generate your onboarding links that contain onboarding actions for your app"
+        />
+        <div className="flex flex-col items-center mt-16 font-Outfit">
+          <div className="flex items-center gap-x-14">
+            <img className="w-[550px] h-auto" src="/assets/main_v3/link-1.png" alt="link" />
+            <div className="flex flex-col gap-y-2 w-[343px]">
+              <span className="text-2.5xl font-semibold leading-tight">
+                Customizable actions
+              </span>
+              <span className="text-xl leading-tight text-gray-light">
+                Each link contains customizable modular features to onboard users from any setting with a series of actions, all in one flow.
+              </span>
+            </div>
+          </div>
+          <div className="flex items-center gap-x-14">
+            <div className="flex flex-col gap-y-2 w-[343px]">
+              <span className="text-2.5xl font-semibold leading-tight">
+                Sharable anywhere
+              </span>
+              <span className="text-xl leading-tight text-gray-light">
+                Share them easily on social media and other platforms, both Web2 and Web3
+              </span>
+            </div>
+            <img className="w-[550px] h-auto" src="/assets/main_v3/link-2.png" alt="link" />
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
