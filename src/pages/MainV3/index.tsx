@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import { throttle } from 'lodash'
 
 import GradientBorderCard from "../../components/GradientBorderCard"
 
@@ -120,6 +121,26 @@ function Links({ title, links }: { title: string, links: LINK[] }) {
 
 function MainV3() {
   const [activeFeature, setActiveFeature] = useState(0)
+  const [activeSection, setActiveSection] = useState('')
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ['features', 'onboarding-links', 'dapp-bastraction']
+      const currentSection = sections.find(section => {
+        const element = document.getElementById(section)
+        if (element) {
+          const rect = element.getBoundingClientRect()
+          return rect.top <= 100 && rect.bottom >= 100
+        }
+        return false
+      })
+      setActiveSection(currentSection || '')
+    }
+
+    const throttledHandleScroll = throttle(handleScroll, 200)
+    window.addEventListener('scroll', throttledHandleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   return (
     // page wrapper
@@ -131,9 +152,18 @@ function MainV3() {
       <div className="fixed flex items-center justify-between px-16 w-header h-header rounded-header mt-header bg-header-bg z-max">
         <img src="/assets/main_v3/ts-logo.png" className="w-[220px] h-auto" alt="logo" />
         <div className="flex items-center gap-x-14 font-Outfit">
-          <a href="#features">Features</a>
-          <a href="#onboarding-links">Onboarding Links</a>
-          <a href="#dapp-bastraction">Dapp Abstraction</a>
+          <a
+            href="#features"
+            className={activeSection === 'features' ? 'text-primary-light font-semibold' : 'text-gray-light2'}
+          >Features</a>
+          <a
+            href="#onboarding-links"
+            className={activeSection === 'onboarding-links' ? 'text-primary-light font-semibold' : 'text-gray-light2'}
+          >Onboarding Links</a>
+          <a
+            href="#dapp-bastraction"
+            className={activeSection === 'dapp-bastraction' ? 'text-primary-light font-semibold' : 'text-gray-light2'}
+          >Dapp Abstraction</a>
         </div>
         <div className="flex items-center gap-x-6 pl-[52px]">
           <img src="/assets/main_v3/x.png" className="w-auto h-6" alt="logo" />
