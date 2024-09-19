@@ -43,6 +43,22 @@ function SectionHeader({ sectionName, title, subTitle }: { sectionName: string, 
   )
 }
 
+function Para({ title, content, width }: { title: string, content: string, width: number }) {
+  return (
+    <div
+      className="flex flex-col gap-y-2 font-Outfit"
+      style={{ width: `${width}px` }}
+    >
+      <span className="text-2.5xl font-semibold leading-tight">
+        {title}
+      </span>
+      <span className="text-xl leading-tight text-gray-light">
+        {content}
+      </span>
+    </div>
+  )
+}
+
 function MainV3() {
   const [activeFeature, setActiveFeature] = useState(0)
 
@@ -132,24 +148,18 @@ function MainV3() {
         <div className="flex flex-col items-center mt-16 font-Outfit">
           <div className="flex items-center gap-x-14">
             <img className="w-[550px] h-auto" src="/assets/main_v3/link-1.png" alt="link" />
-            <div className="flex flex-col gap-y-2 w-[343px]">
-              <span className="text-2.5xl font-semibold leading-tight">
-                Customizable actions
-              </span>
-              <span className="text-xl leading-tight text-gray-light">
-                Each link contains customizable modular features to onboard users from any setting with a series of actions, all in one flow.
-              </span>
-            </div>
+            <Para
+              title="Customizable actions"
+              content="Each link contains customizable modular features to onboard users from any setting with a series of actions, all in one flow."
+              width={343}
+            />
           </div>
           <div className="flex items-center gap-x-14">
-            <div className="flex flex-col gap-y-2 w-[343px]">
-              <span className="text-2.5xl font-semibold leading-tight">
-                Sharable anywhere
-              </span>
-              <span className="text-xl leading-tight text-gray-light">
-                Share them easily on social media and other platforms, both Web2 and Web3
-              </span>
-            </div>
+            <Para
+              title="Sharable anywhere"
+              content="Share them easily on social media and other platforms, both Web2 and Web3"
+              width={343}
+            />
             <img className="w-[550px] h-auto" src="/assets/main_v3/link-2.png" alt="link" />
           </div>
         </div>
