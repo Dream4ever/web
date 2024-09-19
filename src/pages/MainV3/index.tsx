@@ -92,7 +92,7 @@ function MainV3() {
           <img src="/assets/main_v3/discord.png" className="w-[30px] h-auto" alt="logo" />
         </div>
       </div>
-      {/* section 1 */}
+      {/* section banner */}
       <div className="flex flex-col items-center w-full h-screen pt-56 pb-40 bg-cover bg-index-s1-bg">
         {/* content on the left and right */}
         <div className="flex items-center gap-x-20">
@@ -114,7 +114,7 @@ function MainV3() {
           </div>
         </div>
       </div>
-      {/* section 2 */}
+      {/* section features */}
       <div className="flex flex-col items-center w-full bg-dark-base/30 pt-25 pb-50 rounded-t-section">
         <SectionHeader
           sectionName="FEATURES"
@@ -149,7 +149,7 @@ function MainV3() {
           </div>
         </div>
       </div>
-      {/* section 3 */}
+      {/* section links */}
       <div className="flex flex-col items-center w-full pt-25">
         <SectionHeader
           sectionName="ONBOARDING LINKS"
@@ -175,7 +175,7 @@ function MainV3() {
           </div>
         </div>
       </div>
-      {/* section 4 */}
+      {/* section dapp */}
       <div className="flex flex-col items-center w-full pb-20 bg-dark-base/30 pt-25 rounded-b-section">
         <SectionHeader
           sectionName="DAPP ABSTRACTION"
@@ -207,7 +207,7 @@ function MainV3() {
           <span className="font-medium">COMING SOON</span>
         </div>
       </div>
-      {/* section 5 */}
+      {/* section social */}
       <div className="relative flex flex-col items-center w-full py-20">
         <img className="absolute w-full h-auto -top-48" src="/assets/main_v3/bg-curve-bottom.png" alt="bg" />
         <div className="z-20 flex flex-col items-center gap-y-2 font-Outfit">
