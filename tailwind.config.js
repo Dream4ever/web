@@ -31,6 +31,8 @@ module.exports = {
         black: "#000000",
         'primary-light': '#B882FF',
         'primary-dark': '#6646AE',
+        'primary-dark2': '#2D2947',
+        'primary-dark3': '#211738',
         'header-bg': '#1B1B1BCC',
         'dark-lg': '#0E0E0E',
         'dark-md': '#151516',
@@ -41,7 +43,7 @@ module.exports = {
         'bg-card-primary-to': '#643695',
         'gray-base': '#D9D9D9',
         'gray-light': '#AAAAAA',
-        'primary-dark2': '#2D2947',
+        'gray-light2': '#CCCCCC',
         'gray-light3': '#4C4266',
       },
       fontSize: {

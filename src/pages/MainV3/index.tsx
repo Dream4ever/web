@@ -25,6 +25,34 @@ const features = [
   },
 ]
 
+const links = [
+  {
+    title: 'Legal',
+    links: [
+      {
+        text: 'Terms of Service',
+      },
+      {
+        text: 'Legal',
+      },
+      {
+        text: 'Privacy Policy',
+      },
+    ]
+  },
+  {
+    title: 'Community',
+    links: [
+      {
+        text: 'Twitter',
+      },
+      {
+        text: 'Discord',
+      },
+    ]
+  },
+]
+
 function SectionHeader({ sectionName, title, subTitle }: { sectionName: string, title: string, subTitle?: string }) {
   return (
     <div className="flex flex-col items-center gap-y-3 font-Outfit w-section-header">
@@ -61,11 +89,31 @@ function Para({ title, content, width }: { title: string, content: string, width
 
 function FlatButton({ text, imgSrc }: { text: string, imgSrc: string }) {
   return (
-    <div className="flex items-center justify-center h-16 border w-60 gap-x-2 rounded-xl bg-primary-dark2 border-gray-light3">
+    <div className="flex items-center justify-center h-16 border cursor-pointer w-60 gap-x-2 rounded-xl bg-primary-dark2 border-gray-light3">
       <img className="w-auto h-[29px]" src={imgSrc} alt="icon" />
       <span className="text-xl font-medium text-white font-Outfit">
         {text}
       </span>
+    </div>
+  )
+}
+
+type LINK = {
+  text: string;
+  link?: string;
+}
+function Links({ title, links }: { title: string, links: LINK[] }) {
+  return (
+    <div className="flex flex-col text-sm font-Outfit gap-y-2">
+      {/* title */}
+      <span className="font-semibold text-white">{title}</span>
+      {links.map((item, i) => (
+        <a
+          className="text-gray-light2"
+          key={i}
+          href={item.link || ''}
+        >{item.text}</a>
+      ))}
     </div>
   )
 }
@@ -75,7 +123,7 @@ function MainV3() {
 
   return (
     // page wrapper
-    <div className="relative flex flex-col items-center bg-dark-lg">
+    <div className="relative flex flex-col items-center overflow-hidden bg-dark-lg">
       <div className="fixed pointer-events-none">
         <img className="h-auto w-bg-lines" src="/assets/main_v3/bg-lines.png" alt="bg-line" />
       </div>
@@ -225,6 +273,35 @@ function MainV3() {
             text="TownSquare"
             imgSrc="/assets/main_v3/discord.png"
           />
+        </div>
+      </div>
+      {/* footer */}
+      <div className="z-20 flex justify-between w-full px-40 py-8 bg-primary-dark3">
+        {/* content */}
+        <div className="flex justify-between w-full">
+          {/* content on the left */}
+          <div className="flex flex-col justify-between">
+            <div className="flex flex-col gap-y-2">
+              <span className="text-sm font-semibold">Follow us</span>
+              <div className="flex items-center gap-x-4">
+                <img className="w-6 h-auto" src="/assets/main_v3/x.png" alt="social" />
+                <img className="h-auto w-7" src="/assets/main_v3/discord.png" alt="social" />
+              </div>
+            </div>
+            <a href="https://househaeds.com/" target="_blank">
+              Copyright © 2024 TowneSquare. All rights reserved.
+            </a>
+          </div>
+          {/* content on the right */}
+          <div className="flex gap-x-24">
+            {links.map((item, i) => (
+              <Links
+                key={i}
+                title={item.title}
+                links={item.links}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>
