@@ -219,7 +219,7 @@ function MainV3() {
               content="Share them easily on social media and other platforms, both Web2 and Web3"
               width={343}
             />
-            <img className="w-[550px] h-auto" src="/assets/main_v3/link-2.png" alt="link" />
+            <img className="w-[406px] h-auto" src="/assets/main_v3/link-2.png" alt="link" />
           </div>
         </div>
       </div>
