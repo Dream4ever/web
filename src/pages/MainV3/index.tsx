@@ -164,6 +164,38 @@ function MainV3() {
           </div>
         </div>
       </div>
+      {/* section 4 */}
+      <div className="flex flex-col items-center w-full pb-20 bg-dark-base/30 pt-25">
+        <SectionHeader
+          sectionName="DAPP ABSTRACTION"
+          title="Pioneering Dapp Abstraction"
+          subTitle="TownSquare is using Dapp abstraction to power onboarding experiences"
+        />
+        <div className="flex mt-20 gap-x-24">
+          <div className="flex flex-col items-center gap-y-8">
+            <img className="w-auto h-[210px]" src="/assets/main_v3/dapp-1.png" alt="dapp" />
+            <Para
+              title="Highly customizable with minimum coding"
+              content="Each onboarding link is an app that contains customizable features abstracted from other applications, allowing an onboarding app to be created with minimum development."
+              width={436}
+            />
+          </div>
+          <div className="flex flex-col items-center gap-y-8">
+            <img className="w-auto h-[210px]" src="/assets/main_v3/dapp-2.png" alt="dapp" />
+            <Para
+              title="Feature modularity"
+              content="Each feature is a primitive abstracted from a Dapp into a library, which can be leveraged by any developer to build new applications"
+              width={484}
+            />
+          </div>
+        </div>
+        <div className="flex flex-col items-center mt-10 text-white gap-y-3 font-Outfit">
+          <button className="flex items-center justify-center h-12 text-sm font-medium w-button rounded-4xl bg-primary-dark">
+            Check out DApp Abstraction Library
+          </button>
+          <span className="font-medium">COMING SOON</span>
+        </div>
+      </div>
     </div>
   )
 }

@@ -12,6 +12,7 @@ module.exports = {
         'bg-lines': '1140px',
         'feature-list': '531px',
         'section-header': '729px',
+        'button': '300px',
       },
       height: {
         'header': '102px',
@@ -20,6 +21,7 @@ module.exports = {
         'header': '50px',
       },
       borderRadius: {
+        '4xl': '32px',
         'header': '136px',
       },
       colors: {
@@ -27,6 +29,7 @@ module.exports = {
         "secondary-cyan": "#00EEFD",
         black: "#000000",
         'primary-light': '#B882FF',
+        'primary-dark': '#6646AE',
         'header-bg': '#1B1B1BCC',
         'dark-lg': '#0E0E0E',
         'dark-md': '#151516',
