@@ -23,6 +23,7 @@ module.exports = {
       borderRadius: {
         '4xl': '32px',
         'header': '136px',
+        'section': '100px',
       },
       colors: {
         "primary-default": "#9264F8",
@@ -40,6 +41,8 @@ module.exports = {
         'bg-card-primary-to': '#643695',
         'gray-base': '#D9D9D9',
         'gray-light': '#AAAAAA',
+        'gray-light2': '#2D2947',
+        'gray-light3': '#4C4266',
       },
       fontSize: {
         '2.5xl': '28px',

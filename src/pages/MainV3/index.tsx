@@ -59,6 +59,17 @@ function Para({ title, content, width }: { title: string, content: string, width
   )
 }
 
+function FlatButton({ text, imgSrc }: { text: string, imgSrc: string }) {
+  return (
+    <div className="flex items-center justify-center h-16 border w-60 gap-x-2 rounded-xl bg-gray-light2 border-gray-light3">
+      <img className="w-auto h-[29px]" src={imgSrc} alt="icon" />
+      <span className="text-xl font-medium text-white font-Outfit">
+        {text}
+      </span>
+    </div>
+  )
+}
+
 function MainV3() {
   const [activeFeature, setActiveFeature] = useState(0)
 
@@ -104,7 +115,7 @@ function MainV3() {
         </div>
       </div>
       {/* section 2 */}
-      <div className="flex flex-col items-center w-full bg-dark-base/30 pt-25 pb-50 rounded-3xl">
+      <div className="flex flex-col items-center w-full bg-dark-base/30 pt-25 pb-50 rounded-t-section">
         <SectionHeader
           sectionName="FEATURES"
           title="Embed however many onboarding actions in one singular onboarding flow"
@@ -165,7 +176,7 @@ function MainV3() {
         </div>
       </div>
       {/* section 4 */}
-      <div className="flex flex-col items-center w-full pb-20 bg-dark-base/30 pt-25">
+      <div className="flex flex-col items-center w-full pb-20 bg-dark-base/30 pt-25 rounded-b-section">
         <SectionHeader
           sectionName="DAPP ABSTRACTION"
           title="Pioneering Dapp Abstraction"
@@ -194,6 +205,26 @@ function MainV3() {
             Check out DApp Abstraction Library
           </button>
           <span className="font-medium">COMING SOON</span>
+        </div>
+      </div>
+      {/* section 5 */}
+      <div className="relative flex flex-col items-center w-full py-20">
+        <img className="absolute w-full h-auto -top-48" src="/assets/main_v3/bg-curve-bottom.png" alt="bg" />
+        <div className="z-20 flex flex-col items-center gap-y-2 font-Outfit">
+          <span className="text-4.5xl font-medium leading-tight">Find us on socials</span>
+          <span className="text-2xl leading-tight">
+            TownSquare is using Dapp abstraction to power onboarding experiences
+          </span>
+        </div>
+        <div className="z-20 flex items-center mt-20 gap-x-9">
+          <FlatButton
+            text="@TowneSquarexyz"
+            imgSrc="/assets/main_v3/x.png"
+          />
+          <FlatButton
+            text="TownSquare"
+            imgSrc="/assets/main_v3/discord.png"
+          />
         </div>
       </div>
     </div>
