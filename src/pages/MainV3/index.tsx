@@ -288,7 +288,7 @@ function MainV3() {
                 <img className="h-auto w-7" src="/assets/main_v3/discord.png" alt="social" />
               </div>
             </div>
-            <a href="https://househaeds.com/" target="_blank">
+            <a href="https://househaeds.com/" target="_blank" rel="noreferrer">
               Copyright © 2024 TowneSquare. All rights reserved.
             </a>
           </div>
