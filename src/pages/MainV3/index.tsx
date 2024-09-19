@@ -163,7 +163,7 @@ function MainV3() {
         </div>
       </div>
       {/* section features */}
-      <div className="flex flex-col items-center w-full bg-dark-base/30 pt-25 pb-50 rounded-t-section">
+      <div className="flex flex-col items-center w-full pt-44 bg-dark-base/30 pb-50 rounded-t-section" id="features">
         <SectionHeader
           sectionName="FEATURES"
           title="Embed however many onboarding actions in one singular onboarding flow"
@@ -198,7 +198,7 @@ function MainV3() {
         </div>
       </div>
       {/* section links */}
-      <div className="flex flex-col items-center w-full pt-25">
+      <div className="flex flex-col items-center w-full pt-44" id="onboarding-links">
         <SectionHeader
           sectionName="ONBOARDING LINKS"
           title="Onboarding Links to bring users from anywhere to your DApp"
@@ -224,7 +224,7 @@ function MainV3() {
         </div>
       </div>
       {/* section dapp */}
-      <div className="flex flex-col items-center w-full pb-20 bg-dark-base/30 pt-25 rounded-b-section">
+      <div className="flex flex-col items-center w-full pb-20 bg-dark-base/30 pt-44 rounded-b-section" id="dapp-bastraction">
         <SectionHeader
           sectionName="DAPP ABSTRACTION"
           title="Pioneering Dapp Abstraction"
