@@ -41,7 +41,7 @@ module.exports = {
         'bg-card-primary-to': '#643695',
         'gray-base': '#D9D9D9',
         'gray-light': '#AAAAAA',
-        'gray-light2': '#2D2947',
+        'primary-dark2': '#2D2947',
         'gray-light3': '#4C4266',
       },
       fontSize: {

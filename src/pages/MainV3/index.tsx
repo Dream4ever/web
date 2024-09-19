@@ -61,7 +61,7 @@ function Para({ title, content, width }: { title: string, content: string, width
 
 function FlatButton({ text, imgSrc }: { text: string, imgSrc: string }) {
   return (
-    <div className="flex items-center justify-center h-16 border w-60 gap-x-2 rounded-xl bg-gray-light2 border-gray-light3">
+    <div className="flex items-center justify-center h-16 border w-60 gap-x-2 rounded-xl bg-primary-dark2 border-gray-light3">
       <img className="w-auto h-[29px]" src={imgSrc} alt="icon" />
       <span className="text-xl font-medium text-white font-Outfit">
         {text}
