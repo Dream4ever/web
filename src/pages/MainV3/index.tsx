@@ -11,7 +11,7 @@ const features = [
   {
     title: 'Customizable onboarding flow creation',
     description: 'Embed multiple actions from DEX, bridge, etc. in your onboarding channel',
-    w: 436,
+    w: 599,
   },
   {
     title: 'Sharable anytime anywhere',
@@ -70,10 +70,14 @@ function MainV3() {
         </div>
       </div>
       {/* section 2 */}
-      <div className="flex flex-col items-center w-full h-screen bg-dark-base/30 pt-25 rounded-3xl">
+      <div className="flex flex-col items-center w-full bg-dark-base/30 pt-25 pb-50 rounded-3xl">
         <div className="flex flex-col items-center gap-y-3 w-[729px]">
-          <span className="text-xl font-bold leading-tight font-Outfit text-primary-light">FEATURES</span>
-          <span className="font-Outfit font-medium text-4.5xl leading-tight text-center">Embed however many onboarding actions in one singular onboarding flow</span>
+          <span className="text-xl font-bold leading-tight font-Outfit text-primary-light">
+            FEATURES
+          </span>
+          <span className="font-Outfit font-medium text-4.5xl leading-tight text-center">
+            Embed however many onboarding actions in one singular onboarding flow
+          </span>
         </div>
         <div className="flex items-center mt-32 gap-x-20">
           {/* feature list on the left */}
@@ -92,14 +96,16 @@ function MainV3() {
               </div>
             ))}
           </div>
-          <img
-            src={`/assets/main_v3/feature-${activeFeature + 1}.png`}
-            alt="feature-img"
-            style={{
-              width: `${features[activeFeature].w}px`,
-              height: 'auto',
-            }}
-          />
+          <div className="w-fit h-[614px]">
+            <img
+              src={`/assets/main_v3/feature-${activeFeature + 1}.png`}
+              alt="feature-img"
+              style={{
+                width: `${features[activeFeature].w}px`,
+                height: 'auto',
+              }}
+            />
+          </div>
         </div>
       </div>
     </div>

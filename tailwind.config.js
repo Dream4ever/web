@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       spacing: {
         '25': '100px',
+        '50': '200px',
       },
       width: {
         'header': '1200px',
