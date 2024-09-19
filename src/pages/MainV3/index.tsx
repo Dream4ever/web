@@ -20,7 +20,7 @@ const features = [
   },
   {
     title: 'Support multiple wallet onboard options',
-    description: 'Generate an onboarding action link for your onboarding app for anyone',
+    description: 'Meet your users with both Web3 & Web2 signing options',
     w: 678,
   },
 ]
