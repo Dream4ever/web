@@ -149,25 +149,28 @@ function MainV3() {
         <img className="h-auto w-bg-lines" src="/assets/main_v3/bg-lines.png" alt="bg-line" />
       </div>
       {/* header */}
-      <div className="fixed flex items-center justify-between px-16 w-header h-header rounded-header mt-header bg-header-bg z-max">
-        <img src="/assets/main_v3/ts-logo.png" className="w-[220px] h-auto" alt="logo" />
-        <div className="flex items-center gap-x-14 font-Outfit">
-          <a
-            href="#features"
-            className={activeSection === 'features' ? 'text-primary-light font-semibold' : 'text-gray-light2'}
-          >Features</a>
-          <a
-            href="#onboarding-links"
-            className={activeSection === 'onboarding-links' ? 'text-primary-light font-semibold' : 'text-gray-light2'}
-          >Onboarding Links</a>
-          <a
-            href="#dapp-bastraction"
-            className={activeSection === 'dapp-bastraction' ? 'text-primary-light font-semibold' : 'text-gray-light2'}
-          >Dapp Abstraction</a>
-        </div>
-        <div className="flex items-center gap-x-6 pl-[52px]">
-          <img src="/assets/main_v3/x.png" className="w-auto h-6" alt="logo" />
-          <img src="/assets/main_v3/discord.png" className="w-[30px] h-auto" alt="logo" />
+      <div className="fixed flex justify-center w-full px-3 mt-6 md:px-4 xl:px-0 md:mt-header z-max">
+        <div className="flex items-center justify-between w-full px-4 md:px-8 xl:px-16 xl:w-header_xl h-header md:h-header_md rounded-header bg-header-bg">
+          <img src="/assets/main_v3/ts-logo.png" className="w-[169px] md:w-[154px] xl:w-[220px] h-auto" alt="logo" />
+          {/* hide on mobile */}
+          <div className="items-center hidden text-center md:flex md:gap-x-6 xl:gap-x-14 font-Outfit">
+            <a
+              href="#features"
+              className={activeSection === 'features' ? 'text-primary-light font-semibold' : 'text-gray-light2'}
+            >Features</a>
+            <a
+              href="#onboarding-links"
+              className={activeSection === 'onboarding-links' ? 'text-primary-light font-semibold' : 'text-gray-light2'}
+            >Onboarding Links</a>
+            <a
+              href="#dapp-bastraction"
+              className={activeSection === 'dapp-bastraction' ? 'text-primary-light font-semibold' : 'text-gray-light2'}
+            >Dapp Abstraction</a>
+          </div>
+          <div className="flex items-center gap-x-6">
+            <img src="/assets/main_v3/x.png" className="w-5 h-auto md:w-6" alt="logo" />
+            <img src="/assets/main_v3/discord.png" className="w-6 h-auto md:w-[30px]" alt="logo" />
+          </div>
         </div>
       </div>
       {/* section banner */}

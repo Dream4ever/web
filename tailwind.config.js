@@ -8,7 +8,7 @@ module.exports = {
         '50': '200px',
       },
       width: {
-        'header': '1200px',
+        'header_xl': '1200px',
         'bg-lines': '1140px',
         'feature-list': '531px',
         'section-header': '729px',
@@ -17,7 +17,8 @@ module.exports = {
         'grad-card_xl': '278px',
       },
       height: {
-        'header': '102px',
+        'header': '79px',
+        'header_md': '102px',
         'grad-card': '94px',
         'grad-card_xl': '128px',
       },
