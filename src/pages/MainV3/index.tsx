@@ -174,14 +174,15 @@ function MainV3() {
         </div>
       </div>
       {/* section banner */}
-      <div className="flex flex-col items-center w-full h-screen pt-56 pb-40 bg-cover bg-index-s1-bg">
+      <div className="flex flex-col items-center w-full h-screen pb-40 bg-cover pt-36 md:pt-50 xl:pt-56 bg-index-s1-bg">
         {/* content on the left and right */}
-        <div className="flex items-center gap-x-20">
-          <div className="flex flex-col gap-y-8">
-            <span className="text-[43px] font-semibold leading-tight font-Outfit">
-              <span className="text-primary-light">Onboard anyone</span> to your Web3 app,<br />anywhere anytime
+        <div className="flex flex-col items-center xl:flex-row gap-y-12 md:gap-y-24 xl:gap-x-20">
+          {/* slogon */}
+          <div className="flex flex-col px-5 gap-y-4 md:gap-y-8 md:px-14 xl:px-0">
+            <span className="xl:w-[720px] text-[28px] md:text-[43px] font-semibold leading-tight font-Outfit">
+              <span className="text-primary-light">Onboard anyone</span> to your Web3 app, anywhere anytime
             </span>
-            <span className="text-2xl leading-normal tracking-wide text-gray-light font-Outfit">
+            <span className="text-lg leading-normal tracking-wide md:text-2xl text-gray-light font-Outfit">
               Creating distribution channels for Web3 applications<br />with customizable onboarding links.
             </span>
           </div>
