@@ -56,11 +56,11 @@ const links = [
 
 function SectionHeader({ sectionName, title, subTitle }: { sectionName: string, title: string, subTitle?: string }) {
   return (
-    <div className="flex flex-col items-center gap-y-3 font-Outfit w-section-header">
+    <div className="flex flex-col w-full md:items-center gap-y-3 font-Outfit md:px-14 xl:px-0 xl:w-section-header">
       <span className="text-xl font-bold leading-tight text-primary-light">
         {sectionName}
       </span>
-      <span className="font-medium text-4.5xl leading-tight text-center">
+      <span className="font-medium text-2.5xl md:text-4.5xl leading-tight md:text-center">
         {title}
       </span>
       {subTitle && (
@@ -197,29 +197,39 @@ function MainV3() {
         </div>
       </div>
       {/* section features */}
-      <div className="flex flex-col items-center w-full pt-44 bg-dark-base/30 pb-50 rounded-t-section" id="features">
+      <div className="flex flex-col items-center w-full px-5 pt-16 pb-12 xl:pt-44 bg-dark-base/30 md:pb-40 xl:pb-50 rounded-t-section md:rounded-t-section_md" id="features">
         <SectionHeader
           sectionName="FEATURES"
           title="Embed however many onboarding actions in one singular onboarding flow"
         />
-        <div className="flex items-center mt-32 gap-x-20">
+        <div className="flex flex-col items-center mt-16 md:mt-32 md:flex-row md:px-16 xl:px-0 md:justify-between xl:justify-normal gap-x-20">
           {/* feature list on the left */}
-          <div className="flex flex-col border-l w-feature-list border-l-gray-base">
+          <div className="flex flex-col gap-y-16 md:gap-y-0 md:border-l xl:w-feature-list_xl md:w-feature-list_md md:border-l-gray-base">
             {features.map((feature, i) => (
               // feature item
-              <div key={i} className={`flex flex-col gap-y-1.5 pl-8 -ml-px cursor-pointer
-                ${i === activeFeature ? 'py-7 border-l-4 border-primary-light' : 'py-11'}
-              `} onClick={() => setActiveFeature(i)}>
-                <span className={`text-2xl
-                  ${i === activeFeature ? 'text-primary-light font-semibold' : 'text-gray-light'}
-                `}>{feature.title}</span>
-                {i === activeFeature && (
-                  <span className="text-xl">{feature.description}</span>
-                )}
+              <div className="flex flex-col gap-y-8" key={i}>
+                <div className={`flex flex-col gap-y-1.5 pl-4 md:pl-8 md:-ml-px cursor-pointer border-l-4 border-primary-light
+                  ${i === activeFeature ? 'md:py-7 md:border-l-4 md:border-primary-light' : 'md:py-11 md:border-none'}
+                `} onClick={() => setActiveFeature(i)}>
+                  <span className={`text-xl xl:text-2xl text-primary-light font-semibold
+                    ${i === activeFeature ? 'md:text-primary-light md:font-semibold' : 'md:text-gray-light'}
+                  `}>
+                    {feature.title}
+                  </span>
+                  <span className={`text-base md:text-lg xl:text-xl ${i !== activeFeature && 'md:hidden'}`}>
+                    {feature.description}
+                  </span>
+                </div>
+                <img
+                  className="w-full h-auto md:hidden"
+                  src={`/assets/main_v3/feature-${activeFeature + 1}.png`}
+                  alt="feature-img"
+                />
               </div>
             ))}
           </div>
-          <div className="w-fit h-[614px]">
+          {/* feature img shown on tablet and desktop */}
+          <div className="hidden md:block md:w-80 d:h-auto xl:w-fit xl:h-[614px]">
             <img
               src={`/assets/main_v3/feature-${activeFeature + 1}.png`}
               alt="feature-img"

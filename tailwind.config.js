@@ -10,7 +10,8 @@ module.exports = {
       width: {
         'header_xl': '1200px',
         'bg-lines': '1140px',
-        'feature-list': '531px',
+        'feature-list_md': '278px',
+        'feature-list_xl': '531px',
         'section-header': '729px',
         'button': '300px',
         'grad-card': '202px',
@@ -28,7 +29,8 @@ module.exports = {
       borderRadius: {
         '4xl': '32px',
         'header': '136px',
-        'section': '100px',
+        'section': '20px',
+        'section_md': '100px',
         'grad-card': '10.75px',
         'grad-card_xl': '14.78px',
       },
