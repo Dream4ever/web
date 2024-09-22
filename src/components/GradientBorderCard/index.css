@@ -1,7 +1,4 @@
 .gradient-border-card {
-  width: 278px;
-  height: 128px;
-  border-radius: 14.78px;
   box-shadow: -5px 7.35px 0px 0px #4E4E4E;
   transform: rotate3d(0.8, 0.2, 0.6, -60deg);
 }
@@ -24,7 +21,6 @@
   position: absolute;
   inset: 0;
   border: 1px solid transparent;
-  border-radius: 14.78px;
   background: linear-gradient(180deg, #FFFFFF 0%, #999999 100%) border-box;
   -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
   mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);

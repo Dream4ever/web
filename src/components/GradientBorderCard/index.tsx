@@ -21,7 +21,7 @@ const GradientBorderCard: React.FC<GradientBorderCardProps> = ({
   return (
     // card wrapper
     <div className={`relative flex items-center justify-center overflow-hidden gradient-border-card
-        bg-gradient-to-l ${wrapperBg}`}>
+        bg-gradient-to-l w-grad-card xl:w-grad-card_xl h-grad-card xl:h-grad-card_xl rounded-grad-card xl:rounded-grad-card_xl before:rounded-grad-card before:xl:rounded-grad-card_xl ${wrapperBg}`}>
       {/* card content */}
       <span className='text-2xl font-semibold text-white uppercase font-Outfit'>
         {text}

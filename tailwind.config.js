@@ -13,9 +13,13 @@ module.exports = {
         'feature-list': '531px',
         'section-header': '729px',
         'button': '300px',
+        'grad-card': '202px',
+        'grad-card_xl': '278px',
       },
       height: {
         'header': '102px',
+        'grad-card': '94px',
+        'grad-card_xl': '128px',
       },
       margin: {
         'header': '50px',
@@ -24,6 +28,8 @@ module.exports = {
         '4xl': '32px',
         'header': '136px',
         'section': '100px',
+        'grad-card': '10.75px',
+        'grad-card_xl': '14.78px',
       },
       colors: {
         "primary-default": "#9264F8",
