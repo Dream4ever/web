@@ -57,14 +57,14 @@ const links = [
 function SectionHeader({ sectionName, title, subTitle }: { sectionName: string, title: string, subTitle?: string }) {
   return (
     <div className="flex flex-col w-full md:items-center gap-y-3 font-Outfit md:px-14 xl:px-0 xl:w-section-header">
-      <span className="text-xl font-bold leading-tight text-primary-light">
+      <span className="text-xl font-bold leading-tight tracking-[.2em] text-primary-light">
         {sectionName}
       </span>
       <span className="font-medium text-2.5xl md:text-4.5xl leading-tight md:text-center">
         {title}
       </span>
       {subTitle && (
-        <span className="text-2xl leading-tight text-center text-gray-light">
+        <span className="text-2xl leading-tight md:text-center text-gray-light">
           {subTitle}
         </span>
       )}
@@ -72,16 +72,16 @@ function SectionHeader({ sectionName, title, subTitle }: { sectionName: string, 
   )
 }
 
-function Para({ title, content, width }: { title: string, content: string, width: number }) {
+function Para({ title, content, width, classes }: { title: string, content: string, width?: number, classes?: string }) {
   return (
     <div
-      className="flex flex-col gap-y-2 font-Outfit"
+      className={`flex flex-col gap-y-2 px-4 md:px-0 font-Outfit ${classes}`}
       style={{ width: `${width}px` }}
     >
-      <span className="text-2.5xl font-semibold leading-tight">
+      <span className="text-xl md:text-2.5xl font-semibold leading-tight">
         {title}
       </span>
-      <span className="text-xl leading-tight text-gray-light">
+      <span className="leading-tight md:text-xl md:text-gray-light">
         {content}
       </span>
     </div>
@@ -263,7 +263,7 @@ function MainV3() {
       </div>
       {/* section links */}
       <div
-        className="z-10 flex flex-col items-center w-full pt-44"
+        className="z-10 flex flex-col items-center w-full px-5 pt-16 pb-8 md:pb-36 md:pt-44 md:px-7 xl:px-0"
         id="onboarding-links"
       >
         <SectionHeader
@@ -271,22 +271,22 @@ function MainV3() {
           title="Onboarding Links to bring users from anywhere to your DApp"
           subTitle="Generate your onboarding links that contain onboarding actions for your app"
         />
-        <div className="flex flex-col items-center mt-16 font-Outfit">
-          <div className="flex items-center gap-x-14">
-            <img className="w-[550px] h-auto" src="/assets/main_v3/link-1.png" alt="link" />
+        <div className="flex flex-col items-center mt-16 gap-y-18 md:gap-y-0 font-Outfit">
+          <div className="flex flex-col items-center gap-y-6 md:flex-row md:gap-x-8 xl:gap-x-14">
+            <img className="w-full md:w-[350px] xl:w-[550px] h-auto" src="/assets/main_v3/link-1.png" alt="link" />
             <Para
               title="Customizable actions"
               content="Each link contains customizable modular features to onboard users from any setting with a series of actions, all in one flow."
-              width={343}
+              classes="md:w-[343px]"
             />
           </div>
-          <div className="flex items-center gap-x-14">
+          <div className="flex flex-col-reverse items-center gap-y-6 md:flex-row md:gap-x-8 xl:gap-x-14">
             <Para
               title="Sharable anywhere"
               content="Share them easily on social media and other platforms, both Web2 and Web3"
-              width={343}
+              classes="md:w-[314px] xl:w-[343px]"
             />
-            <img className="w-[406px] h-auto" src="/assets/main_v3/link-2.png" alt="link" />
+            <img className="w-full px-4 md:w-[310px] xl:w-[406px] h-auto" src="/assets/main_v3/link-2.png" alt="link" />
           </div>
         </div>
       </div>
