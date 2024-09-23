@@ -64,7 +64,7 @@ function SectionHeader({ sectionName, title, subTitle }: { sectionName: string, 
         {title}
       </span>
       {subTitle && (
-        <span className="text-2xl leading-tight md:text-center md:w-[600px] xl:w-auto text-gray-light">
+        <span className="text-lg md:text-2xl leading-tight md:text-center md:w-[600px] xl:w-auto text-gray-light">
           {subTitle}
         </span>
       )}
@@ -72,13 +72,11 @@ function SectionHeader({ sectionName, title, subTitle }: { sectionName: string, 
   )
 }
 
-function Para({ title, content, width, classes }: { title: string, content: string, width?: number, classes?: string }) {
+function Para({ title, content, classes, titleClasses }
+  : { title: string, content: string, classes?: string, titleClasses?: string }) {
   return (
-    <div
-      className={`flex flex-col gap-y-2 px-4 md:px-0 font-Outfit ${classes}`}
-      style={{ width: `${width}px` }}
-    >
-      <span className="text-xl md:text-2.5xl font-semibold leading-tight">
+    <div className={`flex flex-col gap-y-2 px-4 md:px-0 font-Outfit ${classes || ''}`}>
+      <span className={`text-xl md:text-2.5xl font-semibold leading-tight ${titleClasses || ''}`}>
         {title}
       </span>
       <span className="leading-tight md:text-xl md:text-gray-light">
@@ -292,7 +290,7 @@ function MainV3() {
       </div>
       {/* section dapp */}
       <div
-        className="z-10 flex flex-col items-center w-full pt-16 pb-20 bg-dark-base/30 md:pt-44 rounded-b-section"
+        className="z-10 flex flex-col items-center w-full px-5 pt-16 pb-20 md:px-0 bg-dark-base md:bg-dark-base/30 md:pt-44 rounded-b-section"
         id="dapp-bastraction"
       >
         <SectionHeader
@@ -300,25 +298,27 @@ function MainV3() {
           title="Pioneering Dapp Abstraction"
           subTitle="TownSquare is using Dapp abstraction to power onboarding experiences"
         />
-        <div className="flex flex-col mt-20 xl:flex-row md:w-120 xl:w-auto gap-x-24 md:gap-y-25 xl:gap-y-0">
-          <div className="flex flex-col items-center gap-y-8">
+        <div className="flex flex-col w-full mt-14 md:mt-20 xl:flex-row md:w-120 xl:w-auto gap-x-24 gap-y-18 md:gap-y-25 xl:gap-y-0">
+          <div className="flex flex-col-reverse items-center md:flex-col gap-y-8">
             <img className="w-auto h-[210px]" src="/assets/main_v3/dapp-1.png" alt="dapp" />
             <Para
               title="Highly customizable with minimum coding"
               content="Each onboarding link is an app that contains customizable features abstracted from other applications, allowing an onboarding app to be created with minimum development."
-              width={436}
+              classes="px-0 pl-4 flex gap-x-4 border-l-4 border-primary-light"
+              titleClasses="text-primary-light"
             />
           </div>
-          <div className="flex flex-col items-center gap-y-8">
+          <div className="flex flex-col-reverse items-center md:flex-col gap-y-8">
             <img className="w-auto h-[210px]" src="/assets/main_v3/dapp-2.png" alt="dapp" />
             <Para
               title="Feature modularity"
               content="Each feature is a primitive abstracted from a Dapp into a library, which can be leveraged by any developer to build new applications"
-              width={484}
+              classes="px-0 pl-4 flex gap-x-4 border-l-4 border-primary-light"
+              titleClasses="text-primary-light"
             />
           </div>
         </div>
-        <div className="flex flex-col items-center text-white md:mt-25 xl:mt-10 gap-y-3 font-Outfit">
+        <div className="flex flex-col items-center text-white mt-18 md:mt-25 xl:mt-10 gap-y-3 font-Outfit">
           <button className="flex items-center justify-center h-12 text-sm font-medium w-button rounded-4xl bg-primary-dark">
             Check out DApp Abstraction Library
           </button>
