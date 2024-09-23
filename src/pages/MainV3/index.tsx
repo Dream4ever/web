@@ -136,6 +136,40 @@ function DiscordIcon() {
   )
 }
 
+function FooterFollow() {
+  return (
+    <div className="flex flex-col gap-y-2">
+      <span className="text-sm font-semibold">Follow us</span>
+      <div className="flex items-center gap-x-4">
+        <XIcon />
+        <DiscordIcon />
+      </div>
+    </div>
+  )
+}
+
+function FooterLinks() {
+  return (
+    <>
+      {links.map((item, i) => (
+        <Links
+          key={i}
+          title={item.title}
+          links={item.links}
+        />
+      ))}
+    </>
+  )
+}
+
+function FooterCopyright() {
+  return (
+    <a className="text-sm md:text-base" href="https://househaeds.com/" target="_blank" rel="noreferrer">
+      Copyright © 2024 TowneSquare. All rights reserved.
+    </a>
+  )
+}
+
 function MainV3() {
   const [activeFeature, setActiveFeature] = useState(0)
   const [activeSection, setActiveSection] = useState('')
@@ -349,34 +383,29 @@ function MainV3() {
           />
         </div>
       </div>
-      {/* footer */}
-      <div className="z-20 flex justify-between w-full px-40 py-8 bg-primary-dark3">
+      {/* footer above mobile */}
+      <div className="z-20 justify-between hidden w-full px-8 py-8 md:flex xl:px-40 bg-primary-dark3">
         {/* content */}
         <div className="flex justify-between w-full">
           {/* content on the left */}
           <div className="flex flex-col justify-between">
-            <div className="flex flex-col gap-y-2">
-              <span className="text-sm font-semibold">Follow us</span>
-              <div className="flex items-center gap-x-4">
-                <XIcon />
-                <DiscordIcon />
-              </div>
-            </div>
-            <a href="https://househaeds.com/" target="_blank" rel="noreferrer">
-              Copyright © 2024 TowneSquare. All rights reserved.
-            </a>
+            <FooterFollow />
+            <FooterCopyright />
           </div>
           {/* content on the right */}
           <div className="flex gap-x-24">
-            {links.map((item, i) => (
-              <Links
-                key={i}
-                title={item.title}
-                links={item.links}
-              />
-            ))}
+            <FooterLinks />
           </div>
         </div>
+      </div>
+      {/* footer on mobile */}
+      <div className="z-20 flex flex-col w-full px-5 py-8 md:hidden gap-y-12 bg-primary-dark3">
+        <img src="/assets/main_v3/ts-logo.png" className="w-40 h-auto" alt="logo" />
+        <div className="flex justify-between">
+          <FooterLinks />
+          <FooterFollow />
+        </div>
+        <FooterCopyright />
       </div>
     </div>
   )
