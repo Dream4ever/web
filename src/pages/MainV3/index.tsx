@@ -44,9 +44,11 @@ const links = [
     links: [
       {
         text: 'Twitter',
+        link: 'https://x.com/TowneSquarexyz',
       },
       {
         text: 'Discord',
+        link: 'https://discord.gg/yMRmqFzrDW',
       },
     ]
   },
@@ -86,13 +88,15 @@ function Para({ title, content, width }: { title: string, content: string, width
   )
 }
 
-function FlatButton({ text, imgSrc }: { text: string, imgSrc: string }) {
+function FlatButton({ text, imgSrc, url }: { text: string, imgSrc: string, url: string }) {
   return (
     <div className="flex items-center justify-center h-16 border cursor-pointer w-60 gap-x-2 rounded-xl bg-primary-dark2 border-gray-light3">
-      <img className="w-auto h-[29px]" src={imgSrc} alt="icon" />
-      <span className="text-xl font-medium text-white font-Outfit">
-        {text}
-      </span>
+      <a href={url} target="_blank">
+        <img className="w-auto h-[29px]" src={imgSrc} alt="icon" />
+        <span className="text-xl font-medium text-white font-Outfit">
+          {text}
+        </span>
+      </a>
     </div>
   )
 }
@@ -111,9 +115,26 @@ function Links({ title, links }: { title: string, links: LINK[] }) {
           className="text-gray-light2"
           key={i}
           href={item.link || ''}
+          target="_blank"
         >{item.text}</a>
       ))}
     </div>
+  )
+}
+
+function XIcon() {
+  return (
+    <a href="https://x.com/TowneSquarexyz" target="_blank">
+      <img src="/assets/main_v3/x.png" className="w-5 h-auto md:w-6" alt="logo" />
+    </a>
+  )
+}
+
+function DiscordIcon() {
+  return (
+    <a href="https://discord.gg/yMRmqFzrDW" target="_blank">
+      <img src="/assets/main_v3/discord.png" className="w-6 h-auto md:w-[30px]" alt="logo" />
+    </a>
   )
 }
 
@@ -166,8 +187,8 @@ function MainV3() {
             >Dapp Abstraction</a>
           </div>
           <div className="flex items-center gap-x-6">
-            <img src="/assets/main_v3/x.png" className="w-5 h-auto md:w-6" alt="logo" />
-            <img src="/assets/main_v3/discord.png" className="w-6 h-auto md:w-[30px]" alt="logo" />
+            <XIcon />
+            <DiscordIcon />
           </div>
         </div>
       </div>
@@ -317,10 +338,12 @@ function MainV3() {
           <FlatButton
             text="@TowneSquarexyz"
             imgSrc="/assets/main_v3/x.png"
+            url="https://x.com/TowneSquarexyz"
           />
           <FlatButton
             text="TownSquare"
             imgSrc="/assets/main_v3/discord.png"
+            url="https://discord.gg/yMRmqFzrDW"
           />
         </div>
       </div>
@@ -333,8 +356,8 @@ function MainV3() {
             <div className="flex flex-col gap-y-2">
               <span className="text-sm font-semibold">Follow us</span>
               <div className="flex items-center gap-x-4">
-                <img className="w-6 h-auto" src="/assets/main_v3/x.png" alt="social" />
-                <img className="h-auto w-7" src="/assets/main_v3/discord.png" alt="social" />
+                <XIcon />
+                <DiscordIcon />
               </div>
             </div>
             <a href="https://househaeds.com/" target="_blank" rel="noreferrer">
