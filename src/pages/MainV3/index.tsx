@@ -242,7 +242,7 @@ function MainV3() {
                 </div>
                 <img
                   className="w-full h-auto md:hidden"
-                  src={`/assets/main_v3/feature-${activeFeature + 1}.png`}
+                  src={`/assets/main_v3/feature-${i + 1}.png`}
                   alt="feature-img"
                 />
               </div>
