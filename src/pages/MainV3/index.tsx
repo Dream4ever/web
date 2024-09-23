@@ -90,8 +90,8 @@ function Para({ title, content, width }: { title: string, content: string, width
 
 function FlatButton({ text, imgSrc, url }: { text: string, imgSrc: string, url: string }) {
   return (
-    <div className="flex items-center justify-center h-16 border cursor-pointer w-60 gap-x-2 rounded-xl bg-primary-dark2 border-gray-light3">
-      <a href={url} target="_blank">
+    <div className="flex items-center justify-center h-16 border cursor-pointer w-60 rounded-xl bg-primary-dark2 border-gray-light3">
+      <a className="flex items-center justify-center gap-x-2" href={url} target="_blank">
         <img className="w-auto h-[29px]" src={imgSrc} alt="icon" />
         <span className="text-xl font-medium text-white font-Outfit">
           {text}
