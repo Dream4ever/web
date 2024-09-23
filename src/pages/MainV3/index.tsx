@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react"
 import { throttle } from 'lodash'
 
-import GradientBorderCard from "../../components/GradientBorderCard"
-
 const features = [
   {
     title: 'Modular on-chain actions',
@@ -186,13 +184,11 @@ function MainV3() {
               Creating distribution channels for Web3 applications<br />with customizable onboarding links.
             </span>
           </div>
-          <div className="flex flex-col -space-y-10">
-            <GradientBorderCard text="users" />
-            <GradientBorderCard primary={true}>
-              <img src="/assets/main_v3/ts-logo.png" className="w-[220px] h-auto" alt="logo" />
-            </GradientBorderCard>
-            <GradientBorderCard text="web3 dapps" />
-            <GradientBorderCard text="chains" last={true} />
+          <div className="flex flex-col -space-y-20 xl:-space-y-28">
+            <img className="z-50 h-auto w-grad-card xl:w-grad-card_xl" src="/assets/main_v3/hero-1.png" alt="hero" />
+            <img className="z-40 h-auto w-grad-card xl:w-grad-card_xl" src="/assets/main_v3/hero-2.png" alt="hero" />
+            <img className="z-30 h-auto w-grad-card xl:w-grad-card_xl" src="/assets/main_v3/hero-3.png" alt="hero" />
+            <img className="z-20 h-auto w-grad-card xl:w-grad-card_xl" src="/assets/main_v3/hero-4.png" alt="hero" />
           </div>
         </div>
       </div>

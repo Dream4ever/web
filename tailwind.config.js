@@ -14,14 +14,12 @@ module.exports = {
         'feature-list_xl': '531px',
         'section-header': '729px',
         'button': '300px',
-        'grad-card': '202px',
-        'grad-card_xl': '278px',
+        'grad-card': '245px',
+        'grad-card_xl': '338px',
       },
       height: {
         'header': '79px',
         'header_md': '102px',
-        'grad-card': '94px',
-        'grad-card_xl': '128px',
       },
       margin: {
         'header': '50px',
