@@ -143,7 +143,7 @@ function MainV3() {
   return (
     // page wrapper
     <div className="relative flex flex-col items-center overflow-hidden bg-dark-lg">
-      <div className="fixed pointer-events-none">
+      <div className="fixed z-0 pointer-events-none">
         <img className="h-auto w-bg-lines" src="/assets/main_v3/bg-lines.png" alt="bg-line" />
       </div>
       {/* header */}
@@ -193,7 +193,10 @@ function MainV3() {
         </div>
       </div>
       {/* section features */}
-      <div className="flex flex-col items-center w-full px-5 pt-16 pb-12 xl:pt-44 bg-dark-base/30 md:pb-40 xl:pb-50 rounded-t-section md:rounded-t-section_md" id="features">
+      <div
+        className="z-10 flex flex-col items-center w-full px-5 pt-16 pb-12 xl:pt-44 bg-dark-base/30 md:pb-40 xl:pb-50 rounded-t-section md:rounded-t-section_md"
+        id="features"
+      >
         <SectionHeader
           sectionName="FEATURES"
           title="Embed however many onboarding actions in one singular onboarding flow"
@@ -238,7 +241,10 @@ function MainV3() {
         </div>
       </div>
       {/* section links */}
-      <div className="flex flex-col items-center w-full pt-44" id="onboarding-links">
+      <div
+        className="z-10 flex flex-col items-center w-full pt-44"
+        id="onboarding-links"
+      >
         <SectionHeader
           sectionName="ONBOARDING LINKS"
           title="Onboarding Links to bring users from anywhere to your DApp"
@@ -264,7 +270,10 @@ function MainV3() {
         </div>
       </div>
       {/* section dapp */}
-      <div className="flex flex-col items-center w-full pb-20 bg-dark-base/30 pt-44 rounded-b-section" id="dapp-bastraction">
+      <div
+        className="z-10 flex flex-col items-center w-full pb-20 bg-dark-base/30 pt-44 rounded-b-section"
+        id="dapp-bastraction"
+      >
         <SectionHeader
           sectionName="DAPP ABSTRACTION"
           title="Pioneering Dapp Abstraction"
@@ -296,7 +305,7 @@ function MainV3() {
         </div>
       </div>
       {/* section social */}
-      <div className="relative flex flex-col items-center w-full py-20">
+      <div className="relative z-10 flex flex-col items-center w-full py-20">
         <img className="absolute w-full h-auto -top-48" src="/assets/main_v3/bg-curve-bottom.png" alt="bg" />
         <div className="z-20 flex flex-col items-center gap-y-2 font-Outfit">
           <span className="text-4.5xl font-medium leading-tight">Find us on socials</span>
