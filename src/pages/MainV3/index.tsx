@@ -88,10 +88,10 @@ function Para({ title, content, classes, titleClasses }
 
 function FlatButton({ text, imgSrc, url }: { text: string, imgSrc: string, url: string }) {
   return (
-    <div className="flex items-center justify-center h-16 border cursor-pointer w-60 rounded-xl bg-primary-dark2 border-gray-light3">
+    <div className="flex items-center justify-center w-full h-16 border cursor-pointer md:w-60 rounded-xl bg-primary-dark2 border-gray-light3">
       <a className="flex items-center justify-center gap-x-2" href={url} target="_blank">
-        <img className="w-auto h-[29px]" src={imgSrc} alt="icon" />
-        <span className="text-xl font-medium text-white font-Outfit">
+        <img className="w-6 h-auto md:w-auto md:h-7" src={imgSrc} alt="icon" />
+        <span className="text-base font-medium text-white md:text-xl font-Outfit">
           {text}
         </span>
       </a>
@@ -203,11 +203,11 @@ function MainV3() {
               Creating distribution channels for Web3 applications<br />with customizable onboarding links.
             </span>
           </div>
-          <div className="flex flex-col -space-y-20 xl:-space-y-28">
-            <img className="z-50 h-auto w-grad-card xl:w-grad-card_xl" src="/assets/main_v3/hero-1.png" alt="hero" />
-            <img className="z-40 h-auto w-grad-card xl:w-grad-card_xl" src="/assets/main_v3/hero-2.png" alt="hero" />
-            <img className="z-30 h-auto w-grad-card xl:w-grad-card_xl" src="/assets/main_v3/hero-3.png" alt="hero" />
-            <img className="z-20 h-auto w-grad-card xl:w-grad-card_xl" src="/assets/main_v3/hero-4.png" alt="hero" />
+          <div className="flex flex-col -space-y-20 md:-space-y-28">
+            <img className="z-50 h-auto w-grad-card md:w-grad-card_xl" src="/assets/main_v3/hero-1.png" alt="hero" />
+            <img className="z-40 h-auto w-grad-card md:w-grad-card_xl" src="/assets/main_v3/hero-2.png" alt="hero" />
+            <img className="z-30 h-auto w-grad-card md:w-grad-card_xl" src="/assets/main_v3/hero-3.png" alt="hero" />
+            <img className="z-20 h-auto w-grad-card md:w-grad-card_xl" src="/assets/main_v3/hero-4.png" alt="hero" />
           </div>
         </div>
       </div>
@@ -290,7 +290,7 @@ function MainV3() {
       </div>
       {/* section dapp */}
       <div
-        className="z-10 flex flex-col items-center w-full px-5 pt-16 pb-20 md:px-0 bg-dark-base md:bg-dark-base/30 md:pt-44 rounded-b-section"
+        className="z-20 flex flex-col items-center w-full px-5 pt-16 pb-20 md:px-0 bg-dark-base md:bg-dark-base/30 md:pt-44 rounded-b-section"
         id="dapp-bastraction"
       >
         <SectionHeader
@@ -304,8 +304,8 @@ function MainV3() {
             <Para
               title="Highly customizable with minimum coding"
               content="Each onboarding link is an app that contains customizable features abstracted from other applications, allowing an onboarding app to be created with minimum development."
-              classes="px-0 pl-4 flex gap-x-4 border-l-4 border-primary-light"
-              titleClasses="text-primary-light"
+              classes="px-0 pl-4 flex gap-x-4 border-l-4 border-primary-light md:border-none xl:w-120"
+              titleClasses="text-primary-light md:text-white"
             />
           </div>
           <div className="flex flex-col-reverse items-center md:flex-col gap-y-8">
@@ -313,8 +313,8 @@ function MainV3() {
             <Para
               title="Feature modularity"
               content="Each feature is a primitive abstracted from a Dapp into a library, which can be leveraged by any developer to build new applications"
-              classes="px-0 pl-4 flex gap-x-4 border-l-4 border-primary-light"
-              titleClasses="text-primary-light"
+              classes="px-0 pl-4 flex gap-x-4 border-l-4 border-primary-light md:border-none xl:w-120"
+              titleClasses="text-primary-light md:text-white"
             />
           </div>
         </div>
@@ -326,15 +326,17 @@ function MainV3() {
         </div>
       </div>
       {/* section social */}
-      <div className="relative z-10 flex flex-col items-center w-full py-20">
-        <img className="absolute w-full h-auto -top-48" src="/assets/main_v3/bg-curve-bottom.png" alt="bg" />
-        <div className="z-20 flex flex-col items-center gap-y-2 font-Outfit">
-          <span className="text-4.5xl font-medium leading-tight">Find us on socials</span>
-          <span className="text-2xl leading-tight">
+      <div className="relative z-10 flex flex-col items-center w-full px-5 py-20 pt-20 md:px-0 md:pt-44 md:pb-40">
+        <img className="absolute w-full md:w-[240%] md:max-w-none xl:w-full h-auto left-0 bottom-0" src="/assets/main_v3/bg-curve-bottom.png" alt="bg" />
+        <div className="z-20 flex flex-col justify-start px-5 md:items-center md:px-0 gap-y-4 md:gap-y-2 font-Outfit">
+          <span className="text-2.5xl md:text-4.5xl font-medium leading-tight">
+            Find us on socials
+          </span>
+          <span className="text-lg leading-tight md:text-2xl md:w-150 text-gray-light md:text-white md:text-center xl:w-auto">
             TownSquare is using Dapp abstraction to power onboarding experiences
           </span>
         </div>
-        <div className="z-20 flex items-center mt-20 gap-x-9">
+        <div className="z-20 flex flex-col items-center w-full mt-8 md:mt-20 md:flex-row gap-y-4 md:gap-x-9 md:w-auto">
           <FlatButton
             text="@TowneSquarexyz"
             imgSrc="/assets/main_v3/x.png"
