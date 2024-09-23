@@ -64,7 +64,7 @@ function SectionHeader({ sectionName, title, subTitle }: { sectionName: string, 
         {title}
       </span>
       {subTitle && (
-        <span className="text-2xl leading-tight md:text-center text-gray-light">
+        <span className="text-2xl leading-tight md:text-center md:w-[600px] xl:w-auto text-gray-light">
           {subTitle}
         </span>
       )}
@@ -292,7 +292,7 @@ function MainV3() {
       </div>
       {/* section dapp */}
       <div
-        className="z-10 flex flex-col items-center w-full pb-20 bg-dark-base/30 pt-44 rounded-b-section"
+        className="z-10 flex flex-col items-center w-full pt-16 pb-20 bg-dark-base/30 md:pt-44 rounded-b-section"
         id="dapp-bastraction"
       >
         <SectionHeader
@@ -300,7 +300,7 @@ function MainV3() {
           title="Pioneering Dapp Abstraction"
           subTitle="TownSquare is using Dapp abstraction to power onboarding experiences"
         />
-        <div className="flex mt-20 gap-x-24">
+        <div className="flex flex-col mt-20 xl:flex-row md:w-120 xl:w-auto gap-x-24 md:gap-y-25 xl:gap-y-0">
           <div className="flex flex-col items-center gap-y-8">
             <img className="w-auto h-[210px]" src="/assets/main_v3/dapp-1.png" alt="dapp" />
             <Para
@@ -318,7 +318,7 @@ function MainV3() {
             />
           </div>
         </div>
-        <div className="flex flex-col items-center mt-10 text-white gap-y-3 font-Outfit">
+        <div className="flex flex-col items-center text-white md:mt-25 xl:mt-10 gap-y-3 font-Outfit">
           <button className="flex items-center justify-center h-12 text-sm font-medium w-button rounded-4xl bg-primary-dark">
             Check out DApp Abstraction Library
           </button>

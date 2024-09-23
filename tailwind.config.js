@@ -7,6 +7,7 @@ module.exports = {
         '18': '72px',
         '25': '100px',
         '50': '200px',
+        '120': '480px',
       },
       width: {
         'header_xl': '1200px',
