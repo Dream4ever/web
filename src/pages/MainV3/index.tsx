@@ -172,7 +172,7 @@ function MainV3() {
         </div>
       </div>
       {/* section banner */}
-      <div className="flex flex-col items-center w-full h-screen pb-40 bg-cover pt-36 md:pt-50 xl:pt-56 bg-index-s1-bg">
+      <div className="flex flex-col items-center w-full pb-8 bg-cover md:pb-20 xl:pb-40 pt-36 md:pt-50 bg-index-s1-bg">
         {/* content on the left and right */}
         <div className="flex flex-col items-center xl:flex-row gap-y-12 md:gap-y-24 xl:gap-x-20">
           {/* slogon */}
