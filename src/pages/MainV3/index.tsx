@@ -1,5 +1,10 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useMemo, useRef } from "react"
 import { throttle } from 'lodash'
+import gsap from "gsap"
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger"
+import { useMediaQuery } from 'react-responsive'
+
+gsap.registerPlugin(ScrollTrigger)
 
 const features = [
   {
@@ -23,7 +28,6 @@ const features = [
     w: 678,
   },
 ]
-
 const links = [
   {
     title: 'Legal',
@@ -174,6 +178,12 @@ function MainV3() {
   const [activeFeature, setActiveFeature] = useState(0)
   const [activeSection, setActiveSection] = useState('')
 
+  const main = useRef(null)
+  const cardsRef = useRef(null)
+
+  const isTabletOrAbove = useMediaQuery({ query: '(min-width: 768px)' })
+  const cardHeight = isTabletOrAbove ? 112 : 80
+
   useEffect(() => {
     const handleScroll = () => {
       const sections = ['features', 'onboarding-links', 'dapp-bastraction']
@@ -191,6 +201,27 @@ function MainV3() {
     const throttledHandleScroll = throttle(handleScroll, 200)
     window.addEventListener('scroll', throttledHandleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  useMemo(() => {
+    ScrollTrigger.create({
+      trigger: '#cards',
+      start: 0,
+      end: 200,
+      onUpdate: (self) => {
+        if (cardsRef.current) {
+          const cards = gsap.utils.toArray('.card')
+          cards.forEach((card, i) => {
+            // only change marginTop of 2nd to 4th elements
+            if (i === 0) {
+              return
+            }
+            // change style works, change className not
+            (card as HTMLElement).style.marginTop = `-${Math.floor(cardHeight + self.progress * cardHeight)}px`
+          })
+        }
+      },
+    })
   }, [])
 
   return (
@@ -225,7 +256,7 @@ function MainV3() {
         </div>
       </div>
       {/* section banner */}
-      <div className="flex flex-col items-center w-full pb-8 bg-cover md:pb-20 xl:pb-40 pt-36 md:pt-50 bg-index-s1-bg">
+      <div ref={main} className="flex flex-col items-center w-full pb-8 bg-cover md:pb-20 xl:pb-40 pt-36 md:pt-50 bg-index-s1-bg">
         {/* content on the left and right */}
         <div className="flex flex-col items-center xl:flex-row gap-y-12 md:gap-y-24 xl:gap-x-20">
           {/* slogon */}
@@ -237,11 +268,30 @@ function MainV3() {
               Creating distribution channels for Web3 applications<br />with customizable onboarding links.
             </span>
           </div>
-          <div className="flex flex-col -space-y-20 md:-space-y-28">
-            <img className="z-50 h-auto w-grad-card md:w-grad-card_xl" src="/assets/main_v3/hero-1.png" alt="hero" />
-            <img className="z-40 h-auto w-grad-card md:w-grad-card_xl" src="/assets/main_v3/hero-2.png" alt="hero" />
-            <img className="z-30 h-auto w-grad-card md:w-grad-card_xl" src="/assets/main_v3/hero-3.png" alt="hero" />
-            <img className="z-20 h-auto w-grad-card md:w-grad-card_xl" src="/assets/main_v3/hero-4.png" alt="hero" />
+          <div id="cards" ref={cardsRef} className={`flex flex-col`}>
+            <img
+              className="z-50 h-auto w-grad-card md:w-grad-card_xl card"
+              src="/assets/main_v3/hero-1.png"
+              alt="hero"
+            />
+            <img
+              className="z-40 h-auto w-grad-card md:w-grad-card_xl card"
+              style={{ marginTop: `-${cardHeight}px` }}
+              src="/assets/main_v3/hero-2.png"
+              alt="hero"
+            />
+            <img
+              className="z-30 h-auto w-grad-card md:w-grad-card_xl card"
+              style={{ marginTop: `-${cardHeight}px` }}
+              src="/assets/main_v3/hero-3.png"
+              alt="hero"
+            />
+            <img
+              className="z-20 h-auto w-grad-card md:w-grad-card_xl card"
+              style={{ marginTop: `-${cardHeight}px` }}
+              src="/assets/main_v3/hero-4.png"
+              alt="hero"
+            />
           </div>
         </div>
       </div>
