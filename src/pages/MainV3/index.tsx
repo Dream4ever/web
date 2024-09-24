@@ -318,7 +318,7 @@ function MainV3() {
                   `}>
                     {feature.title}
                   </span>
-                  <span className={`text-base md:text-lg xl:text-xl ${i !== activeFeature && 'md:hidden'}`}>
+                  <span className={`text-base md:text-lg xl:text-xl md:leading-tight ${i !== activeFeature && 'md:hidden'}`}>
                     {feature.description}
                   </span>
                 </div>
@@ -331,14 +331,11 @@ function MainV3() {
             ))}
           </div>
           {/* feature img shown on tablet and desktop */}
-          <div className="hidden md:block md:w-80 d:h-auto xl:w-fit xl:h-[614px]">
+          <div className="hidden md:block md:w-80 md:h-80 xl:w-120 xl:h-120">
             <img
               src={`/assets/main_v3/feature-${activeFeature + 1}.png`}
               alt="feature-img"
-              style={{
-                width: `${features[activeFeature].w}px`,
-                height: 'auto',
-              }}
+              className="object-contain max-w-full max-h-full"
             />
           </div>
         </div>
@@ -353,9 +350,9 @@ function MainV3() {
           title="Onboarding Links to bring users from anywhere to your DApp"
           subTitle="Generate your onboarding links that contain onboarding actions for your app"
         />
-        <div className="flex flex-col items-center mt-16 gap-y-18 md:gap-y-0 font-Outfit">
+        <div className="flex flex-col items-center mt-16 gap-y-18 font-Outfit">
           <div className="flex flex-col items-center gap-y-6 md:flex-row md:gap-x-8 xl:gap-x-14">
-            <img className="w-full md:w-[350px] xl:w-[550px] h-auto" src="/assets/main_v3/link-1.png" alt="link" />
+            <img className="w-full md:w-[306px] xl:w-[470px] h-auto" src="/assets/main_v3/link-1.png" alt="link" />
             <Para
               title="Customizable actions"
               content="Each link contains customizable modular features to onboard users from any setting with a series of actions, all in one flow."
