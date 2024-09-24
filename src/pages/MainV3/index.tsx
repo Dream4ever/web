@@ -57,7 +57,7 @@ const links = [
 function SectionHeader({ sectionName, title, subTitle }: { sectionName: string, title: string, subTitle?: string }) {
   return (
     <div className="flex flex-col w-full md:items-center gap-y-3 font-Outfit md:px-14 xl:px-0 xl:w-section-header">
-      <span className="text-xl font-bold leading-tight tracking-[.2em] text-primary-light">
+      <span className="text-ssm md:text-xl font-bold leading-tight tracking-[.2em] text-primary-light">
         {sectionName}
       </span>
       <span className="font-medium text-2.5xl md:text-4.5xl leading-tight md:text-center">

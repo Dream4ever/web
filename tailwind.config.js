@@ -57,6 +57,7 @@ module.exports = {
         'gray-light3': '#4C4266',
       },
       fontSize: {
+        'ssm': '13px',
         '2.5xl': '28px',
         '4.5xl': '40px',
       },
