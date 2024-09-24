@@ -324,7 +324,7 @@ function MainV3() {
       </div>
       {/* section dapp */}
       <div
-        className="z-20 flex flex-col items-center w-full px-5 pt-16 pb-20 md:px-0 bg-dark-base md:bg-dark-base/30 md:pt-44 rounded-b-section"
+        className="z-20 flex flex-col items-center w-full px-5 pt-16 pb-20 md:px-0 bg-dark-md md:bg-dark-base/30 md:pt-44 rounded-b-section"
         id="dapp-bastraction"
       >
         <SectionHeader
