@@ -4,11 +4,13 @@ module.exports = {
   theme: {
     extend: {
       spacing: {
+        '15': '60px',
         '18': '72px',
         '25': '100px',
         '50': '200px',
         '120': '480px',
         '150': '600px',
+        '180': '720px',
       },
       width: {
         'header_xl': '1200px',

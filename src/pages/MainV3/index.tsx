@@ -260,12 +260,16 @@ function MainV3() {
         {/* content on the left and right */}
         <div className="flex flex-col items-center xl:flex-row gap-y-12 md:gap-y-24 xl:gap-x-20">
           {/* slogon */}
-          <div className="flex flex-col px-5 gap-y-4 md:gap-y-8 md:px-14 xl:px-0">
-            <span className="xl:w-[720px] text-[28px] md:text-[43px] font-semibold leading-tight font-Outfit">
+          <div className="flex flex-col px-5 xl:w-180 gap-y-4 md:gap-y-8 md:px-15 xl:px-0">
+            <span className="text-2.5xl md:text-[43px] font-semibold leading-tight font-Outfit">
               <span className="text-primary-light">Onboard anyone</span> to your Web3 app, anywhere anytime
             </span>
             <span className="text-lg leading-normal tracking-wide md:text-2xl text-gray-light font-Outfit">
-              Creating distribution channels for Web3 applications<br />with customizable onboarding links.
+              Creating distribution channels for Web3 applications with customizable onboarding links.
+            </span>
+            <span className="flex items-center text-base font-semibold leading-normal gap-x-1 text-gray-light">
+              POWERED BY
+              <img className="w-auto h-4" src="/assets/main_v3/monad.png" alt="mona" />
             </span>
           </div>
           <div id="cards" ref={cardsRef} className={`flex flex-col`}>
