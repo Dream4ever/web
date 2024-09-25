@@ -28,6 +28,7 @@
 body{
   font-family: Outfit, Urbanist, Arial, Helvetica, sans-serif;
   color: white;
+  overscroll-behavior: none;
 }
 .right-panel-menu ul li{
   height: 44px;
