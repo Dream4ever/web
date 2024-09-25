@@ -226,12 +226,7 @@ function MainV3() {
 
   return (
     // page wrapper
-    <div
-      className="relative flex flex-col items-center overflow-hidden bg-dark-lg"
-      style={{
-        overscrollBehaviorY: 'none',
-      }}
-    >
+    <div className="relative flex flex-col items-center overflow-hidden bg-dark-lg">
       <div className="fixed z-0 pointer-events-none">
         <img className="h-auto w-bg-lines" src="/assets/main_v3/bg-lines.png" alt="bg-line" />
       </div>
